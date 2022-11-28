@@ -1,0 +1,13 @@
+@use "sass:math";
+
+// Function: Convert PX to REM
+@function to-rem($pixel) {
+  // If $pixel not has a unit, divide $pixel by 16 to return rems
+  @if math.is-unitless($pixel) {
+    @return math.div($pixel, 16) + rem;
+  }
+  // Otherwise (else) throw an error
+  @else {
+    @error 'Don\'t use units when using the to-rem() functions, only nembers';
+  }
+}

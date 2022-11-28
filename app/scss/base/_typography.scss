@@ -1,0 +1,11 @@
+@use "../assistants/variables" as *;
+@use "../assistants/mixins" as *;
+
+/* Base Typography */
+body {
+  font-size: $fs-native;
+  font-weight: $fw-native;
+  font-family: $ff-native;
+  line-height: $lh-native;
+  color: $clr-text-ligth;
+}

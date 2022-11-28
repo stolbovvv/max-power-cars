@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+// 1. Vendors
+// 2. Base stuff
+@forward "./base/fonts";
+@forward "./base/base";
+@forward "./base/typography";
+@forward "./base/helpers";
+
+// 3. Layout-related sections
+@forward "./layout/header";
+@forward "./layout/footer";
+
+// 4. Components
+@forward "./components/buttons";
+
+// 5. Page-specific styles
+@forward "./pages/home";
+
+// 6. Themes
+@forward "./themes/default";

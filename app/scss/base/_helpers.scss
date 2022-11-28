@@ -1,0 +1,50 @@
+@use "../assistants/variables" as *;
+@use "../assistants/mixins" as *;
+
+/* Main body wrapper */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Main section page for content */
+.main {
+  flex: 1 1 auto;
+}
+
+/* Main content containers */
+.container {
+  max-width: $container-max-width;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: $container-inline-padding;
+  padding-right: $container-inline-padding;
+}
+
+/* Clear inner floats */
+.clearfix::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+/* Hide text while making it readable for screen readers */
+.hide-text {
+  overflow: hidden;
+  padding: 0;
+  text-indent: 101%;
+  white-space: nowrap;
+}
+
+/* Hide element while making it readable for screen readers */
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}

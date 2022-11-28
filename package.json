@@ -1,0 +1,48 @@
+{
+  "name": "simple-starter-template",
+  "version": "1.0.0",
+  "description": "Simple starter template for website development",
+  "homepage": "",
+  "main": "gulpfile.js",
+  "browserslist": [
+    ">0.5%",
+    "not dead",
+    "not op_mini all",
+    "last 2 versions"
+  ],
+  "scripts": {
+    "start": "gulp",
+    "clean": "gulp clean",
+    "build": "gulp build --production",
+    "archive": "gulp archive --production",
+    "deploy": "gh-pages -d dist",
+    "predeploy": "npm run build"
+  },
+  "author": {
+    "name": "Valerii Stolbov",
+    "email": "stolbov.v@outlook.com"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.19.6",
+    "@babel/preset-env": "^7.19.4",
+    "browser-sync": "^2.27.10",
+    "del": "^6.1.1",
+    "eslint": "^8.25.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "gh-pages": "^4.0.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-if": "^3.0.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-terser": "^2.1.0",
+    "gulp-zip": "^5.1.0",
+    "prettier": "2.7.1",
+    "sass": "^1.56.1"
+  }
+}
