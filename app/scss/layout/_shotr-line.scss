@@ -1,0 +1,47 @@
+@use "../assistants/variables" as *;
+
+/* Section: Short line */
+.short-line {
+  padding: 32px 0 32px 0;
+  background: tomato;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__row {
+    display: flex;
+    align-items: center;
+
+    > * + * {
+      margin: 0 0 0 18px;
+    }
+  }
+
+  &__title {
+    color: $clr-text-ligth;
+    -webkit-text-stroke: 1px #000000;
+    -webkit-text-fill-color: transparent;
+    font-family: "Roboto";
+    font-size: 54px;
+    line-height: 1;
+    font-weight: 900;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+
+    > * + * {
+      margin: 0 0 0 10px;
+    }
+  }
+
+  &__link {
+    align-self: flex-end;
+    margin: 24px 0 0 0;
+  }
+}

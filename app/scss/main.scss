@@ -10,9 +10,14 @@
 // 3. Layout-related sections
 @forward "./layout/header";
 @forward "./layout/footer";
+@forward "./layout/shotr-line";
 
 // 4. Components
 @forward "./components/buttons";
+@forward "./components/cards";
+@forward "./components/forms";
+@forward "./components/nav-and-tabs";
+@forward "./components/navbar";
 
 // 5. Page-specific styles
 @forward "./pages/home";
