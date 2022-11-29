@@ -90,17 +90,17 @@
               <ul class="social-menu__list">
                 <li class="social-menu__list-item">
                   <a href="#" class="social-menu__list-link">
-                    <img class="social-menu__list-icon" src="./images/social/instagram.svg" alt="instagram" />
+                    <img class="social-menu__list-icon" src="./images/icons-social/instagram.svg" alt="instagram" />
                   </a>
                 </li>
                 <li class="social-menu__list-item">
                   <a href="#" class="social-menu__list-link">
-                    <img class="social-menu__list-icon" src="./images/social/telegram.svg" alt="telegram" />
+                    <img class="social-menu__list-icon" src="./images/icons-social/telegram.svg" alt="telegram" />
                   </a>
                 </li>
                 <li class="social-menu__list-item">
                   <a href="#" class="social-menu__list-link">
-                    <img class="social-menu__list-icon" src="./images/social/youtube.svg" alt="youtube" />
+                    <img class="social-menu__list-icon" src="./images/icons-social/youtube.svg" alt="youtube" />
                   </a>
                 </li>
               </ul>
@@ -110,72 +110,193 @@
       </nav>
 
       <main class="main">
-        <section class="short-line">фото</section>
-        <section class="short-line">
+        <!-- Positions -->
+        <div class="positions">
           <div class="container">
-            <div class="short-line__wrapper">
-              <div class="short-line__row">
-                <h2 class="short-line__title">новости</h2>
-                <div class="short-line__content">
-                  <article class="news-card">
-                    <div class="news-card__thumbnail">
-                      <img class="news-card__thumbnail-img" src="./images/news/news_1.jpg" alt="" />
+            <div class="positions__wrapper">
+              <h2 class="positions__title">Положение в чемпионате <span class="text-stroke">/ MPC Best Laps</span></h2>
+              <div class="positions__controls">
+                <p class="positions__controls-label">Зачетный класс:</p>
+                <div class="positions__controls-select select">
+                  <select class="select__body" name="credit-class:" id="">
+                    <option value="class-supercars" selected>supercars</option>
+                    <option value="class-supercars">supercars-1</option>
+                    <option value="class-supercars">supercars-2</option>
+                    <option value="class-supercars">supercars-3</option>
+                  </select>
+                  <span class="select__arrow">
+                    <img class="select__arrow-icon" src="./images/icons-ui/icon-triangle.svg" alt="" />
+                  </span>
+                </div>
+              </div>
+              <div class="positions__tabel">
+                <div class="positions__tabel-body">
+                  <div class="positions__tabel-row">
+                    <p class="positions__tabel-cell"></p>
+                  </div>
+                  <div class="positions__tabel-row">
+                    <p class="positions__tabel-cell">1</p>
+                  </div>
+                  <div class="positions__tabel-row">
+                    <p class="positions__tabel-cell">2</p>
+                  </div>
+                  <div class="positions__tabel-row">
+                    <p class="positions__tabel-cell">3</p>
+                  </div>
+                  <div class="positions__tabel-row">
+                    <p class="positions__tabel-cell">4</p>
+                  </div>
+                  <div class="positions__tabel-row">
+                    <p class="positions__tabel-cell">5</p>
+                  </div>
+                  <div class="positions__tabel-row">
+                    <p class="positions__tabel-cell">6</p>
+                  </div>
+                  <div class="positions__tabel-row">
+                    <p class="positions__tabel-cell">7</p>
+                  </div>
+                  <div class="positions__tabel-row">
+                    <p class="positions__tabel-cell">8</p>
+                  </div>
+                  <div class="positions__tabel-row">
+                    <p class="positions__tabel-cell">9</p>
+                  </div>
+                  <div class="positions__tabel-row">
+                    <p class="positions__tabel-cell">10</p>
+                  </div>
+                </div>
+              </div>
+              <div class="positions__button-container">
+                <a class="positions__link button" href="#">полная статистика</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Photo -->
+        <section class="event-sheet event-sheet_bg-photo">
+          <div class="container">
+            <div class="event-sheet__wrapper">
+              <div class="event-sheet__row">
+                <h2 class="event-sheet__title text-stroke text-stroke_clr-white">Фото</h2>
+                <div class="event-sheet__content">
+                  <article class="event-sheet__content-item card-photo">
+                    <div class="card-photo__thumbnail">
+                      <a class="card-photo__thumbnail-link" href="./images/photo/photo_1.jpg" data-fslightbox="lb-photo">
+                        <img class="card-photo__thumbnail-img" src="./images/photo/photo_1.jpg" alt="" />
+                      </a>
                     </div>
-                    <div class="news-card__content">
-                      <div class="news-card__content-row">
-                        <h3 class="news-card__title">Новости 1-го этапа сезона, прошедшего 23.05 на Moscow Raceway</h3>
+                    <div class="card-photo__body">
+                      <p class="card-photo__descr">Фотографии с 1-го этапа сезона, прошедшего 23.05 на Moscow Raceway</p>
+                    </div>
+                  </article>
+                  <article class="event-sheet__content-item card-photo">
+                    <div class="card-photo__thumbnail">
+                      <a class="card-photo__thumbnail-link" href="./images/photo/photo_2.jpg" data-fslightbox="lb-photo">
+                        <img class="card-photo__thumbnail-img" src="./images/photo/photo_2.jpg" alt="" />
+                      </a>
+                    </div>
+                    <div class="card-photo__body">
+                      <p class="card-photo__descr">Фотографии с 1-го этапа сезона, прошедшего 23.05 на Moscow Raceway</p>
+                    </div>
+                  </article>
+                  <article class="event-sheet__content-item card-photo">
+                    <div class="card-photo__thumbnail">
+                      <a class="card-photo__thumbnail-link" href="./images/photo/photo_3.jpg" data-fslightbox="lb-photo">
+                        <img class="card-photo__thumbnail-img" src="./images/photo/photo_3.jpg" alt="" />
+                      </a>
+                    </div>
+                    <div class="card-photo__body">
+                      <p class="card-photo__descr">Фотографии с 1-го этапа сезона, прошедшего 23.05 на Moscow Raceway</p>
+                    </div>
+                  </article>
+                  <article class="event-sheet__content-item card-photo">
+                    <div class="card-photo__thumbnail">
+                      <a class="card-photo__thumbnail-link" href="./images/photo/photo_4.jpg" data-fslightbox="lb-photo">
+                        <img class="card-photo__thumbnail-img" src="./images/photo/photo_4.jpg" alt="" />
+                      </a>
+                    </div>
+                    <div class="card-photo__body">
+                      <p class="card-photo__descr">Фотографии с 1-го этапа сезона, прошедшего 23.05 на Moscow Raceway</p>
+                    </div>
+                  </article>
+                </div>
+              </div>
+              <div class="event-sheet__button-container">
+                <a class="event-sheet__link button" href="#">все фото и видео</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- News -->
+        <section class="event-sheet event-sheet_bg-news">
+          <div class="container">
+            <div class="event-sheet__wrapper">
+              <div class="event-sheet__row">
+                <h2 class="event-sheet__title text-stroke">Новости</h2>
+                <div class="event-sheet__content">
+                  <article class="event-sheet__content-item card-news">
+                    <div class="card-news__thumbnail">
+                      <img class="card-news__thumbnail-img" src="./images/news/news_1.jpg" alt="" />
+                    </div>
+                    <div class="card-news__body">
+                      <div class="card-news__body-row">
+                        <h3 class="card-news__title">Новости 1-го этапа сезона, прошедшего 23.05 на Moscow Raceway</h3>
                       </div>
-                      <div class="news-card__content-row">
-                        <span class="news-card__date">25.05.2022</span>
-                        <a class="news-card__link" href="#">Подробнее</a>
+                      <div class="card-news__body-row">
+                        <span class="card-news__date">25.05.2022</span>
+                        <a class="card-news__link" href="#">Подробнее</a>
                       </div>
                     </div>
                   </article>
-                  <article class="news-card">
-                    <div class="news-card__thumbnail">
-                      <img class="news-card__thumbnail-img" src="./images/news/news_2.jpg" alt="" />
+                  <article class="event-sheet__content-item card-news">
+                    <div class="card-news__thumbnail">
+                      <img class="card-news__thumbnail-img" src="./images/news/news_2.jpg" alt="" />
                     </div>
-                    <div class="news-card__content">
-                      <div class="news-card__content-row">
-                        <h3 class="news-card__title">Новости 1-го этапа сезона, прошедшего 23.05 на Moscow Raceway</h3>
+                    <div class="card-news__body">
+                      <div class="card-news__body-row">
+                        <h3 class="card-news__title">Новости 1-го этапа сезона, прошедшего 23.05 на Moscow Raceway</h3>
                       </div>
-                      <div class="news-card__content-row">
-                        <span class="news-card__date">25.05.2022</span>
-                        <a class="news-card__link" href="#">Подробнее</a>
-                      </div>
-                    </div>
-                  </article>
-                  <article class="news-card">
-                    <div class="news-card__thumbnail">
-                      <img class="news-card__thumbnail-img" src="./images/news/news_3.jpg" alt="" />
-                    </div>
-                    <div class="news-card__content">
-                      <div class="news-card__content-row">
-                        <h3 class="news-card__title">Новости 1-го этапа сезона, прошедшего 23.05 на Moscow Raceway</h3>
-                      </div>
-                      <div class="news-card__content-row">
-                        <span class="news-card__date">25.05.2022</span>
-                        <a class="news-card__link" href="#">Подробнее</a>
+                      <div class="card-news__body-row">
+                        <span class="card-news__date">25.05.2022</span>
+                        <a class="card-news__link" href="#">Подробнее</a>
                       </div>
                     </div>
                   </article>
-                  <article class="news-card">
-                    <div class="news-card__thumbnail">
-                      <img class="news-card__thumbnail-img" src="./images/news/news_4.jpg" alt="" />
+                  <article class="event-sheet__content-item card-news">
+                    <div class="card-news__thumbnail">
+                      <img class="card-news__thumbnail-img" src="./images/news/news_3.jpg" alt="" />
                     </div>
-                    <div class="news-card__content">
-                      <div class="news-card__content-row">
-                        <h3 class="news-card__title">Новости 1-го этапа сезона, прошедшего 23.05 на Moscow Raceway</h3>
+                    <div class="card-news__body">
+                      <div class="card-news__body-row">
+                        <h3 class="card-news__title">Новости 1-го этапа сезона, прошедшего 23.05 на Moscow Raceway</h3>
                       </div>
-                      <div class="news-card__content-row">
-                        <span class="news-card__date">25.05.2022</span>
-                        <a class="news-card__link" href="#">Подробнее</a>
+                      <div class="card-news__body-row">
+                        <span class="card-news__date">25.05.2022</span>
+                        <a class="card-news__link" href="#">Подробнее</a>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="event-sheet__content-item card-news">
+                    <div class="card-news__thumbnail">
+                      <img class="card-news__thumbnail-img" src="./images/news/news_4.jpg" alt="" />
+                    </div>
+                    <div class="card-news__body">
+                      <div class="card-news__body-row">
+                        <h3 class="card-news__title">Новости 1-го этапа сезона, прошедшего 23.05 на Moscow Raceway</h3>
+                      </div>
+                      <div class="card-news__body-row">
+                        <span class="card-news__date">25.05.2022</span>
+                        <a class="card-news__link" href="#">Подробнее</a>
                       </div>
                     </div>
                   </article>
                 </div>
               </div>
-              <a class="short-line__link button" href="#">все новости</a>
+              <div class="event-sheet__button-container">
+                <a class="event-sheet__link button" href="#">все новости</a>
+              </div>
             </div>
           </div>
         </section>
@@ -210,6 +331,9 @@
         </div>
       </footer>
     </div>
+
+    <!-- Connecting Libs Scripts -->
+    <script src="./libs/javascript/fslightbox.js"></script>
 
     <!-- Connecting Page Scripts -->
     <script src="./javascript/main.min.js"></script>
