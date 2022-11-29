@@ -1,0 +1,62 @@
+@use "../assistants/variables" as *;
+
+/* Section: Event sheet */
+.event-sheet {
+  padding: 32px 0 24px 0;
+  background-color: #d7d7d7;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  &_bg-photo {
+    background-image: url("../images/bg/bg_photo.jpg");
+  }
+  &_bg-news {
+    background-image: url("../images/bg/bg_news.jpg");
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__row {
+    display: flex;
+    align-items: center;
+
+    > * + * {
+      margin: 0 0 0 18px;
+    }
+  }
+
+  &__title {
+    color: $clr-text-ligth;
+    font-family: $ff-accent;
+    font-size: 48px;
+    line-height: 1;
+    font-weight: 900;
+    text-transform: uppercase;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+  }
+
+  &__content {
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__content-item {
+    flex: 0 0 calc(25% - 15px);
+  }
+
+  &__button-container {
+    align-self: flex-end;
+    margin: 24px 0 0 0;
+  }
+
+  &__link {
+    min-width: 160px;
+    text-decoration: none;
+  }
+}

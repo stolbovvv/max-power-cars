@@ -1,0 +1,63 @@
+@use "../assistants/variables" as *;
+
+.select {
+  position: relative;
+  font-size: 12px;
+
+  &__body {
+    outline: 3px solid transparent;
+    border: 0;
+    border-radius: 4px;
+    padding: 0.5em 0.875em 0.5em 0.875em;
+    box-shadow: 0px 2px 5px 0px #000000;
+    background-color: #bb3a3a;
+    background-image: linear-gradient(0deg, #800a09 0%, #bb3a3a 50%, #bb3a3a 50%, #800a09 100%);
+    background-size: 100% 200%;
+    background-position: bottom;
+    font-size: inherit;
+    font-weight: 700;
+    line-height: 1;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $clr-text-ligth;
+    transition: all 0.25s ease 0s;
+
+    &:hover {
+      background-position: top;
+
+      + .select__arrow {
+        background-position: top;
+      }
+    }
+
+    &:focus-visible {
+      outline: 3px solid $clr-primary;
+
+      + .select__arrow > .select__arrow-icon {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  &__arrow {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    top: 0;
+    right: 0;
+    width: 1.75em;
+    height: 100%;
+    background-image: linear-gradient(0deg, #800a09 0%, #bb3a3a 50%, #bb3a3a 50%, #800a09 100%);
+    background-size: 100% 200%;
+    background-position: bottom;
+    transition: all 0.25s ease 0s;
+    pointer-events: none;
+  }
+
+  &__arrow-icon {
+    flex: 0 0 8px;
+    width: 12px;
+    transition: all 0.25s ease 0s;
+  }
+}

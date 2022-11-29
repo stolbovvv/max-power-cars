@@ -1,0 +1,89 @@
+@use "../assistants/variables" as *;
+
+.positions {
+  padding: 32px 0 24px 0;
+  background-image: url("../images/bg/bg_positions.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  &__wrapper {
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  &__title {
+    font-family: $ff-accent;
+    font-size: 28px;
+    line-height: 1.2;
+    font-weight: 900;
+    font-style: italic;
+    text-transform: uppercase;
+    color: #dc2929;
+  }
+
+  &__controls {
+    display: flex;
+    align-items: center;
+    margin: 20px 0 0 0;
+  }
+
+  &__controls-label {
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 600;
+    color: #000000;
+  }
+
+  &__controls-select {
+    margin: 0 0 0 12px;
+  }
+
+  &__tabel {
+    margin: 20px 0 0 0;
+  }
+
+  &__tabel-body {
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow-y: auto;
+    background-color: rgba($color: #ffffff, $alpha: 0.5);
+  }
+
+  &__tabel-row {
+    &:nth-child(1) {
+      background-color: $clr-primary;
+      min-height: 40px;
+    }
+
+    &:nth-child(2n + 2) {
+      background-color: rgba($color: #ffffff, $alpha: 0.25);
+    }
+
+    &:nth-child(2n + 3) {
+      background-color: rgba($color: $clr-primary, $alpha: 0.25);
+    }
+  }
+
+  &__tabel-cell {
+    padding: 0em 0.5em 0em 0.5em;
+    font-size: 14px;
+    line-height: 1.75;
+    font-weight: 500;
+    color: #000000;
+  }
+
+  &__button-container {
+    align-self: flex-end;
+    margin: 24px 0 0 0;
+  }
+
+  &__link {
+    min-width: 160px;
+    text-decoration: none;
+  }
+}

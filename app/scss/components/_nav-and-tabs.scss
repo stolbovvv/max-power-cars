@@ -30,11 +30,6 @@
     text-decoration: none;
     color: #ffffff;
 
-    &:focus-visible {
-      outline: 3px solid rgb(133, 0, 0);
-      border-radius: 4px;
-    }
-
     &:hover,
     &:focus-visible {
       background-image: linear-gradient(to bottom, #00000000 0%, #00000000 50%, #00000040 100%);
@@ -117,10 +112,6 @@
     outline: 3px solid transparent;
     transition: all 0.25s ease 0s;
     overflow: hidden;
-
-    &:focus-within {
-      outline: 3px solid rgb(133, 0, 0);
-    }
 
     &:hover,
     &:focus-within {

@@ -9,11 +9,13 @@
 
 // 3. Layout-related sections
 @forward "./layout/header";
+@forward "./layout/positions";
+@forward "./layout/event-sheet";
 @forward "./layout/footer";
-@forward "./layout/shotr-line";
 
 // 4. Components
 @forward "./components/buttons";
+@forward "./components/selects";
 @forward "./components/cards";
 @forward "./components/forms";
 @forward "./components/nav-and-tabs";

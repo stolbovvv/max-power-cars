@@ -9,3 +9,12 @@ body {
   line-height: $lh-native;
   color: $clr-text-ligth;
 }
+
+.text-stroke {
+  -webkit-text-stroke: 1px #000000;
+  -webkit-text-fill-color: transparent;
+
+  &_clr-white {
+    -webkit-text-stroke: 1px #ffffff;
+  }
+}

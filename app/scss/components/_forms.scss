@@ -17,7 +17,7 @@
   }
 
   &__legend {
-    font-family: "Roboto";
+    font-family: $ff-accent;
     font-size: 14px;
     font-weight: 900;
     line-height: 1;
@@ -43,5 +43,6 @@
   &__button {
     align-self: flex-end;
     margin: 12px 0 0 0;
+    min-width: 80px;
   }
 }
