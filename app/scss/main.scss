@@ -9,6 +9,8 @@
 
 // 3. Layout-related sections
 @forward "./layout/header";
+@forward "./layout/stage-list";
+@forward "./layout/next-stage";
 @forward "./layout/positions";
 @forward "./layout/event-sheet";
 @forward "./layout/footer";

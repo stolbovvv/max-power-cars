@@ -110,8 +110,128 @@
       </nav>
 
       <main class="main">
+        <!-- Stage list -->
+        <section class="stage-list">
+          <div class="container">
+            <div class="stage-list__wrapper">
+              <div class="stage-list__row">
+                <h2 class="stage-list__title text-stroke text-stroke_clr-red">ЭТАПЫ</h2>
+                <div class="stage-list__content">
+                  <article class="card-stage">
+                    <p class="card-stage__day">14</p>
+                    <p class="card-stage__month">Мая</p>
+                    <h3 class="card-stage__name">MOSCOW RACEWAY</h3>
+                    <a href="" class="card-stage__link">Итоги</a>
+                    <span class="card-stage__arrow">
+                      <img class="card-stage__arrow-icon" src="./images/icons-ui/icon-triangle-red.svg" alt="" />
+                    </span>
+                  </article>
+
+                  <article class="card-stage">
+                    <p class="card-stage__day">15</p>
+                    <p class="card-stage__month">Мая</p>
+                    <h3 class="card-stage__name">MOSCOW RACEWAY</h3>
+                    <a href="" class="card-stage__link">Подробнее</a>
+                    <span class="card-stage__arrow">
+                      <img class="card-stage__arrow-icon" src="./images/icons-ui/icon-triangle-red.svg" alt="" />
+                    </span>
+                  </article>
+
+                  <article class="card-stage card-stage_current">
+                    <p class="card-stage__day">28</p>
+                    <p class="card-stage__month">Мая</p>
+                    <h3 class="card-stage__name">SMOLENSK RING</h3>
+                    <a href="" class="card-stage__link">Подробнее</a>
+                    <span class="card-stage__arrow">
+                      <img class="card-stage__arrow-icon" src="./images/icons-ui/icon-triangle-red.svg" alt="" />
+                    </span>
+                  </article>
+
+                  <article class="card-stage">
+                    <p class="card-stage__day">23</p>
+                    <p class="card-stage__month">июля</p>
+                    <h3 class="card-stage__name">N-RING CIRCUIT</h3>
+                    <a href="" class="card-stage__link">Подробнее</a>
+                    <span class="card-stage__arrow">
+                      <img class="card-stage__arrow-icon" src="./images/icons-ui/icon-triangle-red.svg" alt="" />
+                    </span>
+                  </article>
+
+                  <article class="card-stage">
+                    <p class="card-stage__day">27</p>
+                    <p class="card-stage__month">августа</p>
+                    <h3 class="card-stage__name">IGORA DRIVE</h3>
+                    <a href="" class="card-stage__link">Подробнее</a>
+                    <span class="card-stage__arrow">
+                      <img class="card-stage__arrow-icon" src="./images/icons-ui/icon-triangle-red.svg" alt="" />
+                    </span>
+                  </article>
+
+                  <article class="card-stage">
+                    <p class="card-stage__day">17</p>
+                    <p class="card-stage__month">сентября</p>
+                    <h3 class="card-stage__name">MOSCOW RACEWAY</h3>
+                    <a href="" class="card-stage__link">Подробнее</a>
+                    <span class="card-stage__arrow">
+                      <img class="card-stage__arrow-icon" src="./images/icons-ui/icon-triangle-red.svg" alt="" />
+                    </span>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Next stage -->
+        <section class="next-stage">
+          <div class="container">
+            <div class="next-stage__wrapper">
+              <h2 class="next-stage__title">Следующий этап</h2>
+              <div class="next-stage__row">
+                <div class="next-stage__reg">
+                  <div class="next-stage__reg-thumb">
+                    <img class="next-stage__reg-thumb-img" src="./images/stage/thumb/stage_1.jpg" alt="" />
+                  </div>
+                  <div class="next-stage__reg-footer">
+                    <p class="next-stage__reg-date">3 Июля / 09:00 - 20:00</p>
+                    <a class="next-stage__reg-link button" href="#">регистрация</a>
+                  </div>
+                </div>
+                <div class="next-stage__info">
+                  <div class="next-stage__info-head">
+                    <div class="next-stage__info-col">
+                      <h3 class="next-stage__info-title">Смоленское кольцо</h3>
+                      <p class="next-stage__info-address">Смоленская область, пгт Верхнеднепровский</p>
+                    </div>
+                    <div class="next-stage__info-col">
+                      <img class="next-stage__info-track-img" src="./images/stage/track/track_1.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="next-stage__info-parameters">
+                    <div class="next-stage__info-parameters-item">
+                      <p class="next-stage__info-parameters-value">3357</p>
+                      <p class="next-stage__info-parameters-descr">длина трассы, метров</p>
+                    </div>
+                    <div class="next-stage__info-parameters-item">
+                      <p class="next-stage__info-parameters-value">13</p>
+                      <p class="next-stage__info-parameters-descr">повороты, (8 левых, 5 правых)</p>
+                    </div>
+                    <div class="next-stage__info-parameters-item">
+                      <p class="next-stage__info-parameters-value">241</p>
+                      <p class="next-stage__info-parameters-descr">максимальная скорость, км/ч</p>
+                    </div>
+                  </div>
+                  <div class="next-stage__info-footer">
+                    <a class="next-stage__info-link button" href="#">подробнее об этапе</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <!-- Positions -->
-        <div class="positions">
+        <section class="positions">
           <div class="container">
             <div class="positions__wrapper">
               <h2 class="positions__title">Положение в чемпионате <span class="text-stroke">/ MPC Best Laps</span></h2>
@@ -125,7 +245,7 @@
                     <option value="class-supercars">supercars-3</option>
                   </select>
                   <span class="select__arrow">
-                    <img class="select__arrow-icon" src="./images/icons-ui/icon-triangle.svg" alt="" />
+                    <img class="select__arrow-icon" src="./images/icons-ui/icon-triangle-white.svg" alt="" />
                   </span>
                 </div>
               </div>
@@ -171,7 +291,7 @@
               </div>
             </div>
           </div>
-        </div>
+        </section>
 
         <!-- Photo -->
         <section class="event-sheet event-sheet_bg-photo">
@@ -181,9 +301,9 @@
                 <h2 class="event-sheet__title text-stroke text-stroke_clr-white">Фото</h2>
                 <div class="event-sheet__content">
                   <article class="event-sheet__content-item card-photo">
-                    <div class="card-photo__thumbnail">
-                      <a class="card-photo__thumbnail-link" href="./images/photo/photo_1.jpg" data-fslightbox="lb-photo">
-                        <img class="card-photo__thumbnail-img" src="./images/photo/photo_1.jpg" alt="" />
+                    <div class="card-photo__thumb">
+                      <a class="card-photo__thumb-link" href="./images/photo/photo_1.jpg" data-fslightbox="lb-photo">
+                        <img class="card-photo__thumb-img" src="./images/photo/photo_1.jpg" alt="" />
                       </a>
                     </div>
                     <div class="card-photo__body">
@@ -191,9 +311,9 @@
                     </div>
                   </article>
                   <article class="event-sheet__content-item card-photo">
-                    <div class="card-photo__thumbnail">
-                      <a class="card-photo__thumbnail-link" href="./images/photo/photo_2.jpg" data-fslightbox="lb-photo">
-                        <img class="card-photo__thumbnail-img" src="./images/photo/photo_2.jpg" alt="" />
+                    <div class="card-photo__thumb">
+                      <a class="card-photo__thumb-link" href="./images/photo/photo_2.jpg" data-fslightbox="lb-photo">
+                        <img class="card-photo__thumb-img" src="./images/photo/photo_2.jpg" alt="" />
                       </a>
                     </div>
                     <div class="card-photo__body">
@@ -201,9 +321,9 @@
                     </div>
                   </article>
                   <article class="event-sheet__content-item card-photo">
-                    <div class="card-photo__thumbnail">
-                      <a class="card-photo__thumbnail-link" href="./images/photo/photo_3.jpg" data-fslightbox="lb-photo">
-                        <img class="card-photo__thumbnail-img" src="./images/photo/photo_3.jpg" alt="" />
+                    <div class="card-photo__thumb">
+                      <a class="card-photo__thumb-link" href="./images/photo/photo_3.jpg" data-fslightbox="lb-photo">
+                        <img class="card-photo__thumb-img" src="./images/photo/photo_3.jpg" alt="" />
                       </a>
                     </div>
                     <div class="card-photo__body">
@@ -211,9 +331,9 @@
                     </div>
                   </article>
                   <article class="event-sheet__content-item card-photo">
-                    <div class="card-photo__thumbnail">
-                      <a class="card-photo__thumbnail-link" href="./images/photo/photo_4.jpg" data-fslightbox="lb-photo">
-                        <img class="card-photo__thumbnail-img" src="./images/photo/photo_4.jpg" alt="" />
+                    <div class="card-photo__thumb">
+                      <a class="card-photo__thumb-link" href="./images/photo/photo_4.jpg" data-fslightbox="lb-photo">
+                        <img class="card-photo__thumb-img" src="./images/photo/photo_4.jpg" alt="" />
                       </a>
                     </div>
                     <div class="card-photo__body">
@@ -237,8 +357,8 @@
                 <h2 class="event-sheet__title text-stroke">Новости</h2>
                 <div class="event-sheet__content">
                   <article class="event-sheet__content-item card-news">
-                    <div class="card-news__thumbnail">
-                      <img class="card-news__thumbnail-img" src="./images/news/news_1.jpg" alt="" />
+                    <div class="card-news__thumb">
+                      <img class="card-news__thumb-img" src="./images/news/news_1.jpg" alt="" />
                     </div>
                     <div class="card-news__body">
                       <div class="card-news__body-row">
@@ -251,8 +371,8 @@
                     </div>
                   </article>
                   <article class="event-sheet__content-item card-news">
-                    <div class="card-news__thumbnail">
-                      <img class="card-news__thumbnail-img" src="./images/news/news_2.jpg" alt="" />
+                    <div class="card-news__thumb">
+                      <img class="card-news__thumb-img" src="./images/news/news_2.jpg" alt="" />
                     </div>
                     <div class="card-news__body">
                       <div class="card-news__body-row">
@@ -265,8 +385,8 @@
                     </div>
                   </article>
                   <article class="event-sheet__content-item card-news">
-                    <div class="card-news__thumbnail">
-                      <img class="card-news__thumbnail-img" src="./images/news/news_3.jpg" alt="" />
+                    <div class="card-news__thumb">
+                      <img class="card-news__thumb-img" src="./images/news/news_3.jpg" alt="" />
                     </div>
                     <div class="card-news__body">
                       <div class="card-news__body-row">
@@ -279,8 +399,8 @@
                     </div>
                   </article>
                   <article class="event-sheet__content-item card-news">
-                    <div class="card-news__thumbnail">
-                      <img class="card-news__thumbnail-img" src="./images/news/news_4.jpg" alt="" />
+                    <div class="card-news__thumb">
+                      <img class="card-news__thumb-img" src="./images/news/news_4.jpg" alt="" />
                     </div>
                     <div class="card-news__body">
                       <div class="card-news__body-row">

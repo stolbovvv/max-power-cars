@@ -48,6 +48,8 @@
     right: 0;
     width: 1.75em;
     height: 100%;
+    padding: 0.125em 0 0 0;
+    border-radius: 4px;
     background-image: linear-gradient(0deg, #800a09 0%, #bb3a3a 50%, #bb3a3a 50%, #800a09 100%);
     background-size: 100% 200%;
     background-position: bottom;
@@ -59,5 +61,6 @@
     flex: 0 0 8px;
     width: 12px;
     transition: all 0.25s ease 0s;
+    padding: 0em 0 0 0;
   }
 }

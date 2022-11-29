@@ -14,6 +14,10 @@ body {
   -webkit-text-stroke: 1px #000000;
   -webkit-text-fill-color: transparent;
 
+  &_clr-red {
+    -webkit-text-stroke: 1px $clr-primary;
+  }
+
   &_clr-white {
     -webkit-text-stroke: 1px #ffffff;
   }

@@ -13,13 +13,13 @@
     outline: 3px solid $clr-primary;
   }
 
-  &__thumbnail {
+  &__thumb {
     position: relative;
     padding: 0 0 66.89895% 0;
     overflow: hidden;
   }
 
-  &__thumbnail-img {
+  &__thumb-img {
     position: absolute;
     top: 0;
     left: 0;
@@ -57,14 +57,14 @@
     outline: 3px solid $clr-primary;
   }
 
-  &__thumbnail {
+  &__thumb {
     width: 100%;
     position: relative;
     padding: 0 0 66.89895% 0;
     overflow: hidden;
   }
 
-  &__thumbnail-img {
+  &__thumb-img {
     position: absolute;
     top: 0;
     left: 0;
