@@ -110,9 +110,11 @@
       </nav>
 
       <main class="main">
+        <!-- User profile -->
+
         <section class="user-profile">
           <div class="container">
-            <h2 class="user-profile__title">Иванов Иван</h2>
+            <h2 class="title title_clr-light">Иванов Иван</h2>
             <div class="user-profile__row">
               <div class="user-profile__photo">
                 <div class="user-profile__photo-wrapper">
@@ -170,11 +172,12 @@
           </div>
         </section>
 
+        <!-- User results -->
         <section class="user-results">
           <div class="container">
             <div class="user-results__wrapper">
-              <h2 class="user-results__title">
-                <span class="user-results__title-decor">Персональные результаты</span>
+              <h2 class="title">
+                <span class="title__decor">Персональные результаты</span>
               </h2>
 
               <div class="user-results__controls table-controls">
@@ -236,9 +239,67 @@
           </div>
         </section>
 
-        <section class="user-auto-list"></section>
+        <!-- User cars -->
+        <section class="user-cars">
+          <div class="container">
+            <h2 class="title title_clr-light">
+              <span class="title__decor title__decor_clr-light">Автомобили</span>
+            </h2>
 
-        <section class="user-auto-selected"></section>
+            <div class="user-cars__list">
+              <article class="card-car">
+                <div class="card-car__thumb">
+                  <img class="card-car__thumb-img" src="./images/cars/car_1.jpg" alt="" />
+                </div>
+                <div class="card-car__body">
+                  <h3 class="card-car__name">bmw m2 c f87</h3>
+                  <span class="card-car__arrow">
+                    <img class="card-car__arrow-icon" src="./images/icons-ui/icon-triangle-white.svg" alt="" />
+                  </span>
+                </div>
+              </article>
+
+              <article class="card-car">
+                <div class="card-car__thumb">
+                  <img class="card-car__thumb-img" src="./images/cars/car_2.jpg" alt="" />
+                </div>
+                <div class="card-car__body">
+                  <h3 class="card-car__name">bmw m4 cS f82</h3>
+                  <span class="card-car__arrow">
+                    <img class="card-car__arrow-icon" src="./images/icons-ui/icon-triangle-white.svg" alt="" />
+                  </span>
+                </div>
+              </article>
+
+              <article class="card-car">
+                <div class="card-car__thumb">
+                  <img class="card-car__thumb-img" src="./images/cars/car_3.jpg" alt="" />
+                </div>
+                <div class="card-car__body">
+                  <h3 class="card-car__name">mercedes-benz a45s amg w177</h3>
+                  <span class="card-car__arrow">
+                    <img class="card-car__arrow-icon" src="./images/icons-ui/icon-triangle-white.svg" alt="" />
+                  </span>
+                </div>
+              </article>
+
+              <article class="card-car">
+                <div class="card-car__thumb">
+                  <img class="card-car__thumb-img" src="./images/cars/car_4.jpg" alt="" />
+                </div>
+                <div class="card-car__body">
+                  <h3 class="card-car__name">mitsubishi lancer evo iv</h3>
+                  <span class="card-car__arrow">
+                    <img class="card-car__arrow-icon" src="./images/icons-ui/icon-triangle-white.svg" alt="" />
+                  </span>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <!-- User selected car -->
+        <section class="user-selected-car"></section>
       </main>
 
       <footer class="footer">

@@ -10,6 +10,47 @@ body {
   color: $clr-text-ligth;
 }
 
+.title {
+  font-family: $ff-accent;
+  font-size: 28px;
+  line-height: 1.2;
+  font-weight: 900;
+  font-style: italic;
+  text-transform: uppercase;
+  color: $clr-text-black;
+
+  &_clr-primary {
+    color: $clr-primary;
+  }
+
+  &_clr-light {
+    color: $clr-text-ligth;
+  }
+
+  &__decor {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 100%;
+      width: 100vw;
+      height: 3px;
+      transform: translate(13px, -50%);
+      background: $clr-text-black;
+    }
+
+    &_clr-primary::before {
+      background: $clr-primary;
+    }
+
+    &_clr-light::before {
+      background: $clr-text-ligth;
+    }
+  }
+}
+
 .text-stroke {
   -webkit-text-stroke: 1px #000000;
   -webkit-text-fill-color: transparent;

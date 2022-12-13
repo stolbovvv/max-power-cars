@@ -1,0 +1,63 @@
+@use "../assistants/variables" as *;
+
+.user-cars {
+  padding: 43px 0 130px 0;
+  background-color: $clr-primary;
+  background-image: url("../../images/bg/bg_cars.jpg");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0 0 0;
+    padding: 0 0 0 50px;
+
+    > * + * {
+      margin: 0 0 0 16px;
+    }
+  }
+}
+
+.card-car {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  > * + * {
+    margin: 15px 0 0 0;
+  }
+
+  &__thumb {
+    position: relative;
+    border-radius: 2px;
+    border: 2px solid $clr-text-ligth;
+    overflow: hidden;
+  }
+
+  &__thumb-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100;
+  }
+
+  &__body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  &__name {
+  }
+
+  &__arrow {
+    padding: 15px 0 15px 0;
+  }
+
+  &__arrow-icon {
+  }
+}

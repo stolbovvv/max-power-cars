@@ -19,30 +19,6 @@
     }
   }
 
-  &__title {
-    font-family: $ff-accent;
-    font-size: 28px;
-    line-height: 1.2;
-    font-weight: 900;
-    font-style: italic;
-    text-transform: uppercase;
-    color: #090806;
-  }
-
-  &__title-decor {
-    position: relative;
-    &::before {
-      content: "";
-      position: absolute;
-      top: 50%;
-      left: 100%;
-      width: 100vw;
-      height: 3px;
-      transform: translate(13px, -50%);
-      background: #090806;
-    }
-  }
-
   &__button-container {
     align-self: flex-end;
     margin: 24px 0 0 0;
