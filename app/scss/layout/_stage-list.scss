@@ -2,7 +2,7 @@
 
 .stage-list {
   padding: 40px 0 10px 0;
-  background-image: url("../images/bg/bg_stage-list.jpg");
+  background-image: linear-gradient(180deg, #ffffff 15%, #f6f6f600 125%), url("../images/bg/bg_stage-list.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -16,6 +16,7 @@
   }
 
   &__title {
+    margin: 0 0 40px 0;
     color: $clr-text-ligth;
     font-family: $ff-accent;
     font-size: 48px;
@@ -27,8 +28,14 @@
   }
 
   &__content {
+    flex-grow: 1;
     display: flex;
+    justify-content: space-between;
     margin: 0 -18px 0 18px;
+
+    > * {
+      flex: 1 0 16.5%;
+    }
 
     > * + * {
       position: relative;
@@ -46,92 +53,5 @@
         background-size: contain;
       }
     }
-  }
-}
-
-.card-stage {
-  padding: 0 18px 0 18px;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  min-height: 230px;
-
-  &__day {
-    font-family: $ff-accent;
-    font-size: 60px;
-    line-height: 33px;
-    font-weight: 900;
-    color: #000000;
-    -webkit-text-stroke: 2px #000000;
-    -webkit-text-fill-color: #dfe3e6af;
-
-    .card-stage_current > & {
-      color: $clr-primary;
-      -webkit-text-stroke: 2px $clr-primary;
-      -webkit-text-fill-color: $clr-primary;
-    }
-  }
-
-  &__month {
-    margin: 16px 0 0 0;
-    font-size: 22px;
-    line-height: 33px;
-    font-weight: 900;
-    color: #acacac;
-    text-transform: lowercase;
-
-    .card-stage_current > & {
-      color: $clr-primary;
-    }
-  }
-
-  &__name {
-    max-width: 80%;
-    margin: 20px 0 20px 0;
-    font-family: $ff-accent;
-    font-size: 18px;
-    line-height: 18px;
-    font-weight: 900;
-    color: #212121;
-    text-align: center;
-    text-transform: uppercase;
-
-    .card-stage_current > & {
-      color: $clr-primary;
-    }
-  }
-
-  &__link {
-    width: 100%;
-    margin: auto 0 0 0;
-    padding: 0.5em 1.25em 0.5em 1.25em;
-    border: 1px solid #727272;
-    border-radius: 6px;
-    background: rgba(255, 255, 255, 0.3);
-    font-size: 14px;
-    line-height: 1;
-    font-weight: 500;
-    color: #212121;
-    text-align: center;
-    text-decoration: none;
-
-    .card-stage_current > & {
-      color: $clr-primary;
-      border: 1px solid $clr-primary;
-    }
-  }
-
-  &__arrow {
-    margin: 12px 0 0 0;
-    opacity: 0;
-
-    .card-stage_current > & {
-      opacity: 1;
-    }
-  }
-
-  &__arrow-icon {
-    width: 20px;
-    height: 20px;
   }
 }

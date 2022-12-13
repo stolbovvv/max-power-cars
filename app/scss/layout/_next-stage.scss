@@ -9,9 +9,6 @@
   background-size: cover;
   overflow: hidden;
 
-  &__wrapper {
-  }
-
   &__title {
     font-family: $ff-accent;
     font-size: 18px;
@@ -27,7 +24,7 @@
     margin: 16px 0 0 0;
   }
 
-  &__reg {
+  &__thumb {
     position: relative;
     flex: 0 0 35%;
     display: flex;
@@ -47,17 +44,16 @@
     }
   }
 
-  &__reg-thumb {
+  &__thumb-wrapper {
     position: relative;
     width: 100%;
-    max-width: 350px;
-    padding: 0 0 67.142857% 0;
+    padding: 0 0 68.5% 0;
     border: 2px solid #ffffff;
     border-radius: 2px;
     overflow: hidden;
   }
 
-  &__reg-thumb-img {
+  &__thumb-img {
     position: absolute;
     top: 0;
     left: 0;
@@ -65,27 +61,6 @@
     height: 102%;
     object-fit: cover;
     object-position: center;
-  }
-
-  &__reg-footer {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    max-width: 350px;
-    margin: auto 0 0 0;
-    padding: 16px 0 0 0;
-  }
-
-  &__reg-date {
-    font-size: 15px;
-    line-height: 1.2;
-    font-weight: 500;
-    color: #ffffff;
-  }
-
-  &__reg-link {
   }
 
   &__info {
@@ -159,12 +134,35 @@
     color: #ffffff;
   }
 
-  &__info-footer {
+  &__footer {
     display: flex;
-    padding: 16px 0 0 0;
-    margin: auto 0 0 0;
+    align-items: center;
+    padding: 32px 0 12px 0;
   }
 
-  &__info-link {
+  &__reg {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 0 0 35%;
+    padding: 0 40px 0 40px;
+
+    > * + * {
+      margin: 0 0 0 16px;
+    }
+  }
+
+  &__reg-date {
+    font-size: 15px;
+    line-height: 1.2;
+    font-weight: 500;
+    color: #ffffff;
+  }
+
+  &__more {
+    flex: 0 0 65%;
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 40px;
   }
 }

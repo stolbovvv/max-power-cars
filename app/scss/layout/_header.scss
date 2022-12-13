@@ -2,6 +2,7 @@
 
 /* Header section */
 .header {
+  position: relative;
   padding: 20px 0 20px 0;
   background-color: $clr-text-black;
   background-image: linear-gradient(to bottom, #000000b3, #00000000), linear-gradient(to bottom, #0000004d, #0000004d),
@@ -11,8 +12,34 @@
   background-size: cover;
   overflow: hidden;
 
-  &__wrapper {
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    pointer-events: none;
+  }
+
+  &::before {
+    left: 0;
+    background-image: url("../images/decor/header_effect_left.png");
+    background-position: left top;
+  }
+
+  &::after {
+    right: 0;
+    background-image: url("../images/decor/header_effect_right.png");
+    background-position: right bottom;
+  }
+
+  &__row {
+    position: relative;
     display: flex;
+    z-index: 1;
   }
 
   &__banner {
