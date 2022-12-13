@@ -17,7 +17,7 @@
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
 
     <!-- Basic Page Information -->
-    <title>Max Power Cars</title>
+    <title>Max Power Cars | Profile</title>
 
     <!-- Connecting Page Styles -->
     <link rel="stylesheet" href="css/main.min.css" />
@@ -109,7 +109,137 @@
         </div>
       </nav>
 
-      <main class="main"></main>
+      <main class="main">
+        <section class="user-profile">
+          <div class="container">
+            <h2 class="user-profile__title">Иванов Иван</h2>
+            <div class="user-profile__row">
+              <div class="user-profile__photo">
+                <div class="user-profile__photo-wrapper">
+                  <img class="user-profile__photo-img" src="./images/profile/user-photo.jpg" alt="Иванов Иван" />
+                </div>
+              </div>
+              <div class="user-profile__data">
+                <div class="user-profile__data-head">
+                  <div class="user-profile__props">
+                    <articles class="props-item">
+                      <p class="props-item__label">Город:</p>
+                      <p class="props-item__value">Москва</p>
+                    </articles>
+                    <articles class="props-item">
+                      <p class="props-item__label">Возраст:</p>
+                      <p class="props-item__value">35</p>
+                    </articles>
+                    <articles class="props-item">
+                      <p class="props-item__label">Участвует:</p>
+                      <p class="props-item__value">с 2009 г.</p>
+                    </articles>
+                    <articles class="props-item">
+                      <p class="props-item__label">Команда:</p>
+                      <p class="props-item__value">Team Name</p>
+                    </articles>
+                  </div>
+                  <div class="user-profile__rating">
+                    <articles class="user-rating">
+                      <p class="user-rating__label">рейтинг пилота</p>
+                      <p class="user-rating__value">1 150</p>
+                    </articles>
+                  </div>
+                </div>
+
+                <div class="user-profile__achievements">
+                  <articles class="achievements-item">
+                    <p class="achievements-item__value">2</p>
+                    <p class="achievements-item__label">Выигранные сезоны</p>
+                  </articles>
+                  <articles class="achievements-item">
+                    <p class="achievements-item__value">9</p>
+                    <p class="achievements-item__label">Выигранные этапы</p>
+                  </articles>
+                  <articles class="achievements-item">
+                    <p class="achievements-item__value">13</p>
+                    <p class="achievements-item__label">Призовые места на этапах</p>
+                  </articles>
+                  <articles class="achievements-item">
+                    <p class="achievements-item__value">21</p>
+                    <p class="achievements-item__label">Всего участий в этапах</p>
+                  </articles>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="user-results">
+          <div class="container">
+            <div class="user-results__wrapper">
+              <h2 class="user-results__title">
+                <span class="user-results__title-decor">Персональные результаты</span>
+              </h2>
+
+              <div class="user-results__controls table-controls">
+                <p class="table-controls__label">Сезон:</p>
+                <div class="table-controls__select select">
+                  <select class="select__body" name="credit-class:" id="">
+                    <option value="class-supercars" selected>17 / 2022</option>
+                    <option value="class-supercars">18 / 2022</option>
+                    <option value="class-supercars">19 / 2022</option>
+                    <option value="class-supercars">20 / 2022</option>
+                  </select>
+                  <span class="select__arrow">
+                    <img class="select__arrow-icon" src="./images/icons-ui/icon-triangle-white.svg" alt="" />
+                  </span>
+                </div>
+              </div>
+
+              <div class="user-results__tables">
+                <div class="table">
+                  <div class="table__row">
+                    <p class="table__cell"></p>
+                  </div>
+                  <div class="table__row">
+                    <p class="table__cell">1</p>
+                  </div>
+                  <div class="table__row">
+                    <p class="table__cell">2</p>
+                  </div>
+                  <div class="table__row">
+                    <p class="table__cell">3</p>
+                  </div>
+                  <div class="table__row">
+                    <p class="table__cell">4</p>
+                  </div>
+                  <div class="table__row">
+                    <p class="table__cell">5</p>
+                  </div>
+                  <div class="table__row">
+                    <p class="table__cell">6</p>
+                  </div>
+                  <div class="table__row">
+                    <p class="table__cell">7</p>
+                  </div>
+                  <div class="table__row">
+                    <p class="table__cell">8</p>
+                  </div>
+                  <div class="table__row">
+                    <p class="table__cell">9</p>
+                  </div>
+                  <div class="table__row">
+                    <p class="table__cell">10</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Сделатьскрол для таблицы -->
+              <div class="table-scroll" style="color: red">Здесьб в будующем будт скролл для таблицы :-)</div>
+            </div>
+          </div>
+        </section>
+
+        <section class="user-auto-list"></section>
+
+        <section class="user-auto-selected"></section>
+      </main>
 
       <footer class="footer">
         <div class="container">

@@ -26,7 +26,7 @@
     <div class="wrapper">
       <header class="header">
         <div class="container">
-          <div class="header__wrapper">
+          <div class="header__row">
             <div class="header__banner">
               <div class="header__banner-row">
                 <a class="header__banner-link" href="/">
@@ -121,7 +121,7 @@
                     <p class="card-stage__day">14</p>
                     <p class="card-stage__month">Мая</p>
                     <h3 class="card-stage__name">MOSCOW RACEWAY</h3>
-                    <a href="" class="card-stage__link">Итоги</a>
+                    <a class="card-stage__link" href="#">Подробнее</a>
                     <span class="card-stage__arrow">
                       <img class="card-stage__arrow-icon" src="./images/icons-ui/icon-triangle-red.svg" alt="" />
                     </span>
@@ -131,7 +131,7 @@
                     <p class="card-stage__day">15</p>
                     <p class="card-stage__month">Мая</p>
                     <h3 class="card-stage__name">MOSCOW RACEWAY</h3>
-                    <a href="" class="card-stage__link">Подробнее</a>
+                    <a class="card-stage__link" href="#">Подробнее</a>
                     <span class="card-stage__arrow">
                       <img class="card-stage__arrow-icon" src="./images/icons-ui/icon-triangle-red.svg" alt="" />
                     </span>
@@ -141,7 +141,7 @@
                     <p class="card-stage__day">28</p>
                     <p class="card-stage__month">Мая</p>
                     <h3 class="card-stage__name">SMOLENSK RING</h3>
-                    <a href="" class="card-stage__link">Подробнее</a>
+                    <a class="card-stage__link" href="#">Подробнее</a>
                     <span class="card-stage__arrow">
                       <img class="card-stage__arrow-icon" src="./images/icons-ui/icon-triangle-red.svg" alt="" />
                     </span>
@@ -151,7 +151,7 @@
                     <p class="card-stage__day">23</p>
                     <p class="card-stage__month">июля</p>
                     <h3 class="card-stage__name">N-RING CIRCUIT</h3>
-                    <a href="" class="card-stage__link">Подробнее</a>
+                    <a class="card-stage__link" href="#">Подробнее</a>
                     <span class="card-stage__arrow">
                       <img class="card-stage__arrow-icon" src="./images/icons-ui/icon-triangle-red.svg" alt="" />
                     </span>
@@ -161,7 +161,7 @@
                     <p class="card-stage__day">27</p>
                     <p class="card-stage__month">августа</p>
                     <h3 class="card-stage__name">IGORA DRIVE</h3>
-                    <a href="" class="card-stage__link">Подробнее</a>
+                    <a class="card-stage__link" href="#">Подробнее</a>
                     <span class="card-stage__arrow">
                       <img class="card-stage__arrow-icon" src="./images/icons-ui/icon-triangle-red.svg" alt="" />
                     </span>
@@ -171,7 +171,7 @@
                     <p class="card-stage__day">17</p>
                     <p class="card-stage__month">сентября</p>
                     <h3 class="card-stage__name">MOSCOW RACEWAY</h3>
-                    <a href="" class="card-stage__link">Подробнее</a>
+                    <a class="card-stage__link" href="#">Подробнее</a>
                     <span class="card-stage__arrow">
                       <img class="card-stage__arrow-icon" src="./images/icons-ui/icon-triangle-red.svg" alt="" />
                     </span>
@@ -186,43 +186,47 @@
         <section class="next-stage">
           <div class="container">
             <div class="next-stage__wrapper">
-              <h2 class="next-stage__title">Следующий этап</h2>
-              <div class="next-stage__row">
-                <div class="next-stage__reg">
-                  <div class="next-stage__reg-thumb">
-                    <img class="next-stage__reg-thumb-img" src="./images/stage/thumb/stage_1.jpg" alt="" />
+              <div class="next-stage__item">
+                <h2 class="next-stage__title">Следующий этап</h2>
+                <div class="next-stage__row">
+                  <div class="next-stage__thumb">
+                    <div class="next-stage__thumb-wrapper">
+                      <img class="next-stage__thumb-img" src="./images/stage/thumb/stage_1.jpg" alt="" />
+                    </div>
                   </div>
-                  <div class="next-stage__reg-footer">
-                    <p class="next-stage__reg-date">3 Июля / 09:00 - 20:00</p>
-                    <a class="next-stage__reg-link button" href="#">регистрация</a>
+                  <div class="next-stage__info">
+                    <div class="next-stage__info-head">
+                      <div class="next-stage__info-col">
+                        <h3 class="next-stage__info-title">Смоленское кольцо</h3>
+                        <p class="next-stage__info-address">Смоленская область, пгт Верхнеднепровский</p>
+                      </div>
+                      <div class="next-stage__info-col">
+                        <img class="next-stage__info-track-img" src="./images/stage/track/track_1.png" alt="" />
+                      </div>
+                    </div>
+                    <div class="next-stage__info-parameters">
+                      <div class="next-stage__info-parameters-item">
+                        <p class="next-stage__info-parameters-value">3357</p>
+                        <p class="next-stage__info-parameters-descr">длина трассы, метров</p>
+                      </div>
+                      <div class="next-stage__info-parameters-item">
+                        <p class="next-stage__info-parameters-value">13</p>
+                        <p class="next-stage__info-parameters-descr">повороты, (8 левых, 5 правых)</p>
+                      </div>
+                      <div class="next-stage__info-parameters-item">
+                        <p class="next-stage__info-parameters-value">241</p>
+                        <p class="next-stage__info-parameters-descr">максимальная скорость, км/ч</p>
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <div class="next-stage__info">
-                  <div class="next-stage__info-head">
-                    <div class="next-stage__info-col">
-                      <h3 class="next-stage__info-title">Смоленское кольцо</h3>
-                      <p class="next-stage__info-address">Смоленская область, пгт Верхнеднепровский</p>
-                    </div>
-                    <div class="next-stage__info-col">
-                      <img class="next-stage__info-track-img" src="./images/stage/track/track_1.png" alt="" />
-                    </div>
+                <div class="next-stage__footer">
+                  <div class="next-stage__reg">
+                    <p class="next-stage__reg-date">3 Июля / 09:00 - 20:00</p>
+                    <a class="button" href="#">регистрация</a>
                   </div>
-                  <div class="next-stage__info-parameters">
-                    <div class="next-stage__info-parameters-item">
-                      <p class="next-stage__info-parameters-value">3357</p>
-                      <p class="next-stage__info-parameters-descr">длина трассы, метров</p>
-                    </div>
-                    <div class="next-stage__info-parameters-item">
-                      <p class="next-stage__info-parameters-value">13</p>
-                      <p class="next-stage__info-parameters-descr">повороты, (8 левых, 5 правых)</p>
-                    </div>
-                    <div class="next-stage__info-parameters-item">
-                      <p class="next-stage__info-parameters-value">241</p>
-                      <p class="next-stage__info-parameters-descr">максимальная скорость, км/ч</p>
-                    </div>
-                  </div>
-                  <div class="next-stage__info-footer">
-                    <a class="next-stage__info-link button" href="#">подробнее об этапе</a>
+                  <div class="next-stage__more">
+                    <a class="button" href="#">подробнее об этапе</a>
                   </div>
                 </div>
               </div>
@@ -235,9 +239,10 @@
           <div class="container">
             <div class="positions__wrapper">
               <h2 class="positions__title">Положение в чемпионате <span class="text-stroke">/ MPC Best Laps</span></h2>
-              <div class="positions__controls">
-                <p class="positions__controls-label">Зачетный класс:</p>
-                <div class="positions__controls-select select">
+
+              <div class="positions__controls table-controls">
+                <p class="table-controls__label">Зачетный класс:</p>
+                <div class="table-controls__select select">
                   <select class="select__body" name="credit-class:" id="">
                     <option value="class-supercars" selected>supercars</option>
                     <option value="class-supercars">supercars-1</option>
@@ -249,40 +254,41 @@
                   </span>
                 </div>
               </div>
-              <div class="positions__tabel">
-                <div class="positions__tabel-body">
-                  <div class="positions__tabel-row">
-                    <p class="positions__tabel-cell"></p>
+
+              <div class="positions__tables">
+                <div class="table">
+                  <div class="table__row">
+                    <p class="table__cell"></p>
                   </div>
-                  <div class="positions__tabel-row">
-                    <p class="positions__tabel-cell">1</p>
+                  <div class="table__row">
+                    <p class="table__cell">1</p>
                   </div>
-                  <div class="positions__tabel-row">
-                    <p class="positions__tabel-cell">2</p>
+                  <div class="table__row">
+                    <p class="table__cell">2</p>
                   </div>
-                  <div class="positions__tabel-row">
-                    <p class="positions__tabel-cell">3</p>
+                  <div class="table__row">
+                    <p class="table__cell">3</p>
                   </div>
-                  <div class="positions__tabel-row">
-                    <p class="positions__tabel-cell">4</p>
+                  <div class="table__row">
+                    <p class="table__cell">4</p>
                   </div>
-                  <div class="positions__tabel-row">
-                    <p class="positions__tabel-cell">5</p>
+                  <div class="table__row">
+                    <p class="table__cell">5</p>
                   </div>
-                  <div class="positions__tabel-row">
-                    <p class="positions__tabel-cell">6</p>
+                  <div class="table__row">
+                    <p class="table__cell">6</p>
                   </div>
-                  <div class="positions__tabel-row">
-                    <p class="positions__tabel-cell">7</p>
+                  <div class="table__row">
+                    <p class="table__cell">7</p>
                   </div>
-                  <div class="positions__tabel-row">
-                    <p class="positions__tabel-cell">8</p>
+                  <div class="table__row">
+                    <p class="table__cell">8</p>
                   </div>
-                  <div class="positions__tabel-row">
-                    <p class="positions__tabel-cell">9</p>
+                  <div class="table__row">
+                    <p class="table__cell">9</p>
                   </div>
-                  <div class="positions__tabel-row">
-                    <p class="positions__tabel-cell">10</p>
+                  <div class="table__row">
+                    <p class="table__cell">10</p>
                   </div>
                 </div>
               </div>
