@@ -1,11 +1,12 @@
 @use "../assistants/variables" as *;
 
-.positions {
-  padding: 32px 0 24px 0;
-  background-image: url("../images/bg/bg_positions.jpg");
+.user-results {
+  padding: 32px 0 50px 0;
+  background-image: url("../../images/bg/bg_user-results.jpg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center bottom;
   background-size: cover;
+  overflow: hidden;
 
   &__wrapper {
     display: flex;
@@ -25,7 +26,21 @@
     font-weight: 900;
     font-style: italic;
     text-transform: uppercase;
-    color: #dc2929;
+    color: #090806;
+  }
+
+  &__title-decor {
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 100%;
+      width: 100vw;
+      height: 3px;
+      transform: translate(13px, -50%);
+      background: #090806;
+    }
   }
 
   &__button-container {

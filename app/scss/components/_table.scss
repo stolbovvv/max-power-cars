@@ -1,0 +1,49 @@
+@use "../assistants/variables" as *;
+
+.table {
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+  justify-content: flex-start;
+  overflow-y: auto;
+  background-color: rgba($color: #ffffff, $alpha: 0.5);
+
+  &__row {
+    &:nth-child(1) {
+      background-color: $clr-primary;
+      min-height: 40px;
+    }
+
+    &:nth-child(2n + 2) {
+      background-color: rgba($color: #ffffff, $alpha: 0.25);
+    }
+
+    &:nth-child(2n + 3) {
+      background-color: rgba($color: $clr-primary, $alpha: 0.25);
+    }
+  }
+
+  &__cell {
+    padding: 0em 0.5em 0em 0.5em;
+    font-size: 14px;
+    line-height: 1.75;
+    font-weight: 500;
+    color: #000000;
+  }
+}
+
+.table-controls {
+  display: flex;
+  align-items: center;
+
+  &__label {
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 600;
+    color: #000000;
+  }
+
+  &__select {
+    margin: 0 0 0 12px;
+  }
+}

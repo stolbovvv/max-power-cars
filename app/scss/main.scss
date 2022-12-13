@@ -14,6 +14,7 @@
 @forward "./layout/positions";
 @forward "./layout/event-sheet";
 @forward "./layout/user-profile";
+@forward "./layout/user-results";
 @forward "./layout/footer";
 
 // 4. Components
@@ -21,6 +22,7 @@
 @forward "./components/selects";
 @forward "./components/cards";
 @forward "./components/forms";
+@forward "./components/table";
 @forward "./components/nav-and-tabs";
 @forward "./components/navbar";
 
