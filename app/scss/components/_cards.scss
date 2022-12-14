@@ -228,6 +228,154 @@
   }
 }
 
+/* Card: car */
+.card-car {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  flex-direction: column;
+  cursor: pointer;
+
+  > * + * {
+    margin: 15px 0 0 0;
+  }
+
+  &__thumb {
+    position: relative;
+    padding: 0 0 65% 0;
+    border-radius: 2px;
+    border: 2px solid $clr-text-black;
+    transition: opacity 0.25s ease 0s;
+    overflow: hidden;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba($color: $clr-text-black, $alpha: 0.5);
+      transition: opacity 0.25s ease 0s;
+      pointer-events: none;
+      opacity: 1;
+      z-index: 2;
+    }
+
+    .card-car:hover > &,
+    .card-car_selected > & {
+      border: 2px solid $clr-text-ligth;
+
+      &::before {
+        opacity: 0;
+      }
+    }
+  }
+
+  &__thumb-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  &__body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  &__name {
+    font-size: 14px;
+    line-height: 2.375;
+    font-weight: 700;
+    text-decoration: underline;
+    text-transform: uppercase;
+    text-align: center;
+    color: #090806;
+    transition: color 0.25s ease 0s;
+
+    .card-car:hover &,
+    .card-car_selected & {
+      color: $clr-text-ligth;
+    }
+  }
+
+  &__arrow {
+    padding: 15px 0 15px 0;
+  }
+
+  &__arrow-icon {
+    opacity: 0;
+    transition: opacity 0.25s ease 0s;
+
+    .card-car_selected & {
+      opacity: 1;
+    }
+  }
+}
+
+/* Card: car-descr */
+.card-car-descr {
+  display: flex;
+
+  &__icon {
+    flex: 0 0 auto;
+    width: 22px;
+    height: 22px;
+  }
+
+  &__icon-img {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__body {
+    padding: 4px 0 0 6px;
+  }
+
+  &__name {
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 700;
+    font-style: italic;
+    text-decoration: underline;
+    color: $clr-text-black;
+  }
+
+  &__item {
+    display: flex;
+
+    > * + * {
+      margin: 0 0 0 6px;
+    }
+  }
+
+  &__label,
+  &__value {
+    font-family: Montserrat;
+    font-size: 11px;
+    line-height: 1.2;
+    font-weight: 600;
+    color: $clr-text-black;
+  }
+
+  &__label {
+    color: $clr-text-black;
+  }
+
+  &__value {
+    color: #43ad09;
+
+    &_clr-primary {
+      color: $clr-primary;
+    }
+  }
+}
+
 /* Small card: props */
 .props-item {
   display: flex;
@@ -246,11 +394,19 @@
   &__label {
     font-weight: 600;
     color: $clr-primary;
+
+    &_clr-dark {
+      color: $clr-text-black;
+    }
   }
 
   &__value {
     font-weight: 500;
     color: $clr-text-ligth;
+
+    &_clr-primary {
+      color: $clr-primary;
+    }
   }
 }
 

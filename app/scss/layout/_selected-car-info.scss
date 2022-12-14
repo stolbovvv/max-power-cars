@@ -1,0 +1,65 @@
+@use "../assistants/variables" as *;
+
+.selected-car-info {
+  display: flex;
+  align-items: flex-start;
+  padding: 15px 20px 20px 20px;
+  border: 2px solid $clr-primary;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.74);
+
+  &__descr {
+    flex: 0 0 65%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__descr-head {
+    flex: 0 0 calc(100% - 30px);
+    display: flex;
+    align-items: center;
+    margin: 0 0 20px 0;
+    padding: 0 0 12px 0;
+    border-bottom: 2px solid $clr-text-black;
+
+    > * + * {
+      margin: 0 0 0 12px;
+    }
+  }
+
+  &__descr-label {
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 600;
+    color: $clr-text-black;
+  }
+
+  &__descr-col {
+    flex: 1 1 calc(50% - 30px);
+    margin: 0 30px 0 0;
+
+    > * + * {
+      margin: 12px 0 0 0;
+    }
+  }
+
+  &__slider {
+    flex: 0 0 35%;
+    position: relative;
+    margin: 10px 0 0 0;
+    padding: 0 10px 0 30px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 2px;
+      height: 100%;
+      background-image: url("../images/decor/stage_border.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 100% 100%;
+    }
+  }
+}

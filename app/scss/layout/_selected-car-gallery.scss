@@ -1,0 +1,116 @@
+@use "../assistants/variables" as *;
+
+.selected-car-gallery {
+  position: relative;
+  padding: 35px 0 35px 0;
+  border-radius: 15px;
+  overflow: hidden;
+  background: linear-gradient(to bottom, #ffffff 20%, #ffffff00 40%);
+
+  &::before {
+    content: "";
+    position: absolute;
+    right: 20px;
+    bottom: 25px;
+    width: 60%;
+    height: calc(100% - 50px);
+    border-radius: 15px 0 0 15px;
+    border-top: 3px solid $clr-text-black;
+    border-left: 3px solid $clr-text-black;
+    border-bottom: 3px solid $clr-text-black;
+    pointer-events: none;
+  }
+
+  &__head {
+    display: flex;
+    padding: 0 35px 20px 35px;
+
+    > * + * {
+      margin: 0 0 0 60px;
+    }
+  }
+
+  &__name {
+    flex: 0 0 calc(40% - 30px);
+    padding: 0 0 10px 0;
+  }
+
+  &__props {
+    flex: 0 0 calc(60% - 30px);
+    display: flex;
+    align-self: flex-end;
+    align-items: center;
+    justify-content: flex-start;
+
+    > * + * {
+      margin: 0 0 0 16px;
+    }
+  }
+
+  &__body {
+    position: relative;
+    display: flex;
+    align-items: stretch;
+    padding: 0 35px 0 35px;
+
+    > * + * {
+      margin: 0 0 0 15px;
+    }
+  }
+
+  &__photo-main {
+    flex: 0 0 44%;
+
+    > * {
+      border: 2px solid $clr-primary;
+    }
+  }
+
+  &__photo-list {
+    flex: 0 0 calc(56% - 15px);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    gap: 10px;
+
+    > * {
+      border: 2px solid $clr-text-black;
+    }
+  }
+
+  &__photo-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0 0 65.75% 0;
+    border-radius: 2px;
+    overflow: hidden;
+  }
+
+  &__photo-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  &__footer {
+    display: flex;
+    padding: 15px 0 15px 0;
+  }
+
+  &__links {
+    flex: 0 0 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 0 auto;
+  }
+
+  &__button {
+    min-width: 162px;
+  }
+}

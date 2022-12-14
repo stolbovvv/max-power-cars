@@ -1,0 +1,105 @@
+@use "../assistants/variables" as *;
+
+/* Slider: selected-car */
+.slider-selected-car {
+  &__row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__arrow-left,
+  &__arrow-right {
+    flex-shrink: 0;
+    width: 14px;
+    height: 26px;
+    border: none;
+    background: none;
+    cursor: pointer;
+
+    > img {
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      transition: all 0.25s ease 0s;
+    }
+
+    &:hover > img {
+      transform: scale(1.125);
+    }
+  }
+
+  &__arrow-left {
+    margin-right: 10px;
+  }
+
+  &__arrow-right {
+    margin-left: 10px;
+  }
+
+  &__body {
+    flex: 1 1 auto;
+    overflow: hidden;
+    border-radius: 4px;
+  }
+
+  &__container {
+  }
+
+  &__salide {
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+      float: left;
+      padding-top: 90%;
+      content: "";
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+
+    > img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  &__dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 20px 0 20px 0;
+
+    > * + * {
+      margin: 0 0 0 7px;
+    }
+  }
+
+  &__dots-item {
+    flex: 0 0 auto;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: $clr-text-black;
+    cursor: pointer;
+
+    &:hover {
+      background: #d47070;
+    }
+
+    &.tns-nav-active {
+      background: $clr-primary;
+    }
+  }
+}

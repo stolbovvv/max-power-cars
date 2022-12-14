@@ -16,6 +16,9 @@
 @forward "./layout/user-profile";
 @forward "./layout/user-results";
 @forward "./layout/user-cars";
+@forward "./layout/user-selected-car";
+@forward "./layout/selected-car-gallery";
+@forward "./layout/selected-car-info";
 @forward "./layout/footer";
 
 // 4. Components
@@ -26,6 +29,7 @@
 @forward "./components/table";
 @forward "./components/nav-and-tabs";
 @forward "./components/navbar";
+@forward "./components/sliders";
 
 // 5. Page-specific styles
 @forward "./pages/home";

@@ -19,6 +19,9 @@
     <!-- Basic Page Information -->
     <title>Max Power Cars | Profile</title>
 
+    <!-- Connecting libs Styles -->
+    <link rel="stylesheet" href="./libs/css/tiny-slider.css" />
+
     <!-- Connecting Page Styles -->
     <link rel="stylesheet" href="css/main.min.css" />
   </head>
@@ -247,7 +250,7 @@
             </h2>
 
             <div class="user-cars__list">
-              <article class="card-car">
+              <article class="user-cars__list-item card-car">
                 <div class="card-car__thumb">
                   <img class="card-car__thumb-img" src="./images/cars/car_1.jpg" alt="" />
                 </div>
@@ -259,7 +262,7 @@
                 </div>
               </article>
 
-              <article class="card-car">
+              <article class="user-cars__list-item card-car card-car_selected">
                 <div class="card-car__thumb">
                   <img class="card-car__thumb-img" src="./images/cars/car_2.jpg" alt="" />
                 </div>
@@ -271,7 +274,7 @@
                 </div>
               </article>
 
-              <article class="card-car">
+              <article class="user-cars__list-item card-car">
                 <div class="card-car__thumb">
                   <img class="card-car__thumb-img" src="./images/cars/car_3.jpg" alt="" />
                 </div>
@@ -283,7 +286,7 @@
                 </div>
               </article>
 
-              <article class="card-car">
+              <article class="user-cars__list-item card-car">
                 <div class="card-car__thumb">
                   <img class="card-car__thumb-img" src="./images/cars/car_4.jpg" alt="" />
                 </div>
@@ -299,7 +302,330 @@
         </section>
 
         <!-- User selected car -->
-        <section class="user-selected-car"></section>
+        <section class="user-selected-car">
+          <div class="container">
+            <section class="user-selected-car__gallery">
+              <div class="selected-car-gallery">
+                <div class="selected-car-gallery__head">
+                  <div class="selected-car-gallery__name">
+                    <h2 class="title title_clr-primary">bmw m4 cs f82</h2>
+                  </div>
+
+                  <div class="selected-car-gallery__props">
+                    <articles class="props-item">
+                      <p class="props-item__label props-item__label_clr-dark">Тип двигателя:</p>
+                      <p class="props-item__value props-item__value_clr-primary">Турбо</p>
+                    </articles>
+                    <articles class="props-item">
+                      <p class="props-item__label props-item__label_clr-dark">Мощность в стоке:</p>
+                      <p class="props-item__value props-item__value_clr-primary">350</p>
+                    </articles>
+                    <articles class="props-item">
+                      <p class="props-item__label props-item__label_clr-dark">Вес в стоке:</p>
+                      <p class="props-item__value props-item__value_clr-primary">1450</p>
+                    </articles>
+                    <articles class="props-item">
+                      <p class="props-item__label props-item__label_clr-dark">Привод:</p>
+                      <p class="props-item__value props-item__value_clr-primary">Задний</p>
+                    </articles>
+                  </div>
+                </div>
+
+                <div class="selected-car-gallery__body">
+                  <div class="selected-car-gallery__photo-main">
+                    <div class="selected-car-gallery__photo-wrapper">
+                      <img class="selected-car-gallery__photo-img" src="./images/cars-selected/car_seleced_1.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="selected-car-gallery__photo-list">
+                    <div class="selected-car-gallery__photo-wrapper">
+                      <img class="selected-car-gallery__photo-img" src="./images/cars-selected/car_seleced_1.png" alt="" />
+                    </div>
+                    <div class="selected-car-gallery__photo-wrapper">
+                      <img class="selected-car-gallery__photo-img" src="./images/cars-selected/car_seleced_1.png" alt="" />
+                    </div>
+                    <div class="selected-car-gallery__photo-wrapper">
+                      <img class="selected-car-gallery__photo-img" src="./images/cars-selected/car_seleced_1.png" alt="" />
+                    </div>
+                    <div class="selected-car-gallery__photo-wrapper">
+                      <img class="selected-car-gallery__photo-img" src="./images/cars-selected/car_seleced_1.png" alt="" />
+                    </div>
+                    <div class="selected-car-gallery__photo-wrapper">
+                      <img class="selected-car-gallery__photo-img" src="./images/cars-selected/car_seleced_1.png" alt="" />
+                    </div>
+                    <div class="selected-car-gallery__photo-wrapper">
+                      <img class="selected-car-gallery__photo-img" src="./images/cars-selected/car_seleced_1.png" alt="" />
+                    </div>
+                    <div class="selected-car-gallery__photo-wrapper">
+                      <img class="selected-car-gallery__photo-img" src="./images/cars-selected/car_seleced_1.png" alt="" />
+                    </div>
+                    <div class="selected-car-gallery__photo-wrapper">
+                      <img class="selected-car-gallery__photo-img" src="./images/cars-selected/car_seleced_1.png" alt="" />
+                    </div>
+                    <div class="selected-car-gallery__photo-wrapper">
+                      <img class="selected-car-gallery__photo-img" src="./images/cars-selected/car_seleced_1.png" alt="" />
+                    </div>
+                    <div class="selected-car-gallery__photo-wrapper">
+                      <img class="selected-car-gallery__photo-img" src="./images/cars-selected/car_seleced_1.png" alt="" />
+                    </div>
+                    <div class="selected-car-gallery__photo-wrapper">
+                      <img class="selected-car-gallery__photo-img" src="./images/cars-selected/car_seleced_1.png" alt="" />
+                    </div>
+                    <div class="selected-car-gallery__photo-wrapper">
+                      <img class="selected-car-gallery__photo-img" src="./images/cars-selected/car_seleced_1.png" alt="" />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="selected-car-gallery__footer">
+                  <div class="selected-car-gallery__links">
+                    <a class="selected-car-gallery__button button" href="#">Все фотографии</a>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section class="user-selected-car__info">
+              <div class="selected-car-info">
+                <div class="selected-car-info__descr">
+                  <div class="selected-car-info__descr-head">
+                    <p class="selected-car-info__descr-label">Подтвержденные конфигурации автомобиля:</p>
+                    <button class="button">№1 (15.05.2022)</button>
+                    <button class="button">№2 (30.07.2022)</button>
+                  </div>
+                  <div class="selected-car-info__descr-col">
+                    <article class="card-car-descr">
+                      <div class="card-car-descr__icon"><img class="card-car-descr__icon-img" src="./images/icons-user/icon-car-descr.png" alt="" /></div>
+                      <div class="card-car-descr__body">
+                        <p class="card-car-descr__name">Экстерьер:</p>
+                        <div class="card-car-descr__item">
+                          <p class="card-car-descr__label">Навесные элементы кузова:</p>
+                          <p class="card-car-descr__value">Заводское исполнение</p>
+                        </div>
+                        <div class="card-car-descr__item">
+                          <p class="card-car-descr__label">Двери остекление:</p>
+                          <p class="card-car-descr__value">Заводское исполнение</p>
+                        </div>
+                        <div class="card-car-descr__item">
+                          <p class="card-car-descr__label">Спойлер:</p>
+                          <p class="card-car-descr__value">Аэропакет/киты</p>
+                        </div>
+                        <div class="card-car-descr__item">
+                          <p class="card-car-descr__label">Аэропакет/киты:</p>
+                          <p class="card-car-descr__value">M-Perfomance Carbon Kit</p>
+                        </div>
+                      </div>
+                    </article>
+
+                    <article class="card-car-descr">
+                      <div class="card-car-descr__icon"><img src="./images/icons-user/icon-car-descr.png" alt="" class="card-car-descr__icon-img" /></div>
+                      <div class="card-car-descr__body">
+                        <p class="card-car-descr__name">Интерьер:</p>
+                        <div class="card-car-descr__item">
+                          <p class="card-car-descr__label">Сиденья</p>
+                          <p class="card-car-descr__value">Удалены. Установлен ковш Recaro Podium</p>
+                        </div>
+                        <div class="card-car-descr__item">
+                          <p class="card-car-descr__label">Каркас/роллбар:</p>
+                          <p class="card-car-descr__value">Вварной</p>
+                        </div>
+                        <div class="card-car-descr__item">
+                          <p class="card-car-descr__label">Обшивка салона:</p>
+                          <p class="card-car-descr__value">Удалена</p>
+                        </div>
+                      </div>
+                    </article>
+
+                    <article class="card-car-descr">
+                      <div class="card-car-descr__icon"><img src="./images/icons-user/icon-car-descr.png" alt="" class="card-car-descr__icon-img" /></div>
+                      <div class="card-car-descr__body">
+                        <p class="card-car-descr__name">Подвеска:</p>
+                        <div class="card-car-descr__item">
+                          <p class="card-car-descr__label">Амортизаторы:</p>
+                          <p class="card-car-descr__value">M-Perfomance</p>
+                        </div>
+                        <div class="card-car-descr__item">
+                          <p class="card-car-descr__label">Пружины:</p>
+                          <p class="card-car-descr__value">M-Perfomance</p>
+                        </div>
+                        <div class="card-car-descr__item">
+                          <p class="card-car-descr__label">Опоры:</p>
+                          <p class="card-car-descr__value">M-Perfomance</p>
+                        </div>
+                        <div class="card-car-descr__item">
+                          <p class="card-car-descr__label">Распорки:</p>
+                          <p class="card-car-descr__value">Заводское исполнение</p>
+                        </div>
+                        <div class="card-car-descr__item">
+                          <p class="card-car-descr__label">Стабилизаторы:</p>
+                          <p class="card-car-descr__value">Заводское исполнение</p>
+                        </div>
+                        <div class="card-car-descr__item">
+                          <p class="card-car-descr__label">Рычаги/тяги (передняя ось):</p>
+                          <p class="card-car-descr__value">BMW M4 GT4</p>
+                        </div>
+                        <div class="card-car-descr__item">
+                          <p class="card-car-descr__label">Рычаги/тяги (задняя ось):</p>
+                          <p class="card-car-descr__value">BMW M4 GT4</p>
+                        </div>
+                      </div>
+                    </article>
+
+                    <article class="card-car-descr">
+                      <div class="card-car-descr__icon"><img src="./images/icons-user/icon-car-descr.png" alt="" class="card-car-descr__icon-img" /></div>
+                      <div class="card-car-descr__body">
+                        <p class="card-car-descr__name">Колеса:</p>
+                        <div class="card-car-descr__item">
+                          <p class="card-car-descr__label">Проставки (передняя ось):</p>
+                          <p class="card-car-descr__value">Отсутствуют</p>
+                        </div>
+                        <div class="card-car-descr__item">
+                          <p class="card-car-descr__label">Проставки (задняя ось):</p>
+                          <p class="card-car-descr__value">Отсутствуют</p>
+                        </div>
+                      </div>
+                    </article>
+
+                    <article class="card-car-descr">
+                      <div class="card-car-descr__icon"><img src="./images/icons-user/icon-car-descr.png" alt="" class="card-car-descr__icon-img" /></div>
+                      <div class="card-car-descr__body">
+                        <p class="card-car-descr__name">Тормозная система:</p>
+                        <div class="card-car-descr__item">
+                          <p class="card-car-descr__label">Суппорты:</p>
+                          <p class="card-car-descr__value">Заводское исполнение</p>
+                        </div>
+                        <div class="card-car-descr__item">
+                          <p class="card-car-descr__label">Тормозные диски:</p>
+                          <p class="card-car-descr__value">Заводское исполнение</p>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="selected-car-info__descr-col">
+                    <article class="card-car-descr">
+                      <div class="card-car-descr__icon"><img src="./images/icons-user/icon-car-descr.png" alt="" class="card-car-descr__icon-img" /></div>
+                      <div class="card-car-descr__body">
+                        <p class="card-car-descr__name">Двигатель:</p>
+                        <div class="card-car-descr__item">
+                          <p class="card-car-descr__label">Двигатель/блок цилиндров:</p>
+                          <p class="card-car-descr__value">Заводское исполнение</p>
+                        </div>
+                        <div class="card-car-descr__item">
+                          <p class="card-car-descr__label">ГБЦ:</p>
+                          <p class="card-car-descr__value">Заводское исполнение</p>
+                        </div>
+                        <div class="card-car-descr__item">
+                          <p class="card-car-descr__label">Турбина:</p>
+                          <p class="card-car-descr__value">BMW M4 GT4</p>
+                        </div>
+                      </div>
+                    </article>
+
+                    <article class="card-car-descr">
+                      <div class="card-car-descr__icon"><img src="./images/icons-user/icon-car-descr.png" alt="" class="card-car-descr__icon-img" /></div>
+                      <div class="card-car-descr__body">
+                        <p class="card-car-descr__name">Впускная система:</p>
+                        <div class="card-car-descr__item">
+                          <p class="card-car-descr__label">Впускной коллектор:</p>
+                          <p class="card-car-descr__value">Заводское исполнение</p>
+                        </div>
+                        <div class="card-car-descr__item">
+                          <p class="card-car-descr__label">Интеркулер:</p>
+                          <p class="card-car-descr__value">Заводское исполнение</p>
+                        </div>
+                      </div>
+                    </article>
+
+                    <article class="card-car-descr">
+                      <div class="card-car-descr__icon"><img src="./images/icons-user/icon-car-descr.png" alt="" class="card-car-descr__icon-img" /></div>
+                      <div class="card-car-descr__body">
+                        <p class="card-car-descr__name">Выпускная система:</p>
+                        <div class="card-car-descr__item">
+                          <p class="card-car-descr__label">Выпускной коллектор:</p>
+                          <p class="card-car-descr__value">Заводское исполнение</p>
+                        </div>
+                        <div class="card-car-descr__item">
+                          <p class="card-car-descr__label">Приемная труба:</p>
+                          <p class="card-car-descr__value">Заводское исполнение</p>
+                        </div>
+                        <div class="card-car-descr__item">
+                          <p class="card-car-descr__label">Катализаторы:</p>
+                          <p class="card-car-descr__value">Заводское исполнение</p>
+                        </div>
+                        <div class="card-car-descr__item">
+                          <p class="card-car-descr__label">Средняя часть/резонатор:</p>
+                          <p class="card-car-descr__value">Заводское исполнение</p>
+                        </div>
+                        <div class="card-car-descr__item">
+                          <p class="card-car-descr__label">Глушитель/банка:</p>
+                          <p class="card-car-descr__value">Заводское исполнение</p>
+                        </div>
+                      </div>
+                    </article>
+
+                    <article class="card-car-descr">
+                      <div class="card-car-descr__icon"><img src="./images/icons-user/icon-car-descr.png" alt="" class="card-car-descr__icon-img" /></div>
+                      <div class="card-car-descr__body">
+                        <p class="card-car-descr__name">Топливная система:</p>
+                        <div class="card-car-descr__item">
+                          <p class="card-car-descr__label">Топливный бак:</p>
+                          <p class="card-car-descr__value">Заводское исполнение</p>
+                        </div>
+                        <div class="card-car-descr__item">
+                          <p class="card-car-descr__label">Система впрыска метанола:</p>
+                          <p class="card-car-descr__value">Заводское исполнение</p>
+                        </div>
+                      </div>
+                    </article>
+
+                    <article class="card-car-descr">
+                      <div class="card-car-descr__icon"><img src="./images/icons-user/icon-car-descr.png" alt="" class="card-car-descr__icon-img" /></div>
+                      <div class="card-car-descr__body">
+                        <p class="card-car-descr__name">Трансмиссия:</p>
+                        <div class="card-car-descr__item">
+                          <p class="card-car-descr__label">КПП:</p>
+                          <p class="card-car-descr__value">Заводское исполнение</p>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+
+                <div class="selected-car-info__slider">
+                  <div class="slider-selected-car">
+                    <div class="slider-selected-car__row">
+                      <button class="slider-selected-car__arrow-left" data-slider="button-prev">
+                        <img src="./images/icons-ui/icon-arrow-left.svg" alt="" />
+                      </button>
+                      <div class="slider-selected-car__body">
+                        <div data-slider="slide-container">
+                          <div class="slider-selected-car__salide" data-slider="slide">
+                            <img src="./images/cars/car_1.jpg" alt="" />
+                          </div>
+                          <div class="slider-selected-car__salide" data-slider="slide">
+                            <img src="./images/cars/car_2.jpg" alt="" />
+                          </div>
+                          <div class="slider-selected-car__salide" data-slider="slide">
+                            <img src="./images/cars/car_3.jpg" alt="" />
+                          </div>
+                          <div class="slider-selected-car__salide" data-slider="slide">
+                            <img src="./images/cars/car_4.jpg" alt="" />
+                          </div>
+                        </div>
+                      </div>
+                      <button class="slider-selected-car__arrow-right" data-slider="button-next">
+                        <img src="./images/icons-ui/icon-arrow-right.svg" alt="" />
+                      </button>
+                    </div>
+                    <div class="slider-selected-car__row">
+                      <div class="slider-selected-car__dots" data-slider="dot-container"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </section>
       </main>
 
       <footer class="footer">
@@ -333,6 +659,7 @@
     </div>
 
     <!-- Connecting Libs Scripts -->
+    <script src="./libs/javascript/tiny-slider.js"></script>
     <script src="./libs/javascript/fslightbox.js"></script>
 
     <!-- Connecting Page Scripts -->

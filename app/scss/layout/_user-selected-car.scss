@@ -1,0 +1,18 @@
+@use "../assistants/variables" as *;
+
+.user-selected-car {
+  background-image: url("../images/bg/bg_selected-car.jpg");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding: 0 0 50px 0;
+
+  &__gallery {
+    margin: 105px 0 0 50px;
+    transform: translateY(-100px);
+  }
+
+  &__info {
+    margin: -100px 0 0 0;
+  }
+}
