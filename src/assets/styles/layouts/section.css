@@ -1,0 +1,25 @@
+.section {
+	display: flex;
+	flex-direction: column;
+	gap: var(--size-3);
+	padding: var(--size-5);
+}
+
+.section__wrapper {
+	display: flex;
+}
+
+.section__sidebar {
+	flex: 0 0 auto;
+	width: 190px;
+}
+
+.section__content {
+	flex: 1 1 auto;
+	width: auto;
+}
+
+.section__column {
+	flex: 1 1 auto;
+	width: 100%;
+}

@@ -1,0 +1,14 @@
+/* General styles */
+@import url("./general/font-face.css");
+@import url("./general/normalize.css");
+@import url("./general/root.css");
+@import url("./general/base.css");
+
+/* Components styles */
+@import url("./components/icons.css");
+
+/* Layout styles */
+@import url("./layouts/wrapper.css");
+@import url("./layouts/header.css");
+@import url("./layouts/footer.css");
+@import url("./layouts/section.css");

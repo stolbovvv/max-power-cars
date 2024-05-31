@@ -9,6 +9,8 @@
 		"declaration-property-value-no-unknown": true,
 		"media-feature-range-notation": "context",
 		"no-empty-source": null,
-		"selector-class-pattern": null
+		"selector-class-pattern": null,
+		"selector-no-vendor-prefix": [true, { "ignoreSelectors": ["::-webkit-input-placeholder", "/-moz-.*/"] }],
+		"value-keyword-case": null
 	}
 }

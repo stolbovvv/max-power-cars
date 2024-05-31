@@ -25,7 +25,10 @@
 	<link rel="manifest" href="./site.webmanifest">
 
 	<!-- Page styles -->
-	<link rel="stylesheet" href="./assets/styles/main.min.css">
+	<link rel="stylesheet" href="./assets/styles/bundle.min.css">
+
+	<!-- Page styles -->
+	<script src="./assets/scripts/bundle.min.js" defer></script>
 </head>
 
 <body>
@@ -43,12 +46,53 @@
 		</main>
 
 		<footer class="footer">
-			<!-- Page footer content -->
+			<div class="footer__informtaion">
+				<p>
+					MaxPowerCars - российский любительский автоспортивный чемпионат по дисциплине “Time Attack”. Основан в 2006
+					году Максимом Травиным - одним из основоположнников любительского автоспорта в России.
+				</p>
+				<p>
+					C 2022 года чемпионат проводится под оперативным управлением ООО “МаксПауэрКарс”, при непосредственном участии
+					и наблюдении членов семьи М. Травина.
+				</p>
+			</div>
+			<div class="footer__communication">
+				<ul class="footer__social-list">
+					<li>
+						<a class="footer__social-link" href="#">
+							<svg class="footer__social-icon icon">
+								<use href="./assets/icons/sprite.svg#icon-vk"></use>
+							</svg>
+						</a>
+					</li>
+					<li>
+						<a class="footer__social-link" href="#">
+							<svg class="footer__social-icon icon">
+								<use href="./assets/icons/sprite.svg#icon-instagram"></use>
+							</svg>
+						</a>
+					</li>
+					<li>
+						<a class="footer__social-link" href="#">
+							<svg class="footer__social-icon icon">
+								<use href="./assets/icons/sprite.svg#icon-telegram"></use>
+							</svg>
+						</a>
+					</li>
+					<li>
+						<a class="footer__social-link" href="#">
+							<svg class="footer__social-icon icon">
+								<use href="./assets/icons/sprite.svg#icon-youtube"></use>
+							</svg>
+						</a>
+					</li>
+				</ul>
+				<ul class="footer__contact-list">
+					<li><a class="footer__contact-link" href="mailto:info@maxpowercars.ru">info@maxpowercars.ru</a></li>
+				</ul>
+			</div>
 		</footer>
 	</div>
-
-	<!-- Page scripts -->
-	<script src="./assets/scripts/main.min.js"></script>
 </body>
 
 </html>

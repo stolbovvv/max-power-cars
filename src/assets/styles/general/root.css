@@ -1,0 +1,56 @@
+:root {
+	--neutral-1: #ffffff;
+	--neutral-2: #cfcfcf;
+	--neutral-3: #a6a6a6;
+	--neutral-4: #8f8f8f;
+	--neutral-5: #363636;
+	--neutral-6: #262626;
+	--neutral-7: #000000;
+
+	--neutral-a1: #ffffff80;
+	--neutral-a2: #cfcfcf80;
+	--neutral-a3: #a6a6a680;
+	--neutral-a4: #8f8f8f80;
+	--neutral-a5: #36363680;
+	--neutral-a6: #26262680;
+	--neutral-a7: #00000080;
+
+	--red-1: #df2929;
+	--red-2: #ba1c1c;
+	--red-3: #8e1515;
+
+	--yellow-1: #f1cc0b;
+	--yellow-2: #bea009;
+	--yellow-3: #8d7707;
+
+	--red-a1: #df292980;
+	--red-a2: #ba1c1c80;
+	--red-a3: #8e151580;
+
+	--yellow-a1: #f1cc0b80;
+	--yellow-a2: #bea00980;
+	--yellow-a3: #8d770780;
+
+	--ff-common: "Roboto", sans-serif;
+	--ff-accent: "Zen Dots", sans-serif;
+
+	--fs-common: 12px;
+	--fs-heading-1: 22px;
+	--fs-heading-2: 16px;
+
+	--lh-common: 1.5;
+	--lh-heading-1: 1.3;
+	--lh-heading-2: 1.1;
+
+	--size-1: 10px;
+	--size-2: 15px;
+	--size-3: 20px;
+	--size-4: 25px;
+	--size-5: 30px;
+
+	--box-shadow-1: 0 -4px 6px 0 rgba(0, 0, 0, 25%);
+
+	--transition-ease-1: 0.2s ease;
+	--transition-ease-2: 0.4s ease;
+	--transition-ease-3: 0.6s ease;
+}

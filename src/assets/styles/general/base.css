@@ -1,0 +1,45 @@
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	margin: 0;
+	font-size: var(--fs-common);
+	font-family: var(--ff-common);
+	line-height: var(--lh-common);
+	background-color: var(--neutral-6);
+}
+
+img,
+svg,
+video,
+picture {
+	display: block;
+	max-width: 100%;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	html:focus-within {
+		scroll-behavior: auto;
+	}
+
+	*,
+	*::before,
+	*::after {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+		scroll-behavior: auto !important;
+	}
+}

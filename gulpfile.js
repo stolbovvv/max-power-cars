@@ -3,14 +3,15 @@ import gulp from 'gulp';
 import gzip from 'gulp-zip';
 import sync from 'browser-sync';
 import babel from 'gulp-babel';
+import sprite from 'gulp-svg-sprite';
 import terser from 'gulp-terser';
 import rename from 'gulp-rename';
 import plumber from 'gulp-plumber';
 import postcss from 'gulp-postcss';
 import cssnano from 'cssnano';
 import autoprefixer from 'autoprefixer';
+import postcssUrl from 'postcss-url';
 import postcssImport from 'postcss-import';
-import postcssImportUrl from 'postcss-import-url';
 import postcssPresetEnv from 'postcss-preset-env';
 import * as del from 'del';
 
@@ -26,8 +27,67 @@ const config = {
 	publicDir: 'public',
 };
 
+// Task handle sprite
+function handleSprite() {
+	const outputDir = `${config.sourceDir}/assets/icons/`;
+	const sourceDir = `${config.sourceDir}/assets/icons/`;
+
+	const spriteMode = {
+		symbol: {
+			dest: '.',
+			sprite: 'sprite.svg',
+		},
+	};
+
+	const spriteShape = {
+		transform: [
+			{
+				svgo: {
+					plugins: [
+						'preset-default',
+						{
+							name: 'removeAttrs',
+							active: true,
+							params: {
+								attrs: '(fill.*|stroke.*|opacity|clip-rule)',
+							},
+						},
+						{
+							name: 'removeDimensions',
+							active: true,
+						},
+						{
+							name: 'removeViewBox',
+							active: false,
+						},
+						{
+							name: 'inlineStyles',
+							active: true,
+							params: {
+								onlyMatchedOnce: false,
+							},
+						},
+					],
+				},
+			},
+		],
+	};
+
+	return gulp
+		.src(`${sourceDir}/**/*.svg`, { ignore: 'sprite.svg' })
+		.pipe(plumber())
+		.pipe(
+			sprite({
+				mode: spriteMode,
+				shape: spriteShape,
+			}),
+		)
+		.pipe(gulp.dest(outputDir))
+		.pipe(sync.stream());
+}
+
 // Task handle styles
-function handleStyles() {
+function handleStyles(done) {
 	const outputDir = `${config.outputDir}/assets/styles`;
 	const sourceDir = `${config.sourceDir}/assets/styles`;
 
@@ -45,15 +105,16 @@ function handleStyles() {
 
 	const postcssConfig = [
 		postcssImport(),
-		postcssImportUrl(),
+		postcssUrl(),
 		postcssPresetEnv(postcssPreset),
 		autoprefixer(autoprefixerConfig),
 	];
 
 	return gulp
-		.src([`${sourceDir}/**/*.css`, `!**/*.min.css`], { sourcemaps: config.mode.isDev })
+		.src([`${sourceDir}/*.css`, `!**/*.min.css`], { sourcemaps: config.mode.isDev })
 		.pipe(plumber())
 		.pipe(postcss(postcssConfig))
+		.on('error', done)
 		.pipe(gulp.dest(`${outputDir}/`))
 		.pipe(rename({ suffix: '.min' }))
 		.pipe(postcss([cssnano()]))
@@ -84,7 +145,7 @@ function handleScripts() {
 	};
 
 	return gulp
-		.src([`${sourceDir}/**/*.js`, `!**/*.min.js`], { sourcemaps: config.mode.isDev })
+		.src([`${sourceDir}/*.js`, `!**/*.min.js`], { sourcemaps: config.mode.isDev })
 		.pipe(plumber())
 		.pipe(babel(babelConfig))
 		.pipe(gulp.dest(`${outputDir}/`))
@@ -101,7 +162,6 @@ function handleCopying() {
 			encoding: false,
 			ignore: `${config.sourceDir}/assets/{styles,scripts}/**/*.*`,
 		})
-		.pipe(plumber())
 		.pipe(gulp.dest(`${config.outputDir}/`));
 }
 
@@ -124,7 +184,8 @@ function runClean(out) {
 
 // Task run watcher
 function runWatcher() {
-	gulp.watch([`${config.sourceDir}/**/*.*`, `!**/{styles,scripts}/**/*.*`]).on('change', sync.reload);
+	gulp.watch([`${config.sourceDir}/**/*.*`, `!**/{icons,styles,scripts}/**/*.*`]).on('change', sync.reload);
+	gulp.watch([`${config.sourceDir}/assets/icons/**/*.svg`, `!**/sprite.svg`], handleSprite);
 	gulp.watch([`${config.sourceDir}/assets/styles/**/*.css`, `!**/*.min.css`], handleStyles);
 	gulp.watch([`${config.sourceDir}/assets/scripts/**/*.js`, `!**/*.min.js`], handleScripts);
 }
@@ -145,9 +206,13 @@ function runServer() {
 
 // Gulp scripts:
 export const clean = gulp.series(runClean);
-export const build = gulp.series(runClean, handleStyles, handleScripts, handleCopying);
-export const preview = gulp.series(runClean, handleStyles, handleScripts, handleCopying, runServer);
-export const archive = gulp.series(runClean, handleStyles, handleScripts, handleCopying, createArchive);
+export const build = gulp.series(runClean, handleSprite, handleStyles, handleScripts, handleCopying);
+export const preview = gulp.series(runClean, handleSprite, handleStyles, handleScripts, handleCopying, runServer);
+export const archive = gulp.series(runClean, handleSprite, handleStyles, handleScripts, handleCopying, createArchive);
 
 // Gulp default script:
-export default gulp.series(runClean, gulp.parallel(handleStyles, handleScripts), gulp.parallel(runServer, runWatcher));
+export default gulp.series(
+	runClean,
+	gulp.parallel(handleSprite, handleStyles, handleScripts),
+	gulp.parallel(runServer, runWatcher),
+);

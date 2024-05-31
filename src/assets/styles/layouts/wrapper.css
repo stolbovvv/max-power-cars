@@ -1,0 +1,19 @@
+.wrapper {
+	width: min(1200px, calc(100% - var(--size-5) * 2));
+	margin-inline: auto;
+	padding-bottom: 100px;
+}
+
+@media screen and (width < 1024px) {
+	.wrapper {
+		width: min(964px, calc(100% - var(--size-3) * 2));
+		padding-bottom: 50px;
+	}
+}
+
+@media screen and (width < 768px) {
+	.wrapper {
+		width: min(728px, 100%);
+		padding-bottom: 0;
+	}
+}
