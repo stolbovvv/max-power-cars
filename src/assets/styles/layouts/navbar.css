@@ -1,0 +1,129 @@
+.navbar {
+	position: sticky;
+	top: 0;
+	background: var(--neutral-7);
+	box-shadow: var(--box-shadow-1);
+	padding: 0 var(--size-5);
+	z-index: 100;
+}
+
+.navbar__hide {
+	display: none;
+}
+
+.navbar__menu {
+	display: flex;
+	flex-direction: column;
+	padding: var(--size-2) 0;
+	border-right: 4px solid var(--red-1);
+}
+
+.navbar__menu-list {
+	display: flex;
+	align-items: center;
+	gap: 5px var(--size-2);
+	margin: 0;
+	padding: 0 var(--size-2) 0 0;
+	list-style: none;
+}
+
+.navbar__menu-link {
+	color: #8e8e8e;
+	font-size: 16px;
+	font-weight: 500;
+	text-decoration: none;
+	border-top: 1px solid transparent;
+	border-bottom: 1px solid transparent;
+}
+
+.navbar__menu-link.is-current {
+	border-bottom-color: var(--red-1);
+}
+
+.navbar__menu-link.is-current,
+.navbar__menu-link:is(:focus, :hover) {
+	color: var(--neutral-1);
+}
+
+.navbar__login,
+.navbar__account {
+	display: none;
+}
+
+@media screen and (width < 1024px) {
+	.navbar {
+		position: sticky;
+		top: 0;
+		background: var(--neutral-7);
+		box-shadow: var(--box-shadow-1);
+		z-index: 100;
+		padding: 0 var(--size-3);
+	}
+
+	.navbar__menu-list {
+		flex-wrap: wrap;
+	}
+
+	.navbar__menu-link {
+		font-size: var(--ff-common);
+	}
+}
+
+@media screen and (width < 768px) {
+	.navbar {
+		position: fixed;
+		inset: 0;
+		padding: 75px var(--size-2) var(--size-2);
+		overflow: hidden auto;
+		z-index: 500;
+	}
+
+	.navbar__menu {
+		border: none;
+		border-top: 1px solid var(--red-3);
+		border-bottom: 1px solid var(--red-3);
+	}
+
+	.navbar__menu-list {
+		flex-direction: column;
+		align-items: flex-start;
+		gap: var(--size-1);
+	}
+
+	.navbar__menu-link {
+		font-size: 14px;
+		font-weight: 100;
+	}
+
+	.navbar__login,
+	.navbar__account {
+		display: flex;
+		flex-direction: column;
+		gap: var(--size-1);
+		padding-top: var(--size-2);
+	}
+
+	.navbar__login-name,
+	.navbar__account-name {
+		font-size: 14px;
+		color: var(--yellow-1);
+	}
+
+	.navbar__login-list,
+	.navbar__account-list {
+		display: flex;
+		flex-direction: column;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		gap: var(--size-1);
+	}
+
+	.navbar__login-link,
+	.navbar__account-link {
+		font-size: 14px;
+		font-weight: 200;
+		color: var(--neutral-4);
+		text-decoration: none;
+	}
+}

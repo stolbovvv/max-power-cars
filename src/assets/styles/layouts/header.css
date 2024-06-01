@@ -10,6 +10,8 @@
 		linear-gradient(180deg, rgba(0, 0, 0, 75%) 0%, rgba(0, 0, 0, 0%) 20%),
 		linear-gradient(270deg, rgba(0, 0, 0, 75%) 6%, rgba(0, 0, 0, 0%) 40%),
 		linear-gradient(90deg, rgba(0, 0, 0, 75%) 12%, rgba(0, 0, 0, 0%) 50%);
+	position: relative;
+	z-index: 200;
 }
 
 .header__head {
@@ -209,6 +211,17 @@
 @media screen and (width < 768px) {
 	.header {
 		padding: var(--size-1) var(--size-1) 0 var(--size-1);
+		position: static;
+		z-index: auto;
+	}
+
+	.header__head {
+		position: fixed;
+		width: 100%;
+		top: 0;
+		left: 0;
+		padding: var(--size-1);
+		z-index: 1000;
 	}
 
 	.header__logo {
