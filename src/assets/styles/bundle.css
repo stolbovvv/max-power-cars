@@ -3,13 +3,24 @@
 @import url("./general/normalize.css");
 @import url("./general/root.css");
 @import url("./general/base.css");
+@import url("./general/typography.css");
 
 /* Components styles */
 @import url("./components/icons.css");
+@import url("./components/button.css");
+@import url("./components/tabs.css");
+@import url("./components/table-results.css");
+@import url("./components/card-resource.css");
+@import url("./components/stage.css");
 
-/* Layout styles */
+/* Layouts styles */
 @import url("./layouts/wrapper.css");
 @import url("./layouts/header.css");
 @import url("./layouts/footer.css");
 @import url("./layouts/navbar.css");
 @import url("./layouts/section.css");
+@import url("./layouts/section-best-laps.css");
+@import url("./layouts/section-resources.css");
+
+/* Utility styles */
+@import url("./utility/color-list.css");

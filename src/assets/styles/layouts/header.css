@@ -6,10 +6,12 @@
 	padding: var(--size-5) var(--size-5) 0 var(--size-5);
 	overflow: hidden;
 	min-height: 300px;
-	background: radial-gradient(100% 100% at 50% 0%, rgba(0, 0, 0, 0%) 76.68%, #000000 96.87%),
+	background:
+		radial-gradient(100% 100% at 50% 0%, rgba(0, 0, 0, 0%) 76.68%, #000000 96.87%),
 		linear-gradient(180deg, rgba(0, 0, 0, 75%) 0%, rgba(0, 0, 0, 0%) 20%),
 		linear-gradient(270deg, rgba(0, 0, 0, 75%) 6%, rgba(0, 0, 0, 0%) 40%),
-		linear-gradient(90deg, rgba(0, 0, 0, 75%) 12%, rgba(0, 0, 0, 0%) 50%);
+		linear-gradient(90deg, rgba(0, 0, 0, 75%) 12%, rgba(0, 0, 0, 0%) 50%),
+		url("../../images/bg-header.jpg") center / cover no-repeat;
 	position: relative;
 	z-index: 200;
 }
@@ -109,9 +111,6 @@
 	display: flex;
 	align-items: center;
 	gap: 4px;
-	margin: 0;
-	padding: 0;
-	list-style: none;
 }
 
 .header__login-list > * + *::before {
@@ -167,9 +166,6 @@
 	display: flex;
 	align-items: center;
 	gap: 4px;
-	margin: 0;
-	padding: 0;
-	list-style: none;
 }
 
 .header__account-list > * + *::before {

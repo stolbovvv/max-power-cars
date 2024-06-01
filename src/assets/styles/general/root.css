@@ -31,6 +31,14 @@
 	--yellow-a2: #bea00980;
 	--yellow-a3: #8d770780;
 
+	--green-1: #38bc55;
+	--green-2: #2d9543;
+	--green-3: #216e32;
+
+	--green-a1: #38bc5580;
+	--green-a2: #2d954380;
+	--green-a3: #216e3280;
+
 	--ff-common: "Roboto", sans-serif;
 	--ff-accent: "Zen Dots", sans-serif;
 
@@ -38,9 +46,7 @@
 	--fs-heading-1: 22px;
 	--fs-heading-2: 16px;
 
-	--lh-common: 1.5;
-	--lh-heading-1: 1.3;
-	--lh-heading-2: 1.1;
+	--lh-common: 1.3;
 
 	--size-1: 10px;
 	--size-2: 15px;

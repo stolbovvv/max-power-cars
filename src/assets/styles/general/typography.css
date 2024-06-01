@@ -1,0 +1,14 @@
+.heading-1 {
+	color: inherit;
+	font-size: var(--fs-heading-1);
+	font-weight: 700;
+	line-height: 1.2;
+	text-transform: uppercase;
+}
+
+.heading-2 {
+	color: inherit;
+	font-size: var(--fs-heading-2);
+	font-weight: 500;
+	line-height: 1.1;
+}

@@ -1,0 +1,37 @@
+.section-resurces {
+	background:
+		linear-gradient(99deg, rgba(0, 0, 0, 4%) 0%, rgba(0, 0, 0) 50%, rgba(0, 0, 0, 4%) 100%),
+		linear-gradient(0deg, rgba(0, 0, 0, 5%) 0%, rgba(0, 0, 0, 5%) 100%),
+		url("../../images/bg-resources.jpg") center / cover no-repeat;
+}
+
+.section-resurces__grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	margin: 0;
+	padding: 0;
+	gap: var(--size-1);
+	list-style: none;
+}
+
+.section-resources__card:nth-child(1) {
+	grid-row: span 2;
+}
+
+@media screen and (width < 1024px) {
+	.section-resurces__wrapper {
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+@media screen and (width < 425px) {
+	.section-resurces__grid {
+		display: grid;
+		grid-template-columns: 1fr;
+	}
+
+	.section-resources__card:nth-child(1) {
+		min-height: 300px;
+	}
+}

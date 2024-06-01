@@ -11,9 +11,9 @@
 	}
 }
 
-@media screen and (width < 768px) {
+@media screen and (width <= 768px) {
 	.wrapper {
-		width: min(728px, 100%);
+		width: min(768px, 100%);
 		padding-bottom: 0;
 	}
 }

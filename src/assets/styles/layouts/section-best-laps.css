@@ -1,0 +1,48 @@
+.section-best-laps {
+	background:
+		linear-gradient(70deg, rgba(255, 255, 255, 70%) 10.49%, rgba(255, 255, 255, 0%) 37.78%),
+		linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0%) 100%),
+		linear-gradient(0deg, rgba(255, 255, 255, 40%) 0%, rgba(255, 255, 255, 40%) 100%),
+		url("../../images/bg-results.jpg") center / cover no-repeat;
+}
+
+.section-best-laps__title {
+	color: var(--neutral-1);
+	font-family: var(--ff-accent);
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 2;
+	text-align: center;
+	background: var(--neutral-7);
+}
+
+.section-best-laps__title > span {
+	background: linear-gradient(180deg, #f1cc0b 13.39%, #ebba3b 44.87%, #e0daca 55.37%, #e8ac14 73.13%, #ffffff 83.62%);
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.section-best-laps__descr {
+	font-style: italic;
+	font-weight: 500;
+	margin-top: var(--size-1);
+}
+
+.section-best-laps__link-more {
+	color: var(--neutral-7);
+	font-size: 14px;
+	font-weight: 500;
+	margin-top: auto;
+}
+
+.section-best-laps__popular {
+	margin-top: 35px;
+}
+
+.section-best-laps__popular > * + * {
+	margin-top: 14px;
+}
+
+.section-best-laps__popular-list > * + * {
+	margin-top: 12px;
+}

@@ -1,0 +1,11 @@
+.clr-black {
+	color: var(--neutral-7);
+}
+
+.clr-white {
+	color: var(--neutral-1);
+}
+
+.clr-red {
+	color: var(--red-1);
+}
