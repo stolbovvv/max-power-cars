@@ -13,9 +13,11 @@
 @import url("./components/select.css");
 @import url("./components/tabs.css");
 @import url("./components/table-results.css");
+@import url("./components/table-position.css");
 @import url("./components/card-resource.css");
 @import url("./components/card-document.css");
 @import url("./components/card-popular.css");
+@import url("./components/card-event.css");
 @import url("./components/form-filters.css");
 @import url("./components/results-legend.css");
 @import url("./components/results-info.css");
@@ -32,6 +34,7 @@
 @import url("./layouts/section.css");
 @import url("./layouts/section-seasons.css");
 @import url("./layouts/section-best-laps.css");
+@import url("./layouts/section-results.css");
 @import url("./layouts/section-resources.css");
 @import url("./layouts/section-article.css");
 @import url("./layouts/section-news.css");

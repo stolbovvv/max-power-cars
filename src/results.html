@@ -80,11 +80,11 @@
 		<nav class="navbar">
 			<div class="navbar__menu">
 				<ul class="navbar__menu-list">
-					<li><a class="navbar__menu-link is-current" href="./">Главная</a></li>
+					<li><a class="navbar__menu-link" href="./">Главная</a></li>
 					<li><a class="navbar__menu-link" href="./about.html">О чемпионате</a></li>
 					<li><a class="navbar__menu-link" href="./best-laps.html">MPC Best Laps</a></li>
 					<li><a class="navbar__menu-link" href="./navigator.html">Навигатор по классам</a></li>
-					<li><a class="navbar__menu-link" href="./results.html">Результаты</a></li>
+					<li><a class="navbar__menu-link is-current" href="./results.html">Результаты</a></li>
 					<li><a class="navbar__menu-link" href="./documents.html">Документы</a></li>
 					<li><a class="navbar__menu-link" href="./news.html">Новости</a></li>
 					<li><a class="navbar__menu-link" href="./media.html">Медиа</a></li>
@@ -109,7 +109,647 @@
 		</nav>
 
 		<main class="main">
-			<!-- Page main content -->
+			<section class="section section-results">
+				<h1 class="heading-1">Результаты</h1>
+				<div class="section__wrapper section-results__wrapper">
+					<div class="section__sidebar section-results__sidebar">
+						<div class="tabs">
+							<h3 class="heading-2">Выбрать сезон:</h3>
+							<ul class="tabs__list">
+								<li><button class="tabs__button">2024</button></li>
+								<li><button class="tabs__button is-current">2023</button></li>
+								<li><button class="tabs__button">2022</button></li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="section__content section-results__content">
+						<div class="section-results__stages">
+							<h2 class="heading-2 text-upper">Результаты этапов</h2>
+							<ul class="section-results__stages-list">
+								<li class="card-event">
+									<img class="card-event__image" src="./assets/images/event-1.jpg" alt="">
+									<div class="card-event__body">
+										<p class="card-event__date">16.05</p>
+										<p class="card-event__name">Smolensk ring gp</p>
+										<a class="card-event__button button button--red" href="./results-season.html">Подробнее</a>
+									</div>
+								</li>
+								<li class="card-event">
+									<img class="card-event__image" src="./assets/images/event-2.jpg" alt="">
+									<div class="card-event__body">
+										<p class="card-event__date">08.06</p>
+										<p class="card-event__name">Moscow raceway gp10</p>
+										<a class="card-event__button button button--red" href="./results-season.html">Подробнее</a>
+									</div>
+								</li>
+								<li class="card-event">
+									<img class="card-event__image" src="./assets/images/event-3.jpg" alt="">
+									<div class="card-event__body">
+										<p class="card-event__date">30.06</p>
+										<p class="card-event__name">Kazan ring canyon gp</p>
+										<a class="card-event__button button button--red" href="./results-season.html">Подробнее</a>
+									</div>
+								</li>
+								<li class="card-event">
+									<img class="card-event__image" src="./assets/images/event-4.jpg" alt="">
+									<div class="card-event__body">
+										<p class="card-event__date">10.07</p>
+										<p class="card-event__name">Igora drive f1</p>
+										<a class="card-event__button button button--red" href="./results-season.html">Подробнее</a>
+									</div>
+								</li>
+								<li class="card-event">
+									<img class="card-event__image" src="./assets/images/event-5.jpg" alt="">
+									<div class="card-event__body">
+										<p class="card-event__date">05.08</p>
+										<p class="card-event__name">Moscow raceway fim</p>
+										<a class="card-event__button button button--red" href="./results-season.html">Подробнее</a>
+									</div>
+								</li>
+								<li class="card-event">
+									<img class="card-event__image" src="./assets/images/event-6.jpg" alt="">
+									<div class="card-event__body">
+										<p class="card-event__date">25.08</p>
+										<p class="card-event__name">N-ring circuit a</p>
+										<a class="card-event__button button button--red" href="./results-season.html">Подробнее</a>
+									</div>
+								</li>
+								<li class="card-event">
+									<img class="card-event__image" src="./assets/images/event-7.jpg" alt="">
+									<div class="card-event__body">
+										<p class="card-event__date">09.09</p>
+										<p class="card-event__name">Sochi autodrom gp</p>
+										<a class="card-event__button button button--red" href="./results-season.html">Подробнее</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+
+						<div class="section-results__list">
+							<div class="section-results__list-item">
+								<h3 class="heading-2 text-upper">Класс unlimited</h3>
+								<div class="section-results__list-table">
+									<ul class="table-position">
+										<li class="table-position__head">
+											<span class="table-position__head-cel">Место</span>
+											<span class="table-position__head-cel">Пилот</span>
+											<span class="table-position__head-cel">1 этап</span>
+											<span class="table-position__head-cel">2 этап</span>
+											<span class="table-position__head-cel">3 этап</span>
+											<span class="table-position__head-cel">4 этап</span>
+											<span class="table-position__head-cel">5 этап</span>
+											<span class="table-position__head-cel">6 этап</span>
+											<span class="table-position__head-cel">7 этап</span>
+											<span class="table-position__head-cel">Итого</span>
+										</li>
+										<li class="table-position__row">
+											<span class="table-position__row-cel bg-green">1</span>
+											<span class="table-position__row-cel">Криворотченко Константин</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">15 (4)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">12 (5)</span>
+											<span class="table-position__row-cel">15 (4)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">117</span>
+										</li>
+										<li class="table-position__row">
+											<span class="table-position__row-cel bg-green">2</span>
+											<span class="table-position__row-cel">Криворотченко Константин</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">15 (4)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">12 (5)</span>
+											<span class="table-position__row-cel">15 (4)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">117</span>
+										</li>
+										<li class="table-position__row">
+											<span class="table-position__row-cel bg-green">3</span>
+											<span class="table-position__row-cel">Криворотченко Константин</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">15 (4)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">12 (5)</span>
+											<span class="table-position__row-cel">15 (4)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">117</span>
+										</li>
+										<li class="table-position__row">
+											<span class="table-position__row-cel bg-green">4</span>
+											<span class="table-position__row-cel">Криворотченко Константин</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">15 (4)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">12 (5)</span>
+											<span class="table-position__row-cel">15 (4)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">117</span>
+										</li>
+										<li class="table-position__row">
+											<span class="table-position__row-cel bg-gray">5</span>
+											<span class="table-position__row-cel">Криворотченко Константин</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">15 (4)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">12 (5)</span>
+											<span class="table-position__row-cel">15 (4)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">117</span>
+										</li>
+										<li class="table-position__row">
+											<span class="table-position__row-cel bg-gray">6</span>
+											<span class="table-position__row-cel">Криворотченко Константин</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">15 (4)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">12 (5)</span>
+											<span class="table-position__row-cel">15 (4)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">117</span>
+										</li>
+										<li class="table-position__row">
+											<span class="table-position__row-cel bg-green">7</span>
+											<span class="table-position__row-cel">Криворотченко Константин</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">15 (4)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">12 (5)</span>
+											<span class="table-position__row-cel">15 (4)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">117</span>
+										</li>
+										<li class="table-position__row">
+											<span class="table-position__row-cel bg-gray">8</span>
+											<span class="table-position__row-cel">Криворотченко Константин</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">15 (4)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">12 (5)</span>
+											<span class="table-position__row-cel">15 (4)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">117</span>
+										</li>
+										<li class="table-position__row">
+											<span class="table-position__row-cel bg-gray">9</span>
+											<span class="table-position__row-cel">Криворотченко Константин</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">15 (4)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">12 (5)</span>
+											<span class="table-position__row-cel">15 (4)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">117</span>
+										</li>
+										<li class="table-position__row">
+											<span class="table-position__row-cel bg-gray">10</span>
+											<span class="table-position__row-cel">Криворотченко Константин</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">15 (4)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">12 (5)</span>
+											<span class="table-position__row-cel">15 (4)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">117</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="section-results__list-item">
+								<h3 class="heading-2 text-upper">Класс supercars</h3>
+								<div class="section-results__list-table">
+									<ul class="table-position">
+										<li class="table-position__head">
+											<span class="table-position__head-cel">Место</span>
+											<span class="table-position__head-cel">Пилот</span>
+											<span class="table-position__head-cel">1 этап</span>
+											<span class="table-position__head-cel">2 этап</span>
+											<span class="table-position__head-cel">3 этап</span>
+											<span class="table-position__head-cel">4 этап</span>
+											<span class="table-position__head-cel">5 этап</span>
+											<span class="table-position__head-cel">6 этап</span>
+											<span class="table-position__head-cel">7 этап</span>
+											<span class="table-position__head-cel">Итого</span>
+										</li>
+										<li class="table-position__row">
+											<span class="table-position__row-cel bg-green">1</span>
+											<span class="table-position__row-cel">Криворотченко Константин</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">15 (4)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">12 (5)</span>
+											<span class="table-position__row-cel">15 (4)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">117</span>
+										</li>
+										<li class="table-position__row">
+											<span class="table-position__row-cel bg-green">2</span>
+											<span class="table-position__row-cel">Криворотченко Константин</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">15 (4)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">12 (5)</span>
+											<span class="table-position__row-cel">15 (4)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">117</span>
+										</li>
+										<li class="table-position__row">
+											<span class="table-position__row-cel bg-green">3</span>
+											<span class="table-position__row-cel">Криворотченко Константин</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">15 (4)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">12 (5)</span>
+											<span class="table-position__row-cel">15 (4)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">117</span>
+										</li>
+										<li class="table-position__row">
+											<span class="table-position__row-cel bg-green">4</span>
+											<span class="table-position__row-cel">Криворотченко Константин</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">15 (4)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">12 (5)</span>
+											<span class="table-position__row-cel">15 (4)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">117</span>
+										</li>
+										<li class="table-position__row">
+											<span class="table-position__row-cel bg-gray">5</span>
+											<span class="table-position__row-cel">Криворотченко Константин</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">15 (4)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">12 (5)</span>
+											<span class="table-position__row-cel">15 (4)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">117</span>
+										</li>
+										<li class="table-position__row">
+											<span class="table-position__row-cel bg-gray">6</span>
+											<span class="table-position__row-cel">Криворотченко Константин</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">15 (4)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">12 (5)</span>
+											<span class="table-position__row-cel">15 (4)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">117</span>
+										</li>
+										<li class="table-position__row">
+											<span class="table-position__row-cel bg-green">7</span>
+											<span class="table-position__row-cel">Криворотченко Константин</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">15 (4)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">12 (5)</span>
+											<span class="table-position__row-cel">15 (4)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">117</span>
+										</li>
+										<li class="table-position__row">
+											<span class="table-position__row-cel bg-gray">8</span>
+											<span class="table-position__row-cel">Криворотченко Константин</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">15 (4)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">12 (5)</span>
+											<span class="table-position__row-cel">15 (4)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">117</span>
+										</li>
+										<li class="table-position__row">
+											<span class="table-position__row-cel bg-gray">9</span>
+											<span class="table-position__row-cel">Криворотченко Константин</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">15 (4)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">12 (5)</span>
+											<span class="table-position__row-cel">15 (4)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">117</span>
+										</li>
+										<li class="table-position__row">
+											<span class="table-position__row-cel bg-gray">10</span>
+											<span class="table-position__row-cel">Криворотченко Константин</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">15 (4)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">12 (5)</span>
+											<span class="table-position__row-cel">15 (4)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">117</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="section-results__list-item">
+								<h3 class="heading-2 text-upper">Класс gt1 pro</h3>
+								<div class="section-results__list-table">
+									<ul class="table-position">
+										<li class="table-position__head">
+											<span class="table-position__head-cel">Место</span>
+											<span class="table-position__head-cel">Пилот</span>
+											<span class="table-position__head-cel">1 этап</span>
+											<span class="table-position__head-cel">2 этап</span>
+											<span class="table-position__head-cel">3 этап</span>
+											<span class="table-position__head-cel">4 этап</span>
+											<span class="table-position__head-cel">5 этап</span>
+											<span class="table-position__head-cel">6 этап</span>
+											<span class="table-position__head-cel">7 этап</span>
+											<span class="table-position__head-cel">Итого</span>
+										</li>
+										<li class="table-position__row">
+											<span class="table-position__row-cel bg-green">1</span>
+											<span class="table-position__row-cel">Криворотченко Константин</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">15 (4)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">12 (5)</span>
+											<span class="table-position__row-cel">15 (4)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">117</span>
+										</li>
+										<li class="table-position__row">
+											<span class="table-position__row-cel bg-green">2</span>
+											<span class="table-position__row-cel">Криворотченко Константин</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">15 (4)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">12 (5)</span>
+											<span class="table-position__row-cel">15 (4)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">117</span>
+										</li>
+										<li class="table-position__row">
+											<span class="table-position__row-cel bg-green">3</span>
+											<span class="table-position__row-cel">Криворотченко Константин</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">15 (4)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">12 (5)</span>
+											<span class="table-position__row-cel">15 (4)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">117</span>
+										</li>
+										<li class="table-position__row">
+											<span class="table-position__row-cel bg-green">4</span>
+											<span class="table-position__row-cel">Криворотченко Константин</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">15 (4)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">12 (5)</span>
+											<span class="table-position__row-cel">15 (4)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">117</span>
+										</li>
+										<li class="table-position__row">
+											<span class="table-position__row-cel bg-gray">5</span>
+											<span class="table-position__row-cel">Криворотченко Константин</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">15 (4)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">12 (5)</span>
+											<span class="table-position__row-cel">15 (4)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">117</span>
+										</li>
+										<li class="table-position__row">
+											<span class="table-position__row-cel bg-gray">6</span>
+											<span class="table-position__row-cel">Криворотченко Константин</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">15 (4)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">12 (5)</span>
+											<span class="table-position__row-cel">15 (4)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">117</span>
+										</li>
+										<li class="table-position__row">
+											<span class="table-position__row-cel bg-green">7</span>
+											<span class="table-position__row-cel">Криворотченко Константин</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">15 (4)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">12 (5)</span>
+											<span class="table-position__row-cel">15 (4)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">117</span>
+										</li>
+										<li class="table-position__row">
+											<span class="table-position__row-cel bg-gray">8</span>
+											<span class="table-position__row-cel">Криворотченко Константин</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">15 (4)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">12 (5)</span>
+											<span class="table-position__row-cel">15 (4)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">117</span>
+										</li>
+										<li class="table-position__row">
+											<span class="table-position__row-cel bg-gray">9</span>
+											<span class="table-position__row-cel">Криворотченко Константин</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">15 (4)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">12 (5)</span>
+											<span class="table-position__row-cel">15 (4)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">117</span>
+										</li>
+										<li class="table-position__row">
+											<span class="table-position__row-cel bg-gray">10</span>
+											<span class="table-position__row-cel">Криворотченко Константин</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">15 (4)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">12 (5)</span>
+											<span class="table-position__row-cel">15 (4)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">117</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="section-results__list-item">
+								<h3 class="heading-2 text-upper">Командный зачет</h3>
+								<div class="section-results__list-table">
+									<ul class="table-position">
+										<li class="table-position__head">
+											<span class="table-position__head-cel">Место</span>
+											<span class="table-position__head-cel">Пилот</span>
+											<span class="table-position__head-cel">1 этап</span>
+											<span class="table-position__head-cel">2 этап</span>
+											<span class="table-position__head-cel">3 этап</span>
+											<span class="table-position__head-cel">4 этап</span>
+											<span class="table-position__head-cel">5 этап</span>
+											<span class="table-position__head-cel">6 этап</span>
+											<span class="table-position__head-cel">7 этап</span>
+											<span class="table-position__head-cel">Итого</span>
+										</li>
+										<li class="table-position__row">
+											<span class="table-position__row-cel bg-green">1</span>
+											<span class="table-position__row-cel">Криворотченко Константин</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">15 (4)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">12 (5)</span>
+											<span class="table-position__row-cel">15 (4)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">117</span>
+										</li>
+										<li class="table-position__row">
+											<span class="table-position__row-cel bg-green">2</span>
+											<span class="table-position__row-cel">Криворотченко Константин</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">15 (4)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">12 (5)</span>
+											<span class="table-position__row-cel">15 (4)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">117</span>
+										</li>
+										<li class="table-position__row">
+											<span class="table-position__row-cel bg-green">3</span>
+											<span class="table-position__row-cel">Криворотченко Константин</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">15 (4)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">12 (5)</span>
+											<span class="table-position__row-cel">15 (4)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">117</span>
+										</li>
+										<li class="table-position__row">
+											<span class="table-position__row-cel bg-green">4</span>
+											<span class="table-position__row-cel">Криворотченко Константин</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">15 (4)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">12 (5)</span>
+											<span class="table-position__row-cel">15 (4)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">117</span>
+										</li>
+										<li class="table-position__row">
+											<span class="table-position__row-cel bg-gray">5</span>
+											<span class="table-position__row-cel">Криворотченко Константин</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">15 (4)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">12 (5)</span>
+											<span class="table-position__row-cel">15 (4)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">117</span>
+										</li>
+										<li class="table-position__row">
+											<span class="table-position__row-cel bg-gray">6</span>
+											<span class="table-position__row-cel">Криворотченко Константин</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">15 (4)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">12 (5)</span>
+											<span class="table-position__row-cel">15 (4)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">117</span>
+										</li>
+										<li class="table-position__row">
+											<span class="table-position__row-cel bg-green">7</span>
+											<span class="table-position__row-cel">Криворотченко Константин</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">15 (4)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">12 (5)</span>
+											<span class="table-position__row-cel">15 (4)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">117</span>
+										</li>
+										<li class="table-position__row">
+											<span class="table-position__row-cel bg-gray">8</span>
+											<span class="table-position__row-cel">Криворотченко Константин</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">15 (4)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">12 (5)</span>
+											<span class="table-position__row-cel">15 (4)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">117</span>
+										</li>
+										<li class="table-position__row">
+											<span class="table-position__row-cel bg-gray">9</span>
+											<span class="table-position__row-cel">Криворотченко Константин</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">15 (4)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">12 (5)</span>
+											<span class="table-position__row-cel">15 (4)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">117</span>
+										</li>
+										<li class="table-position__row">
+											<span class="table-position__row-cel bg-gray">10</span>
+											<span class="table-position__row-cel">Криворотченко Константин</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">15 (4)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">12 (5)</span>
+											<span class="table-position__row-cel">15 (4)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">117</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 		</main>
 
 		<footer class="footer">
