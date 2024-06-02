@@ -14,6 +14,7 @@
 @import url("./components/season.css");
 @import url("./components/seasons-list.css");
 @import url("./components/stage.css");
+@import url("./components/splide.css");
 
 /* Layouts styles */
 @import url("./layouts/wrapper.css");
@@ -25,8 +26,9 @@
 @import url("./layouts/section-best-laps.css");
 @import url("./layouts/section-resources.css");
 @import url("./layouts/section-article.css");
-@import url("./layouts/section-video.css");
 @import url("./layouts/section-news.css");
+@import url("./layouts/section-video.css");
+@import url("./layouts/section-media.css");
 
 /* Utility styles */
 @import url("./utility/color-list.css");

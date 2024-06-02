@@ -1,0 +1,58 @@
+.splide {
+	position: relative;
+}
+
+.splide__track {
+	margin-inline: 30px;
+}
+
+.splide__arrow {
+	position: absolute;
+	top: 50%;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	background: none;
+	transform: translateY(-50%);
+	z-index: 100;
+	cursor: pointer;
+	transition: all var(--transition-ease-1);
+	color: var(--red-1);
+}
+
+.splide__arrow:is(:focus, :hover) {
+	filter: brightness(0.875);
+}
+
+.splide__arrow:is(:active) {
+	transform: translateY(-50%) scale(0.9375);
+}
+
+.splide__arrow--prev {
+	left: -20px;
+	border-width: 40px 25px 40px 0;
+	border-color: transparent currentColor transparent transparent;
+}
+
+.splide__arrow:disabled {
+	pointer-events: none;
+	color: var(--neutral-4);
+}
+
+.splide__arrow--next {
+	right: -20px;
+	border-width: 40px 0 40px 25px;
+	border-color: transparent transparent transparent currentColor;
+}
+
+@media screen and (width < 768px) {
+	.splide__arrow--prev {
+		left: -10px;
+		border-width: 20px 15px 20px 0;
+	}
+
+	.splide__arrow--next {
+		right: -10px;
+		border-width: 20px 0 20px 15px;
+	}
+}
