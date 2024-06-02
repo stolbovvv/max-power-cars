@@ -1,0 +1,14 @@
+.section-news {
+	background: linear-gradient(180deg, rgba(255, 255, 255, 10%) 0%, #ffffff 95%), url("../../images/bg-section-news.jpg"),
+		#d9d9d9;
+}
+
+.section-news__grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+	gap: var(--size-2);
+}
+
+.section-news__button {
+	align-self: center;
+}

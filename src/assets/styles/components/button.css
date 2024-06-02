@@ -11,6 +11,7 @@
 	text-align: center;
 	color: var(--neutral-7);
 	transition: all var(--transition-ease-1);
+	cursor: pointer;
 }
 
 .button:is(:focus, :hover) {

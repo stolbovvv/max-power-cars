@@ -25,6 +25,7 @@
 @import url("./layouts/section-best-laps.css");
 @import url("./layouts/section-resources.css");
 @import url("./layouts/section-article.css");
+@import url("./layouts/section-news.css");
 
 /* Utility styles */
 @import url("./utility/color-list.css");
