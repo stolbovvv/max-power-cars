@@ -1,0 +1,27 @@
+.results-legend {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: var(--size-1) var(--size-2);
+	background: var(--neutral-2);
+	padding: var(--size-1);
+}
+
+.results-legend__item {
+	display: flex;
+	align-items: flex-end;
+	gap: 5px;
+}
+
+.results-legend__item > svg {
+	flex: 0 0 auto;
+	width: 16px;
+	height: 16px;
+}
+
+.results-legend__item > span {
+	color: var(--neutral-6);
+	font-weight: 500;
+	font-size: 11px;
+	line-height: 1.1;
+}

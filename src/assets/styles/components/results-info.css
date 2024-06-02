@@ -1,0 +1,26 @@
+.results-info {
+	display: flex;
+	flex-direction: column;
+	gap: var(--size-1);
+}
+
+.results-info__title {
+	display: flex;
+	align-items: center;
+	color: var(--neutral-7);
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 1.2;
+}
+
+.results-info__title::after {
+	content: "";
+	flex: 1 1 auto;
+	height: 3px;
+	margin-left: 10px;
+	background: var(--red-1);
+}
+
+.results-info__text {
+	color: var(--neutral-7);
+}

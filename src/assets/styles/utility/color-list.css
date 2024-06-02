@@ -26,6 +26,10 @@
 	fill: var(--neutral-1);
 }
 
+.fill-green {
+	fill: var(--green-1);
+}
+
 .fill-gray {
 	fill: var(--neutral-4);
 }

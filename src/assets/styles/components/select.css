@@ -1,0 +1,55 @@
+.select {
+	min-height: auto;
+	padding: 0.4em;
+	border: none;
+	border-radius: 0;
+	box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 25%);
+	background: var(--red-1);
+	color: var(--neutral-1);
+	font-size: 12px;
+	font-weight: 500;
+}
+
+.select:focus {
+	background: var(--red-1);
+}
+
+.select--white {
+	color: var(--neutral-7);
+	background: var(--neutral-1);
+}
+
+.select--white:focus {
+	background: var(--neutral-1);
+}
+
+.select.ss-main:focus {
+	box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 25%);
+}
+
+.select.ss-main .ss-arrow {
+	width: 16px;
+	height: 16px;
+}
+
+.select.ss-main .ss-arrow path {
+	fill: var(--neutral-1);
+	stroke-width: 0;
+}
+
+.select.ss-content {
+	padding: 0;
+	background-color: var(--red-2) !important;
+}
+
+.select.ss-content .ss-option {
+	color: var(--neutral-1) !important;
+}
+
+.select.ss-content .ss-option:is(:focus, :hover) {
+	background-color: var(--red-3) !important;
+}
+
+.select.ss-content .ss-option.ss-selected {
+	background-color: var(--red-3) !important;
+}

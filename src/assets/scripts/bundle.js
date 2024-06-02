@@ -1,6 +1,18 @@
-/* global Splide */
+/* global Splide SlimSelect */
 
 window.addEventListener('DOMContentLoaded', () => {
+	// Selects
+	const selects = document.querySelectorAll('.select');
+
+	selects.forEach((select) => {
+		new SlimSelect({
+			select: select,
+			settings: {
+				showSearch: false,
+			},
+		});
+	});
+
 	// Sliders
 	const mediaSlider = document.querySelector('#media-slider');
 	const photoSlider = document.querySelector('#photo-slider');

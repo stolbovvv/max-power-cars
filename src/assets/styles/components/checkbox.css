@@ -1,0 +1,50 @@
+.checkbox {
+	display: flex;
+	align-items: flex-start;
+	gap: var(--size-1);
+}
+
+.checkbox > input {
+	width: 0;
+	height: 0;
+	position: absolute;
+	opacity: 0;
+}
+
+.checkbox > label {
+	position: relative;
+	color: var(--neutral-7);
+	margin-left: 22px;
+	cursor: pointer;
+}
+
+.checkbox > label::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: -22px;
+	width: 16px;
+	height: 16px;
+	border: 1px solid var(--neutral-7);
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.checkbox > label::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: -22px;
+	width: 16px;
+	height: 16px;
+	opacity: 0;
+	background: url("../../icons/icon-check.svg") center/contain no-repeat;
+}
+
+.checkbox > input:checked + label::before {
+	background: var(--neutral-7);
+}
+
+.checkbox > input:checked + label::after {
+	opacity: 1;
+}

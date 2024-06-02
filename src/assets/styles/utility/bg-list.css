@@ -1,0 +1,7 @@
+.bg-gray {
+	background: var(--neutral-4);
+}
+
+.bg-green {
+	background: var(--green-1);
+}
