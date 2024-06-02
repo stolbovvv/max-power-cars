@@ -12,6 +12,7 @@
 @import url("./components/tabs.css");
 @import url("./components/table-results.css");
 @import url("./components/card-resource.css");
+@import url("./components/card-document.css");
 @import url("./components/season.css");
 @import url("./components/seasons-list.css");
 @import url("./components/stage.css");
@@ -31,6 +32,7 @@
 @import url("./layouts/section-video.css");
 @import url("./layouts/section-media.css");
 @import url("./layouts/section-album.css");
+@import url("./layouts/section-documents.css");
 
 /* Utility styles */
 @import url("./utility/color-list.css");

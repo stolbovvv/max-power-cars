@@ -51,7 +51,7 @@
 
 @media screen and (width < 768px) {
 	.section {
-		padding: var(--size-1);
+		padding: var(--size-3) var(--size-1);
 	}
 
 	.section__head,

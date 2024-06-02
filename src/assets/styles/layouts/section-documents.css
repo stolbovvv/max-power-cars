@@ -1,0 +1,18 @@
+.section-documents {
+	background:
+		linear-gradient(180deg, rgba(255, 255, 255, 0%) 47.92%, #e6e6e6 98%) center top / 100% 790px no-repeat,
+		linear-gradient(0deg, rgba(255, 255, 255, 85%) 0%, rgba(255, 255, 255, 85%) 100%) center top / 100% 790px no-repeat,
+		url("../../images/bg-section-documents.jpg") center top / 100% 790px no-repeat,
+		#e6e6e6;
+}
+
+.section-documents__list {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+	gap: var(--size-1);
+	margin-bottom: var(--size-3);
+}
+
+.section-documents__button {
+	align-self: center;
+}
