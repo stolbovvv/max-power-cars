@@ -24,14 +24,12 @@
 
 .section-best-laps__descr {
 	font-style: italic;
-	font-weight: 500;
 	margin-top: var(--size-1);
 }
 
 .section-best-laps__link-more {
 	color: var(--neutral-7);
 	font-size: 14px;
-	font-weight: 500;
 	margin-top: auto;
 }
 

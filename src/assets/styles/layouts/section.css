@@ -34,12 +34,7 @@
 .section__column {
 	display: flex;
 	flex-direction: column;
-}
-
-.section__sidebar > * + *,
-.section__content > * + *,
-.section__column > * + * {
-	margin-top: var(--size-2);
+	gap: var(--size-2);
 }
 
 @media screen and (width < 1024px) {
@@ -49,10 +44,7 @@
 
 	.section,
 	.section__head,
-	.section__wrapper,
-	.section__sidebar,
-	.section__content,
-	.section__column {
+	.section__wrapper {
 		gap: var(--size-2);
 	}
 }
@@ -73,7 +65,10 @@
 
 	.section,
 	.section__head,
-	.section__wrapper,
+	.section__wrapper {
+		gap: var(--size-1);
+	}
+
 	.section__sidebar,
 	.section__content,
 	.section__column {

@@ -31,7 +31,6 @@
 	border-radius: 0.5em;
 	color: var(--neutral-1);
 	font-size: 14px;
-	font-weight: 500;
 	line-height: 1.2;
 }
 
@@ -60,7 +59,6 @@
 	color: var(--neutral-1);
 	font-size: clamp(30px, 13px + 2.924vw, 50px);
 	font-style: italic;
-	font-weight: 500;
 	line-height: 1.1;
 	text-shadow: 0 4px 4px rgba(0, 0, 0, 25%);
 	text-transform: uppercase;
@@ -82,7 +80,6 @@
 	color: var(--neutral-1);
 	font-size: 14px;
 	font-style: italic;
-	font-weight: 500;
 	text-decoration-line: underline;
 }
 
@@ -109,7 +106,6 @@
 .stage__props-label {
 	color: var(--neutral-1);
 	text-shadow: 0 4px 4px rgba(0, 0, 0, 25%);
-	font-weight: 500;
 }
 
 .stage__foot {
@@ -127,7 +123,6 @@
 	color: var(--red-1);
 	text-align: center;
 	font-size: 14px;
-	font-weight: 500;
 }
 
 .stage__button {

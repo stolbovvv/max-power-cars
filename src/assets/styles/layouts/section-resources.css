@@ -7,20 +7,29 @@
 .section-resurces__column {
 	display: flex;
 	flex-direction: column;
-	gap: var(--size-2);
 }
 
 .section-resurces__grid {
+	flex: 1 1 auto;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	margin: 0;
-	padding: 0;
 	gap: var(--size-1);
 	list-style: none;
 }
 
 .section-resources__card:nth-child(1) {
 	grid-row: span 2;
+}
+
+.section-resurces__link {
+	align-self: flex-end;
+	font-size: 14px;
+	text-decoration: none;
+	color: var(--neutral-1);
+}
+
+.section-resurces__link:is(:focus, :hover) {
+	text-decoration: underline;
 }
 
 @media screen and (width < 1024px) {

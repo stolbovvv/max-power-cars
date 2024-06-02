@@ -2,3 +2,7 @@
 	-webkit-text-fill-color: transparent;
 	-webkit-text-stroke: 2px currentColor;
 }
+
+.text-upper {
+	text-transform: uppercase;
+}

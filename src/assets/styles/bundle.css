@@ -24,6 +24,7 @@
 @import url("./layouts/section-seasons.css");
 @import url("./layouts/section-best-laps.css");
 @import url("./layouts/section-resources.css");
+@import url("./layouts/section-article.css");
 
 /* Utility styles */
 @import url("./utility/color-list.css");
