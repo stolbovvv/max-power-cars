@@ -1,0 +1,106 @@
+.seasons-list {
+	display: flex;
+	list-style: none;
+	border-left: 1px solid var(--neutral-1);
+	cursor: grab;
+}
+
+.seasons-list__item {
+	flex: 1 1 auto;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	width: 100%;
+	min-width: 140px;
+	padding-bottom: 10px;
+	cursor: pointer;
+	border-left: 1px solid var(--neutral-3);
+}
+
+.seasons-list__item.is-current {
+	position: relative;
+}
+
+.seasons-list__item.is-current::before {
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	transform: translateX(-50%);
+	display: inline-block;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 10px 6px 0;
+	border-color: var(--red-1) transparent transparent transparent;
+	pointer-events: none;
+}
+
+.seasons-list__item:is(:focus, :hover) {
+	color: var(--red-1);
+}
+
+.seasons-list__item:not(:last-child) {
+	border-right: 1px solid var(--neutral-1);
+}
+
+.seasons-list__day {
+	font-size: 66px;
+	font-weight: 900;
+	line-height: 1;
+	text-align: center;
+	color: var(--neutral-7);
+	transition: color var(--transition-ease-1);
+}
+
+.seasons-list__month {
+	color: var(--neutral-4);
+	font-size: 18px;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-align: center;
+	transition: color var(--transition-ease-1);
+}
+
+.seasons-list__name {
+	margin-block: 8px 10px;
+	color: var(--neutral-6);
+	text-shadow: 0 4px 4px rgba(0, 0, 0, 25%);
+	font-size: 14px;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-align: center;
+	transition: color var(--transition-ease-1);
+}
+
+.seasons-list__button {
+	border-color: var(--neutral-4);
+	transition: all var(--transition-ease-1);
+	box-shadow: none;
+}
+
+.seasons-list__item:is(:focus, :hover, .is-current) .seasons-list__day {
+	color: var(--red-1);
+}
+
+.seasons-list__item.is-current .seasons-list__day {
+	-webkit-text-fill-color: var(--red-1);
+}
+
+.seasons-list__item:is(:focus, :hover, .is-current) .seasons-list__month {
+	color: var(--red-1);
+}
+
+.seasons-list__item:is(:focus, :hover, .is-current) .seasons-list__name {
+	color: var(--red-1);
+}
+
+.seasons-list__item:is(:focus, :hover) .seasons-list__button {
+	color: var(--red-1);
+	border-color: var(--red-1);
+}
+
+.seasons-list__item.is-current .seasons-list__button {
+	color: var(--neutral-1);
+	background: var(--red-1);
+}

@@ -1,0 +1,130 @@
+.season {
+	display: flex;
+	align-items: flex-start;
+	flex-direction: column;
+}
+
+.season__head {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+}
+
+.season__select {
+	display: flex;
+	align-items: center;
+	gap: var(--size-1);
+	margin: 0;
+	padding: 0;
+	border: none;
+	background: transparent;
+	transition: all var(--transition-ease-1);
+	color: var(--neutral-7);
+	cursor: pointer;
+}
+
+.season__select:is(:focus, :hover) {
+	color: var(--red-1);
+}
+
+.season__name {
+	color: currentColor;
+	font-size: 22px;
+	font-weight: 700;
+	line-height: 1.2;
+	text-transform: uppercase;
+}
+
+.season__icon {
+	margin-left: auto;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 12px 8px 0;
+	border-color: currentColor transparent transparent;
+	transform: rotate(0deg);
+}
+
+.season__list {
+	position: absolute;
+	top: 110%;
+	left: -5px;
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	width: max-content;
+	padding: var(--size-1) var(--size-2);
+	border: 1px solid var(--neutral-3);
+	border-radius: 10px;
+	background: var(--neutral-1);
+	box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 25%);
+	transition: all var(--transition-ease-1);
+	visibility: hidden;
+	opacity: 0;
+	z-index: 100;
+}
+
+.season__list.is-open {
+	visibility: visible;
+	opacity: 1;
+}
+
+.season__list-button {
+	border: none;
+	background: none;
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+	font-weight: 500;
+	text-decoration: none;
+	color: var(--neutral-7);
+	cursor: pointer;
+}
+
+.season__list-button:is(:focus, :hover) {
+	text-decoration: underline;
+}
+
+.season__year {
+	color: var(--red-1);
+	font-size: 66px;
+	font-weight: 700;
+	line-height: 1.1;
+}
+
+.season__decor {
+	width: calc(95% + var(--size-5));
+	max-width: none;
+	position: relative;
+	margin-left: calc(-1 * var(--size-5));
+	margin-bottom: 10px;
+}
+
+.season__button {
+	margin-top: auto;
+	box-shadow: none;
+}
+
+@media screen and (width < 576px) {
+	.season {
+		align-items: center;
+		gap: 1em;
+	}
+
+	.season__head {
+		order: 1;
+	}
+
+	.season__year {
+		font-size: 35vw;
+		line-height: 0.875;
+		order: 0;
+	}
+
+	.season__button {
+		order: 1;
+	}
+
+	.season__decor {
+	}
+}

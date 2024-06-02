@@ -56,13 +56,14 @@
 
 .stage__name,
 .stage__data {
+	margin-top: 0;
 	color: var(--neutral-1);
 	font-size: clamp(30px, 13px + 2.924vw, 50px);
 	font-style: italic;
 	font-weight: 500;
+	line-height: 1.1;
 	text-shadow: 0 4px 4px rgba(0, 0, 0, 25%);
 	text-transform: uppercase;
-	margin-top: 0;
 }
 
 .stage__body {
@@ -114,7 +115,7 @@
 .stage__foot {
 	display: flex;
 	flex-wrap: wrap;
-	gap: var(--size-1) var(--size-3);
+	gap: var(--size-3);
 	margin-top: var(--size-3);
 }
 
@@ -148,13 +149,8 @@
 }
 
 @media screen and (width < 768px) {
-	.stage {
-		flex-direction: column;
-	}
-
 	.stage__track {
-		width: 100%;
-		margin-bottom: 0;
+		width: 30%;
 		padding: var(--size-1);
 	}
 
@@ -164,7 +160,6 @@
 
 	.stage__content {
 		padding: var(--size-1);
-		margin-bottom: 0;
 	}
 
 	.stage__props {
@@ -175,9 +170,26 @@
 	.stage__props-value {
 		font-size: 24px;
 	}
+
+	.stage__foot {
+		gap: var(--size-1);
+	}
 }
 
 @media screen and (width < 576px) {
+	.stage {
+		flex-direction: column;
+	}
+
+	.stage__track {
+		width: 100%;
+		margin-bottom: 0;
+	}
+
+	.stage__content {
+		margin-bottom: 0;
+	}
+
 	.stage__props {
 		flex-wrap: wrap;
 	}
@@ -193,5 +205,9 @@
 	.stage__label,
 	.stage__button {
 		width: 100%;
+	}
+
+	.stage__foot {
+		flex-direction: column;
 	}
 }

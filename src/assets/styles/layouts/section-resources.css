@@ -1,8 +1,13 @@
 .section-resurces {
 	background:
-		linear-gradient(99deg, rgba(0, 0, 0, 4%) 0%, rgba(0, 0, 0) 50%, rgba(0, 0, 0, 4%) 100%),
-		linear-gradient(0deg, rgba(0, 0, 0, 5%) 0%, rgba(0, 0, 0, 5%) 100%),
+		linear-gradient(135deg, rgba(0, 0, 0, 40%) 0%, rgba(0, 0, 0, 40%) 50%, rgba(0, 0, 0, 40%) 100%),
 		url("../../images/bg-resources.jpg") center / cover no-repeat;
+}
+
+.section-resurces__column {
+	display: flex;
+	flex-direction: column;
+	gap: var(--size-2);
 }
 
 .section-resurces__grid {

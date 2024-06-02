@@ -1,0 +1,60 @@
+.section-seasons {
+	padding: 0;
+	background:
+		linear-gradient(180deg, rgba(255, 255, 255, 45%) 37.26%, rgba(255, 255, 255, 12%) 100%),
+		url("../../images/bg-calendar.jpg") center / cover no-repeat;
+}
+
+.section-seasons__wrapper {
+	gap: 0;
+	overflow: hidden;
+}
+
+.section-seasons__sidebar {
+	flex: 0 0 auto;
+	padding: var(--size-2) 0 var(--size-2) var(--size-5);
+}
+
+.section-seasons__season {
+	height: 100%;
+	padding-bottom: 10px;
+}
+
+.section-seasons__content {
+	flex: 1 1 auto;
+	overflow: auto hidden;
+	padding-block: var(--size-2);
+}
+
+@media screen and (width < 1260px) {
+	.section-seasons__content {
+		box-shadow: inset 0 0 8px 0 rgba(0, 0, 0, 50%);
+	}
+}
+
+@media screen and (width < 1024px) {
+	.section-seasons__sidebar {
+		flex: 0 0 auto;
+		padding: var(--size-2) 0 var(--size-2) var(--size-3);
+	}
+}
+
+@media screen and (width < 768px) {
+	.section-seasons__wrapper {
+		flex-direction: row;
+	}
+}
+
+@media screen and (width < 576px) {
+	.section-seasons__wrapper {
+		flex-direction: column;
+	}
+
+	.section-seasons__sidebar {
+		padding: var(--size-1) 0 0 0;
+	}
+
+	.section-seasons__content {
+		box-shadow: none;
+	}
+}

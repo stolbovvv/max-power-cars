@@ -109,9 +109,80 @@
 		</nav>
 
 		<main class="main">
+			<section class="section section-seasons">
+				<div class="section__wrapper section-seasons__wrapper">
+					<div class="section-seasons__sidebar">
+						<div class="section-seasons__season season">
+							<div class="season__head">
+								<button class="season__select">
+									<span class="season__name">Сезон 18</span>
+									<span class="season__icon"></span>
+								</button>
+								<ul class="season__list">
+									<li><button class="season__list-button">Сезон 20 / 2025</button></li>
+									<li><button class="season__list-button">Сезон 19 / 2024</button></li>
+									<li><button class="season__list-button">Сезон 18 / 2023</button></li>
+									<li><button class="season__list-button">Сезон 17 / 2022</button></li>
+								</ul>
+							</div>
+							<span class="season__year">2024</span>
+							<img class="season__decor" src="./assets/images/decor-tyretrack.svg" alt="">
+							<a class="season__button button button--transparent" href="./seasons.html">Подробнее</a>
+						</div>
+					</div>
+
+					<div class="section-seasons__content">
+						<ul class="seasons-list">
+							<li class="seasons-list__item is-current">
+								<p class="seasons-list__day text-stroke">16</p>
+								<p class="seasons-list__month">Мая</p>
+								<p class="seasons-list__name">Smolensk<br> ring</p>
+								<a class="seasons-list__button button button--transparent" href="./stage.html">Подробнее</a>
+							</li>
+							<li class="seasons-list__item">
+								<p class="seasons-list__day text-stroke">8</p>
+								<p class="seasons-list__month">Июня</p>
+								<p class="seasons-list__name">Moscow<br> raceway</p>
+								<a class="seasons-list__button button button--transparent" href="./stage.html">Подробнее</a>
+							</li>
+							<li class="seasons-list__item">
+								<p class="seasons-list__day text-stroke">30</p>
+								<p class="seasons-list__month">Июня</p>
+								<p class="seasons-list__name">Kazan<br> ring</p>
+								<a class="seasons-list__button button button--transparent" href="./stage.html">Подробнее</a>
+							</li>
+							<li class="seasons-list__item">
+								<p class="seasons-list__day text-stroke">10</p>
+								<p class="seasons-list__month">Июля</p>
+								<p class="seasons-list__name">Igora<br> drive</p>
+								<a class="seasons-list__button button button--transparent" href="./stage.html">Подробнее</a>
+							</li>
+							<li class="seasons-list__item">
+								<p class="seasons-list__day text-stroke">5</p>
+								<p class="seasons-list__month">Августа</p>
+								<p class="seasons-list__name">Moscow<br> raceway</p>
+								<a class="seasons-list__button button button--transparent" href="./stage.html">Подробнее</a>
+							</li>
+							<li class="seasons-list__item">
+								<p class="seasons-list__day text-stroke">25</p>
+								<p class="seasons-list__month">Августа</p>
+								<p class="seasons-list__name">Nring<br> circuit</p>
+								<a class="seasons-list__button button button--transparent" href="./stage.html">Подробнее</a>
+							</li>
+							<li class="seasons-list__item">
+								<p class="seasons-list__day text-stroke">9</p>
+								<p class="seasons-list__month">Сентября</p>
+								<p class="seasons-list__name">Sochi<br> autodrom</p>
+								<a class="seasons-list__button button button--transparent" href="./stage.html">Подробнее</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
 			<div class="stage">
 				<div class="stage__track">
-					<img class="stage__image" src="#" alt="">
+					<img class="stage__image" src="./assets/images/track-1.png" alt="">
 					<span class="stage__config">Конфигурация: F1</span>
 				</div>
 				<div class="stage__content">
@@ -137,7 +208,8 @@
 						</ul>
 					</div>
 					<div class="stage__foot">
-						<span class="stage__label">Даты могут быть изменены</span>
+						<a class="button" href="./stage.html">Подробнее</a>
+						<a class="button button--green" href="./registration-stage.html">Регистрация</a>
 					</div>
 				</div>
 			</div>
@@ -175,7 +247,7 @@
 								</div>
 								<p class="table-results__cell-time">01:55,943</p>
 								<div class="table-results__cell-car">
-									<svg>
+									<svg class="icon">
 										<use href="./assets/icons/sprite.svg#icon-tires"></use>
 									</svg>
 									<div class="table-results__cell-car-body">
@@ -188,13 +260,13 @@
 									<p>27.09.2023</p>
 								</div>
 								<div class="table-results__cell-icons">
-									<svg>
+									<svg class="icon">
 										<use href="./assets/icons/sprite.svg#icon-config"></use>
 									</svg>
-									<svg>
+									<svg class="icon">
 										<use href="./assets/icons/sprite.svg#icon-camera"></use>
 									</svg>
-									<svg>
+									<svg class="icon">
 										<use href="./assets/icons/sprite.svg#icon-weather"></use>
 									</svg>
 								</div>
@@ -208,7 +280,7 @@
 								</div>
 								<p class="table-results__cell-time">01:56,101</p>
 								<div class="table-results__cell-car">
-									<svg>
+									<svg class="icon">
 										<use href="./assets/icons/sprite.svg#icon-tires"></use>
 									</svg>
 									<div class="table-results__cell-car-body">
@@ -221,13 +293,13 @@
 									<p>27.09.2023</p>
 								</div>
 								<div class="table-results__cell-icons">
-									<svg>
+									<svg class="icon">
 										<use href="./assets/icons/sprite.svg#icon-config"></use>
 									</svg>
-									<svg>
+									<svg class="icon">
 										<use href="./assets/icons/sprite.svg#icon-camera"></use>
 									</svg>
-									<svg>
+									<svg class="icon">
 										<use href="./assets/icons/sprite.svg#icon-weather"></use>
 									</svg>
 								</div>
@@ -241,7 +313,7 @@
 								</div>
 								<p class="table-results__cell-time">01:56,203</p>
 								<div class="table-results__cell-car">
-									<svg>
+									<svg class="icon">
 										<use href="./assets/icons/sprite.svg#icon-tires"></use>
 									</svg>
 									<div class="table-results__cell-car-body">
@@ -254,13 +326,13 @@
 									<p>27.09.2023</p>
 								</div>
 								<div class="table-results__cell-icons">
-									<svg>
+									<svg class="icon">
 										<use href="./assets/icons/sprite.svg#icon-config"></use>
 									</svg>
-									<svg>
+									<svg class="icon">
 										<use href="./assets/icons/sprite.svg#icon-camera"></use>
 									</svg>
-									<svg>
+									<svg class="icon">
 										<use href="./assets/icons/sprite.svg#icon-weather"></use>
 									</svg>
 								</div>
@@ -274,7 +346,7 @@
 								</div>
 								<p class="table-results__cell-time">01:55,943</p>
 								<div class="table-results__cell-car">
-									<svg>
+									<svg class="icon">
 										<use href="./assets/icons/sprite.svg#icon-tires"></use>
 									</svg>
 									<div class="table-results__cell-car-body">
@@ -287,13 +359,13 @@
 									<p>27.09.2023</p>
 								</div>
 								<div class="table-results__cell-icons">
-									<svg>
+									<svg class="icon">
 										<use href="./assets/icons/sprite.svg#icon-config"></use>
 									</svg>
-									<svg>
+									<svg class="icon">
 										<use href="./assets/icons/sprite.svg#icon-camera"></use>
 									</svg>
-									<svg>
+									<svg class="icon">
 										<use href="./assets/icons/sprite.svg#icon-weather"></use>
 									</svg>
 								</div>
@@ -307,7 +379,7 @@
 								</div>
 								<p class="table-results__cell-time">01:56,101</p>
 								<div class="table-results__cell-car">
-									<svg>
+									<svg class="icon">
 										<use href="./assets/icons/sprite.svg#icon-tires"></use>
 									</svg>
 									<div class="table-results__cell-car-body">
@@ -320,13 +392,13 @@
 									<p>27.09.2023</p>
 								</div>
 								<div class="table-results__cell-icons">
-									<svg>
+									<svg class="icon">
 										<use href="./assets/icons/sprite.svg#icon-config"></use>
 									</svg>
-									<svg>
+									<svg class="icon">
 										<use href="./assets/icons/sprite.svg#icon-camera"></use>
 									</svg>
-									<svg>
+									<svg class="icon">
 										<use href="./assets/icons/sprite.svg#icon-weather"></use>
 									</svg>
 								</div>
@@ -340,7 +412,7 @@
 								</div>
 								<p class="table-results__cell-time">01:56,203</p>
 								<div class="table-results__cell-car">
-									<svg>
+									<svg class="icon">
 										<use href="./assets/icons/sprite.svg#icon-tires"></use>
 									</svg>
 									<div class="table-results__cell-car-body">
@@ -353,13 +425,13 @@
 									<p>27.09.2023</p>
 								</div>
 								<div class="table-results__cell-icons">
-									<svg>
+									<svg class="icon">
 										<use href="./assets/icons/sprite.svg#icon-config"></use>
 									</svg>
-									<svg>
+									<svg class="icon">
 										<use href="./assets/icons/sprite.svg#icon-camera"></use>
 									</svg>
-									<svg>
+									<svg class="icon">
 										<use href="./assets/icons/sprite.svg#icon-weather"></use>
 									</svg>
 								</div>
@@ -373,7 +445,7 @@
 								</div>
 								<p class="table-results__cell-time">01:55,943</p>
 								<div class="table-results__cell-car">
-									<svg>
+									<svg class="icon">
 										<use href="./assets/icons/sprite.svg#icon-tires"></use>
 									</svg>
 									<div class="table-results__cell-car-body">
@@ -386,13 +458,13 @@
 									<p>27.09.2023</p>
 								</div>
 								<div class="table-results__cell-icons">
-									<svg>
+									<svg class="icon">
 										<use href="./assets/icons/sprite.svg#icon-config"></use>
 									</svg>
-									<svg>
+									<svg class="icon">
 										<use href="./assets/icons/sprite.svg#icon-camera"></use>
 									</svg>
-									<svg>
+									<svg class="icon">
 										<use href="./assets/icons/sprite.svg#icon-weather"></use>
 									</svg>
 								</div>
@@ -406,7 +478,7 @@
 								</div>
 								<p class="table-results__cell-time">01:56,101</p>
 								<div class="table-results__cell-car">
-									<svg>
+									<svg class="icon">
 										<use href="./assets/icons/sprite.svg#icon-tires"></use>
 									</svg>
 									<div class="table-results__cell-car-body">
@@ -419,13 +491,13 @@
 									<p>27.09.2023</p>
 								</div>
 								<div class="table-results__cell-icons">
-									<svg>
+									<svg class="icon fill-gray">
 										<use href="./assets/icons/sprite.svg#icon-config"></use>
 									</svg>
-									<svg>
+									<svg class="icon">
 										<use href="./assets/icons/sprite.svg#icon-camera"></use>
 									</svg>
-									<svg>
+									<svg class="icon">
 										<use href="./assets/icons/sprite.svg#icon-weather"></use>
 									</svg>
 								</div>
@@ -439,7 +511,7 @@
 								</div>
 								<p class="table-results__cell-time">01:56,203</p>
 								<div class="table-results__cell-car">
-									<svg>
+									<svg class="icon">
 										<use href="./assets/icons/sprite.svg#icon-tires"></use>
 									</svg>
 									<div class="table-results__cell-car-body">
@@ -452,13 +524,13 @@
 									<p>27.09.2023</p>
 								</div>
 								<div class="table-results__cell-icons">
-									<svg>
+									<svg class="icon fill-gray">
 										<use href="./assets/icons/sprite.svg#icon-config"></use>
 									</svg>
-									<svg>
+									<svg class="icon fill-gray">
 										<use href="./assets/icons/sprite.svg#icon-camera"></use>
 									</svg>
-									<svg>
+									<svg class="icon">
 										<use href="./assets/icons/sprite.svg#icon-weather"></use>
 									</svg>
 								</div>
@@ -472,7 +544,7 @@
 								</div>
 								<p class="table-results__cell-time">01:55,943</p>
 								<div class="table-results__cell-car">
-									<svg>
+									<svg class="icon">
 										<use href="./assets/icons/sprite.svg#icon-tires"></use>
 									</svg>
 									<div class="table-results__cell-car-body">
@@ -485,13 +557,13 @@
 									<p>27.09.2023</p>
 								</div>
 								<div class="table-results__cell-icons">
-									<svg>
+									<svg class="icon fill-gray">
 										<use href="./assets/icons/sprite.svg#icon-config"></use>
 									</svg>
-									<svg>
+									<svg class="icon fill-gray">
 										<use href="./assets/icons/sprite.svg#icon-camera"></use>
 									</svg>
-									<svg>
+									<svg class="icon fill-gray">
 										<use href="./assets/icons/sprite.svg#icon-weather"></use>
 									</svg>
 								</div>
@@ -505,7 +577,7 @@
 			<section class="section section-resurces">
 				<div class="section__wrapper section-resurces__wrapper">
 					<div class="section__column section-resurces__column">
-						<h2 class="section__title title clr-white">Новости</h2>
+						<h2 class="section__title heading-1 clr-white">Новости</h2>
 						<ul class="section-resurces__grid">
 							<li class="section-resources__card card-resources">
 								<img class="card-resources__image" src="./assets/images/card-resource-1.jpg" alt="">
@@ -537,7 +609,7 @@
 						</ul>
 					</div>
 					<div class="section__column section-resurces__column">
-						<h2 class="section__title title clr-white">Медиа</h2>
+						<h2 class="section__title heading-1 clr-white">Медиа</h2>
 						<ul class="section-resurces__grid">
 							<li class="section-resources__card card-resources card-resources_big">
 								<img class="card-resources__image" src="./assets/images/card-resource-4.jpg" alt="">

@@ -1,3 +1,5 @@
+/* Text colors */
+
 .clr-black {
 	color: var(--neutral-7);
 }
@@ -6,6 +8,28 @@
 	color: var(--neutral-1);
 }
 
+.clr-gray {
+	color: var(--neutral-4);
+}
+
 .clr-red {
 	color: var(--red-1);
+}
+
+/* Fill colors */
+
+.fill-black {
+	fill: var(--neutral-7);
+}
+
+.fill-white {
+	fill: var(--neutral-1);
+}
+
+.fill-gray {
+	fill: var(--neutral-4);
+}
+
+.fill-red {
+	fill: var(--red-1);
 }
