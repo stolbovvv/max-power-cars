@@ -103,12 +103,9 @@ function handleStyles(done) {
 		},
 	};
 
-	const postcssConfig = [
-		postcssImport(),
-		postcssUrl(),
-		postcssPresetEnv(postcssPreset),
-		autoprefixer(autoprefixerConfig),
-	];
+	const postcssConfig = config.mode.isProd
+		? [postcssImport(), postcssUrl(), postcssPresetEnv(postcssPreset), autoprefixer(autoprefixerConfig)]
+		: [];
 
 	return gulp
 		.src([`${sourceDir}/*.css`, `!**/*.min.css`], { sourcemaps: config.mode.isDev })

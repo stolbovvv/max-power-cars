@@ -75,10 +75,12 @@
 
 	.section-results__sidebar {
 		padding-right: 0;
+		border: none;
 	}
 
 	.section-results__content {
 		padding-left: 0;
+		border: none;
 	}
 
 	.section-results__stages-list {

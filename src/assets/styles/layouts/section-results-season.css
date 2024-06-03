@@ -1,0 +1,48 @@
+.section-results-season {
+	background:
+		linear-gradient(180deg, rgba(255, 255, 255, 60%) 37.26%, rgba(255, 255, 255, 60%) 100%) top center / 100% 680px
+			no-repeat,
+		linear-gradient(180deg, rgba(201, 206, 210, 0%) 76.88%, #c9ced2 100%) top center / 100% 680px no-repeat,
+		url("../../images/bg-section-results-season.png") top center / 100% 680px no-repeat,
+		#ececec;
+}
+
+.section-results-season__wrapper {
+	gap: 0;
+}
+
+.section-results-season__sidebar {
+	gap: var(--size-3);
+	border-right: 1px solid var(--neutral-1);
+	padding-right: var(--size-5);
+}
+
+.section-results-season__content {
+	gap: var(--size-3);
+	border-left: 1px solid var(--neutral-2);
+	padding-left: var(--size-5);
+}
+
+.section-results-season__list > * + * {
+	margin-top: var(--size-1);
+}
+
+@media screen and (width < 768px) {
+	.section-results-season__wrapper {
+		gap: var(--size-5);
+	}
+
+	.section-results-season__sidebar {
+		padding-right: 0;
+		border: none;
+	}
+
+	.section-results-season__content {
+		padding-left: 0;
+		border: none;
+	}
+
+	.section-results-season__stages-list {
+		gap: var(--size-1);
+	}
+}

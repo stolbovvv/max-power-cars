@@ -141,6 +141,11 @@
 	color: var(--neutral-1);
 	padding: 5px 10px;
 	cursor: pointer;
+	fill: currentColor;
+}
+
+.table-results__cell-button > svg {
+	display: none;
 }
 
 .table-results__cell-button:is(:focus, :hover) {
@@ -167,5 +172,15 @@
 @media screen and (width < 576px) {
 	.table-results__cell-time {
 		display: none;
+	}
+
+	.table-results__cell-button > span {
+		display: none;
+	}
+
+	.table-results__cell-button > svg {
+		display: block;
+		width: 16px;
+		height: 16px;
 	}
 }
