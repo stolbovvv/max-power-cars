@@ -1,0 +1,44 @@
+.section-stage {
+	background:
+		url("../../images/bg-section-stage.jpg") center/cover no-repeat,
+		var(--neutral-1);
+}
+
+.section-stage__info-list {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	gap: var(--size-3);
+}
+
+.section-stage__briefing-video {
+	padding: var(--size-1);
+	border-radius: 10px;
+	background: rgba(255, 255, 255, 75%);
+	box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 25%);
+}
+
+.section-stage__briefing-video > iframe,
+.section-stage__briefing-video > video {
+	aspect-ratio: 521/293;
+	width: 100%;
+	height: 100%;
+	border-radius: 4px;
+	object-fit: cover;
+	object-position: center;
+}
+
+@media screen and (width < 1024px) {
+	.section-stage__info-list {
+		gap: var(--size-2);
+	}
+}
+
+@media screen and (width < 768px) {
+	.section-stage__wrapper {
+		gap: var(--size-5);
+	}
+
+	.section-stage__info-list {
+		gap: var(--size-1);
+	}
+}

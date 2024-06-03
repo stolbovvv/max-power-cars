@@ -18,12 +18,14 @@
 @import url("./components/card-document.css");
 @import url("./components/card-popular.css");
 @import url("./components/card-event.css");
+@import url("./components/card-stage-info.css");
 @import url("./components/form-filters.css");
 @import url("./components/results-legend.css");
 @import url("./components/results-info.css");
 @import url("./components/season.css");
 @import url("./components/seasons-list.css");
 @import url("./components/stage.css");
+@import url("./components/banner.css");
 @import url("./components/splide.css");
 
 /* Layouts styles */
@@ -34,6 +36,7 @@
 @import url("./layouts/section.css");
 @import url("./layouts/section-seasons.css");
 @import url("./layouts/section-best-laps.css");
+@import url("./layouts/section-stage.css");
 @import url("./layouts/section-results.css");
 @import url("./layouts/section-results-season.css");
 @import url("./layouts/section-resources.css");
