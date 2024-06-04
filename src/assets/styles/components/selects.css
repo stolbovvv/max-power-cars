@@ -28,8 +28,10 @@
 }
 
 .select.ss-main .ss-arrow {
-	width: 16px;
-	height: 16px;
+	width: 18px;
+	height: 18px;
+	margin: -2px -1px;
+	transform: scaleY(1.25);
 }
 
 .select.ss-main .ss-arrow path {
@@ -37,19 +39,56 @@
 	stroke-width: 0;
 }
 
+.select--white.ss-main .ss-arrow path {
+	fill: var(--neutral-7);
+}
+
 .select.ss-content {
 	padding: 0;
 	background-color: var(--red-2) !important;
+}
+
+.select--white.ss-content {
+	background-color: var(--neutral-2) !important;
 }
 
 .select.ss-content .ss-option {
 	color: var(--neutral-1) !important;
 }
 
+.select--white.ss-content .ss-option {
+	color: var(--neutral-7) !important;
+}
+
 .select.ss-content .ss-option:is(:focus, :hover) {
 	background-color: var(--red-3) !important;
 }
 
+.select--white.ss-content .ss-option:is(:focus, :hover) {
+	background-color: var(--neutral-3) !important;
+}
+
 .select.ss-content .ss-option.ss-selected {
 	background-color: var(--red-3) !important;
+}
+
+.select--white.ss-content .ss-option.ss-selected {
+	background-color: var(--neutral-3) !important;
+}
+
+.selects {
+	display: flex;
+	flex-direction: column;
+	gap: var(--size-1);
+}
+
+.selects__list {
+	display: grid;
+	gap: 8px;
+}
+
+@media screen and (width < 768px) {
+	.selects__list {
+		grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+	}
 }

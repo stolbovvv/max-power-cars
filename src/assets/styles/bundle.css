@@ -10,7 +10,7 @@
 @import url("./components/photo.css");
 @import url("./components/button.css");
 @import url("./components/checkbox.css");
-@import url("./components/select.css");
+@import url("./components/selects.css");
 @import url("./components/tabs.css");
 @import url("./components/stickers.css");
 @import url("./components/table-results.css");
@@ -20,6 +20,8 @@
 @import url("./components/card-popular.css");
 @import url("./components/card-event.css");
 @import url("./components/card-stage-info.css");
+@import url("./components/card-banner.css");
+@import url("./components/card-car.css");
 @import url("./components/form-filters.css");
 @import url("./components/results-legend.css");
 @import url("./components/results-info.css");
@@ -43,6 +45,7 @@
 @import url("./layouts/section-stage.css");
 @import url("./layouts/section-results.css");
 @import url("./layouts/section-results-season.css");
+@import url("./layouts/section-navigator.css");
 @import url("./layouts/section-resources.css");
 @import url("./layouts/section-article.css");
 @import url("./layouts/section-news.css");

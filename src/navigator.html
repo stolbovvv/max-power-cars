@@ -24,6 +24,10 @@
 	<link rel="icon" type="image/svg+xml" href="./favicon.svg">
 	<link rel="manifest" href="./site.webmanifest">
 
+	<!-- BUNDLE TO VENDOR -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slim-select@2.7.1/dist/slimselect.min.css">
+	<script src="https://cdn.jsdelivr.net/npm/slim-select@2.7.1/dist/slimselect.umd.min.js"></script>
+
 	<!-- Page styles -->
 	<link rel="stylesheet" href="./assets/styles/bundle.min.css">
 
@@ -80,10 +84,10 @@
 		<nav class="navbar">
 			<div class="navbar__menu">
 				<ul class="navbar__menu-list">
-					<li><a class="navbar__menu-link is-current" href="./">Главная</a></li>
+					<li><a class="navbar__menu-link" href="./">Главная</a></li>
 					<li><a class="navbar__menu-link" href="./about.html">О чемпионате</a></li>
 					<li><a class="navbar__menu-link" href="./best-laps.html">MPC Best Laps</a></li>
-					<li><a class="navbar__menu-link" href="./navigator.html">Навигатор по классам</a></li>
+					<li><a class="navbar__menu-link is-current" href="./navigator.html">Навигатор по классам</a></li>
 					<li><a class="navbar__menu-link" href="./results.html">Результаты</a></li>
 					<li><a class="navbar__menu-link" href="./documents.html">Документы</a></li>
 					<li><a class="navbar__menu-link" href="./news.html">Новости</a></li>
@@ -109,7 +113,151 @@
 		</nav>
 
 		<main class="main">
-			<!-- Page main content -->
+			<section class="section section-navigator">
+				<h2 class="heading-1">Навигатор по классам</h2>
+
+				<div class="section-navigator__info">
+					<div class="section-navigator__info-text">
+						<p>
+							Навигатор по классам является основным инструментом для конкурентного распределения участников по зачетным группам и помогает участникам ознакомиться с разрешенными
+							доработками конкретных моделей автомобилей. Расчетные данные
+							формируются исходя из опыта организаторов, потенциала автомобилей и результатов выступлений пилотов чемпионата.
+						</p>
+					</div>
+					<div class="section-navigator__info-banner card-banner">
+						<img class="card-banner__img" src="./assets/images/banner-3.jpg" alt="">
+						<div class="card-banner__body">
+							<p class="card-banner__title">Нет вашего автомобиля?</p>
+							<a class="card-banner__link" href="#">Напишите организаторам в телеграм для предварительного определения класса</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="section__wrapper">
+					<div class="section__sidebar">
+						<div class="section-navigator__classes tabs">
+							<h3 class="heading-2">Зачетные классы:</h3>
+							<ul class="tabs__list">
+								<li><button class="tabs__button is-current">UNLIMITED</button></li>
+								<li><button class="tabs__button">SUPERCARS</button></li>
+								<li><button class="tabs__button">GT1 PRO</button></li>
+								<li><button class="tabs__button">GT2 PRO</button></li>
+								<li><button class="tabs__button">GT3 PRO</button></li>
+								<li><button class="tabs__button">TURBOSTOCK</button></li>
+								<li><button class="tabs__button">GT4 PRO</button></li>
+								<li><button class="tabs__button">GT5 PRO</button></li>
+							</ul>
+						</div>
+
+						<div class="section-navigator__select selects">
+							<h3 class="heading-2">Фильтр по авто:</h3>
+							<div class="selects__list">
+								<select class="select select--white" name="track-variant">
+									<option>BMW</option>
+									<option>BMW 1</option>
+									<option>BMW 2</option>
+									<option>BMW 3</option>
+								</select>
+								<select class="select select--white" name="track-variant">
+									<option>M2 C/CS F87</option>
+									<option>M2 C/CS F871</option>
+									<option>M2 C/CS F872</option>
+									<option>M2 C/CS F873</option>
+								</select>
+							</div>
+						</div>
+					</div>
+
+					<div class="section__content">
+						<ul class="section-navigator__list">
+							<li class="section-navigator__list-item card-car">
+								<p class="card-car__name">GT1 PRO</p>
+								<img class="card-car__image" src="./assets/images/model-bmw-1.png" alt="">
+								<div class="card-car__info">
+									<img class="card-car__icon" src="./assets/images/logo-bmw.png" alt="">
+									<p class="card-car__model">M2 C/CS F87</p>
+								</div>
+								<div class="card-car__foot">
+									<a class="card-car__button button button--red" href="./car.html">Разрешенные доработки</a>
+									<button class="card-car__button button button--black">Сравнить</button>
+								</div>
+							</li>
+							<li class="section-navigator__list-item card-car">
+								<p class="card-car__name">GT1 PRO</p>
+								<img class="card-car__image" src="./assets/images/model-bmw-2.png" alt="">
+								<div class="card-car__info">
+									<img class="card-car__icon" src="./assets/images/logo-bmw.png" alt="">
+									<p class="card-car__model">M4 C/CS F82</p>
+								</div>
+								<div class="card-car__foot">
+									<a class="card-car__button button button--red" href="./car.html">Разрешенные доработки</a>
+									<button class="card-car__button button button--black">Сравнить</button>
+								</div>
+							</li>
+							<li class="section-navigator__list-item card-car">
+								<p class="card-car__name">GT1 PRO</p>
+								<img class="card-car__image" src="./assets/images/model-nissan-1.png" alt="">
+								<div class="card-car__info">
+									<img class="card-car__icon" src="./assets/images/logo-nissan.png" alt="">
+									<p class="card-car__model">GT-R R35 (+Nismo)</p>
+								</div>
+								<div class="card-car__foot">
+									<a class="card-car__button button button--red" href="./car.html">Разрешенные доработки</a>
+									<button class="card-car__button button button--black">Сравнить</button>
+								</div>
+							</li>
+							<li class="section-navigator__list-item card-car">
+								<p class="card-car__name">GT1 PRO</p>
+								<img class="card-car__image" src="./assets/images/model-mercedes-1.png" alt="">
+								<div class="card-car__info">
+									<img class="card-car__icon" src="./assets/images/logo-mercedes.png" alt="">
+									<p class="card-car__model">AMG GTR C190</p>
+								</div>
+								<div class="card-car__foot">
+									<a class="card-car__button button button--red" href="./car.html">Разрешенные доработки</a>
+									<button class="card-car__button button button--black">Сравнить</button>
+								</div>
+							</li>
+							<li class="section-navigator__list-item card-car">
+								<p class="card-car__name">GT1 PRO</p>
+								<img class="card-car__image" src="./assets/images/model-porsche-1.png" alt="">
+								<div class="card-car__info">
+									<img class="card-car__icon" src="./assets/images/logo-porsche.png" alt="">
+									<p class="card-car__model">911 TURBO S 991.2 </p>
+								</div>
+								<div class="card-car__foot">
+									<a class="card-car__button button button--red" href="./car.html">Разрешенные доработки</a>
+									<button class="card-car__button button button--black">Сравнить</button>
+								</div>
+							</li>
+							<li class="section-navigator__list-item card-car">
+								<p class="card-car__name">GT1 PRO</p>
+								<img class="card-car__image" src="./assets/images/model-porsche-2.png" alt="">
+								<div class="card-car__info">
+									<img class="card-car__icon" src="./assets/images/logo-porsche.png" alt="">
+									<p class="card-car__model">911 GT3 991.1</p>
+								</div>
+								<div class="card-car__foot">
+									<a class="card-car__button button button--red" href="./car.html">Разрешенные доработки</a>
+									<button class="card-car__button button button--black">Сравнить</button>
+								</div>
+							</li>
+							<li class="section-navigator__list-item card-car">
+								<p class="card-car__name">GT1 PRO</p>
+								<img class="card-car__image" src="./assets/images/model-lamborghini-1.png" alt="">
+								<div class="card-car__info">
+									<img class="card-car__icon" src="./assets/images/logo-lamborghini.png" alt="">
+									<p class="card-car__model">HURACAN (+STO)</p>
+								</div>
+								<div class="card-car__foot">
+									<a class="card-car__button button button--red" href="./car.html">Разрешенные доработки</a>
+									<button class="card-car__button button button--black">Сравнить</button>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
 		</main>
 
 		<footer class="footer">

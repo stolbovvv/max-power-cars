@@ -1,0 +1,53 @@
+.card-banner {
+	position: relative;
+	padding: var(--size-2);
+	border-radius: 15px;
+	box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 25%);
+	overflow: hidden;
+}
+
+.card-banner::before {
+	content: "";
+	position: absolute;
+	inset: 0;
+	background: linear-gradient(93deg, #c30000 24.59%, rgba(190, 0, 0, 0%) 45%),
+		linear-gradient(92deg, #df2929 68.02%, rgba(223, 41, 41, 0%) 80%);
+	z-index: 1;
+}
+
+.card-banner__img {
+	position: absolute;
+	inset: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: right center;
+}
+
+.card-banner__body {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	padding-right: 30%;
+	z-index: 2;
+}
+
+.card-banner__title {
+	color: var(--neutral-1);
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 1.2;
+}
+
+.card-banner__link {
+	color: var(--neutral-1);
+	font-size: 12px;
+	font-weight: 500;
+	line-height: 1.4;
+	text-decoration: none;
+	margin-top: 10px;
+}
+
+.card-banner__link:is(:focus, :hover) {
+	text-decoration: underline;
+}

@@ -1,0 +1,57 @@
+.card-car {
+	display: flex;
+	flex-direction: column;
+	border-radius: 10px;
+	background: rgba(55, 88, 113, 50%);
+	box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 25%);
+}
+
+.card-car__name {
+	padding: var(--size-1);
+	color: rgba(255, 255, 255, 50%);
+	font-size: 36px;
+	font-weight: 700;
+	line-height: 1.1;
+}
+
+.card-car__image {
+	margin: auto var(--size-1);
+}
+
+.card-car__info {
+	display: flex;
+	align-items: center;
+	gap: var(--size-1);
+	padding: var(--size-1);
+}
+
+.card-car__icon {
+	width: 28px;
+	height: 28px;
+	object-fit: contain;
+	object-position: center;
+}
+
+.card-car__model {
+	display: flex;
+	align-items: center;
+	min-height: 28px;
+	margin-top: 0;
+	padding-left: var(--size-1);
+	border-left: 1px solid var(--neutral-1);
+	color: var(--neutral-1);
+	font-size: 18px;
+}
+
+.card-car__foot {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 4px;
+	padding: var(--size-1);
+}
+
+.card-car__button {
+	flex: 1 1 auto;
+	padding-inline: 0.5em;
+	font-size: 12px;
+}
