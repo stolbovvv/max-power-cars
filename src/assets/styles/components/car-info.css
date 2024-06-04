@@ -8,7 +8,7 @@
 }
 
 .car-info__side {
-	width: 35%;
+	max-width: 283.33px;
 	display: flex;
 	flex-direction: column;
 	gap: var(--size-2);
@@ -73,6 +73,7 @@
 
 	.car-info__side {
 		width: 100%;
+		max-width: none;
 	}
 }
 
