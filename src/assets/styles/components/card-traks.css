@@ -1,0 +1,58 @@
+.card-traks {
+	display: flex;
+	flex-direction: column;
+	padding: var(--size-1);
+	gap: var(--size-1);
+	border-radius: 10px;
+	background: rgba(55, 88, 113, 50%);
+	box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 25%);
+}
+
+.card-traks__title {
+	color: var(--neutral-1);
+	font-size: var(--fs-heading-2);
+	line-height: 1.1;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.card-traks__list {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+	gap: var(--size-1);
+}
+
+.card-traks__item {
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	border-radius: 4px;
+	background-color: rgba(217, 217, 217, 50%);
+}
+
+.card-traks__name {
+	padding: 0.25em;
+	background: var(--neutral-7);
+	font-size: 12px;
+	line-height: 1.2;
+	text-align: center;
+	color: var(--neutral-1);
+}
+
+.card-traks__image {
+	width: 75%;
+	margin: 5px auto;
+	object-fit: contain;
+	object-position: center;
+}
+
+.card-traks__time {
+	padding: 0.25em;
+	background: var(--neutral-4);
+	font-weight: 700;
+	font-size: 13px;
+	text-decoration: underline;
+	text-decoration-skip-ink: none;
+	text-align: center;
+	color: var(--neutral-1);
+}

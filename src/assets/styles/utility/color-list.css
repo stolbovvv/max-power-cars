@@ -8,6 +8,10 @@
 	color: var(--neutral-1);
 }
 
+.clr-green {
+	color: var(--green-1);
+}
+
 .clr-gray {
 	color: var(--neutral-4);
 }

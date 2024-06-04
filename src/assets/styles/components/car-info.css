@@ -1,0 +1,102 @@
+.car-info {
+	display: flex;
+	align-items: flex-start;
+	gap: var(--size-3);
+	padding: var(--size-3);
+	border-radius: 15px;
+	background: rgba(33, 33, 33, 95%);
+}
+
+.car-info__side {
+	width: 35%;
+	display: flex;
+	flex-direction: column;
+	gap: var(--size-2);
+}
+
+.car-info__data {
+	flex: 1 1 auto;
+	padding: var(--size-2);
+	border-radius: 10px;
+	background: rgba(55, 88, 113, 50%);
+	box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 25%);
+}
+
+.car-info__data > * + * {
+	margin-top: var(--size-2);
+}
+
+.car-info__data-subtitle {
+	color: var(--neutral-7);
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 1.2;
+	padding: 0.375em var(--size-2);
+	border-radius: 5px;
+	background: var(--neutral-1);
+}
+
+.car-info__data-list {
+	list-style: none;
+	margin: var(--size-1) 0 0 0;
+	padding: 0;
+}
+
+.car-info__data-list > * + * {
+	margin-top: 5px;
+}
+
+.car-info__data-list-item {
+	display: flex;
+	justify-content: space-between;
+	gap: 4px;
+	margin-inline: var(--size-2);
+	padding-block: 2px;
+	border-bottom: 1px dashed var(--neutral-2);
+}
+
+.car-info__data-list-label {
+	color: var(--neutral-1);
+}
+
+.car-info__data-list-value {
+	color: var(--neutral-1);
+}
+
+@media screen and (width < 1024px) {
+	.car-info {
+		flex-direction: column;
+		align-items: stretch;
+		gap: var(--size-2);
+		padding: var(--size-2);
+	}
+
+	.car-info__side {
+		width: 100%;
+	}
+}
+
+@media screen and (width < 768px) {
+	.car-info {
+		gap: var(--size-2);
+		padding: var(--size-1);
+	}
+
+	.car-info__data {
+		padding: var(--size-1);
+	}
+
+	.car-info__data-subtitle {
+		padding: 6px;
+	}
+
+	.car-info__data-list-item {
+		margin-inline: 6px;
+	}
+}
+
+@media screen and (width < 576px) {
+	.car-info__data-list-item {
+		flex-direction: column;
+	}
+}
