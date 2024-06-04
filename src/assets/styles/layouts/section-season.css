@@ -1,0 +1,54 @@
+.section-season {
+	background:
+		linear-gradient(180deg, rgba(255, 255, 255, 45%) 37.26%, rgba(255, 255, 255, 12%) 100%),
+		url("../../images/bg-section-season.jpg") top center / cover no-repeat;
+}
+
+.section-season__wrapper {
+	gap: 0;
+}
+
+.section-season__sidebar {
+	display: flex;
+	flex-direction: column;
+	border-right: 1px solid var(--neutral-1);
+	padding-right: var(--size-5);
+}
+
+.section-season__content {
+	border-left: 1px solid var(--neutral-2);
+	padding-left: var(--size-5);
+	gap: var(--size-5);
+}
+
+.section-season__list {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	gap: var(--size-3);
+}
+
+@media screen and (width < 1024px) {
+	.section-season__sidebar {
+		padding-right: var(--size-3);
+	}
+
+	.section-season__content {
+		padding-left: var(--size-3);
+	}
+}
+
+@media screen and (width < 768px) {
+	.section-season__wrapper {
+		gap: var(--size-5);
+	}
+
+	.section-season__sidebar {
+		padding-right: 0;
+		border: none;
+	}
+
+	.section-season__content {
+		padding-left: 0;
+		border: none;
+	}
+}

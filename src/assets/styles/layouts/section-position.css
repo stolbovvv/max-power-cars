@@ -1,0 +1,61 @@
+.section-position {
+	background:
+		linear-gradient(180deg, rgba(255, 255, 255, 65%) 45.42%, #d9d9d9 90%),
+		linear-gradient(0deg, rgba(255, 255, 255, 60%) 0%, rgba(255, 255, 255, 60%) 100%),
+		url("../../images/bg-position.jpg") top center / cover no-repeat;
+}
+
+.section-position__legend {
+	display: grid;
+	gap: var(--size-1);
+	margin-top: var(--size-1);
+}
+
+.section-position__legend-item {
+	display: grid;
+	gap: 8px;
+	grid-template-columns: 16px 1fr;
+}
+
+.section-position__legend-item > svg {
+	width: 16px;
+	height: 16px;
+}
+
+.section-position__content {
+	gap: var(--size-3);
+}
+
+.section-position__list {
+	display: flex;
+	flex-direction: column;
+	gap: var(--size-3);
+}
+
+.section-position__list-item {
+	display: flex;
+	flex-direction: column;
+	gap: var(--size-2);
+}
+
+@media screen and (width < 1140px) {
+	.section-position__content {
+		overflow: hidden;
+	}
+
+	.section-position__list-table {
+		flex: 0 0 auto;
+		overflow: auto hidden;
+	}
+}
+
+@media screen and (width < 768px) {
+	.section-position__wrapper {
+		gap: var(--size-5);
+	}
+
+	.section-position__content {
+		padding-left: 0;
+		border: none;
+	}
+}

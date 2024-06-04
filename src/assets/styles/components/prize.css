@@ -1,0 +1,66 @@
+.prize {
+	position: relative;
+	padding: var(--size-1) var(--size-5);
+	border-radius: 10px;
+	box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 25%);
+	background:
+		linear-gradient(92deg, #000000 55%, rgba(0, 0, 0, 0%) 65%),
+		linear-gradient(0deg, rgba(0, 0, 0, 20%) 0%, rgba(0, 0, 0, 20%) 100%),
+		url("../../images/bg-prize.jpg") center / cover no-repeat;
+}
+
+.prize__label {
+	color: var(--neutral-1);
+	letter-spacing: 0.25em;
+	text-transform: uppercase;
+}
+
+.prize__value {
+	font-size: 50px;
+	font-weight: 700;
+	line-height: 1.2;
+	background: linear-gradient(180deg, #f1cc0b 14%, #ebba3b 45%, #e0daca 55%, #e8ac14 74%, #ffffff 84%);
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.prize__foot {
+	position: relative;
+	display: flex;
+}
+
+.prize__foot::before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 0%;
+	width: 100%;
+	height: 1px;
+	background: var(--neutral-1);
+}
+
+.prize__button {
+	font-size: 12px;
+	position: relative;
+	margin-inline: auto 50px;
+}
+
+@media screen and (width < 1024px) {
+	.prize {
+		padding: var(--size-1) var(--size-3);
+	}
+}
+
+@media screen and (width < 768px) {
+	.prize {
+		padding: var(--size-1) var(--size-1);
+	}
+
+	.prize__value {
+		font-size: 32px;
+	}
+
+	.prize__button {
+		margin-inline: auto 10px;
+	}
+}

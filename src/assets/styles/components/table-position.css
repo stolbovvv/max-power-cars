@@ -73,7 +73,7 @@
 	border-left: 1px dashed var(--neutral-4);
 }
 
-@media screen and (width < 1140px) {
+@media screen and (width < 1200px) {
 	.table-position {
 		width: max-content;
 	}

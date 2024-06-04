@@ -43,7 +43,7 @@
 	gap: var(--size-2);
 }
 
-@media screen and (width < 1140px) {
+@media screen and (width < 1200px) {
 	.section-results__content {
 		overflow: hidden;
 	}
