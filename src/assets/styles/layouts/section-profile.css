@@ -127,6 +127,7 @@
 	.section-profile__props {
 		flex-wrap: wrap;
 	}
+
 	.section-profile__props-item {
 		width: 50%;
 	}
