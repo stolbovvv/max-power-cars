@@ -1,0 +1,23 @@
+.tag {
+	padding: calc(0.3em - 1px) calc(0.5em - 1px) calc(0.2em - 1px);
+	border-radius: 5px;
+	border: 1px solid var(--neutral-1);
+	background: var(--neutral-1);
+	box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 25%);
+	font-size: 14px;
+	line-height: 1.2;
+	text-align: center;
+	color: var(--neutral-7);
+}
+
+.tag--black {
+	background: var(--neutral-7);
+	border: 1px solid var(--neutral-7);
+	color: var(--neutral-1);
+}
+
+.tag--red {
+	background: var(--red-1);
+	border: 1px solid var(--red-1);
+	color: var(--neutral-1);
+}

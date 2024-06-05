@@ -1,0 +1,23 @@
+.card-tracks {
+	display: flex;
+	flex-direction: column;
+	padding: var(--size-1);
+	gap: var(--size-1);
+	border-radius: 10px;
+	background: rgba(55, 88, 113, 50%);
+	box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 25%);
+}
+
+.card-tracks__title {
+	color: var(--neutral-1);
+	font-size: var(--fs-heading-2);
+	line-height: 1.1;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.card-tracks__list {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+	gap: var(--size-1);
+}

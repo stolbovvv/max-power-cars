@@ -103,4 +103,5 @@
 .seasons-list__item.is-current .seasons-list__button {
 	color: var(--neutral-1);
 	background: var(--red-1);
+	border-color: var(--red-1);
 }

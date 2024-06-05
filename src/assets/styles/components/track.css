@@ -1,0 +1,35 @@
+.track {
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	border-radius: 4px;
+	background-color: rgba(217, 217, 217, 50%);
+}
+
+.track__name {
+	padding: 0.25em;
+	background: var(--neutral-7);
+	font-size: 12px;
+	line-height: 1.2;
+	text-align: center;
+	color: var(--neutral-1);
+}
+
+.track__image {
+	width: 75%;
+	height: 60px;
+	margin: 5px auto;
+	object-fit: contain;
+	object-position: center;
+}
+
+.track__time {
+	padding: 0.25em;
+	background: var(--neutral-4);
+	font-weight: 700;
+	font-size: 13px;
+	text-decoration: underline;
+	text-decoration-skip-ink: none;
+	text-align: center;
+	color: var(--neutral-1);
+}
