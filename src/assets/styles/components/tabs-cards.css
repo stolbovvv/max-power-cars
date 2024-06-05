@@ -1,0 +1,59 @@
+.tab-cards {
+	display: grid;
+	gap: var(--size-2);
+}
+
+.tab-cards__list {
+	display: grid;
+	gap: var(--size-1);
+	grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+}
+
+.tab-cards__button {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+	border: none;
+	padding: 6px;
+	background: var(--neutral-1);
+	transition: all var(--transition-ease-1);
+	cursor: pointer;
+}
+
+.tab-cards__button.is-current,
+.tab-cards__button:is(:focus, :hover) {
+	background: var(--red-1);
+	color: var(--neutral-1);
+}
+
+.tab-cards__button-image {
+	width: 100%;
+	object-fit: cover;
+	object-position: center;
+	aspect-ratio: 200/120;
+}
+
+.tab-cards__button-label {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 8px;
+	text-align: left;
+}
+
+.tab-cards__button-label::after {
+	content: "";
+	display: inline-block;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0.5em 0 0.5em 0.833em;
+	border-color: transparent transparent transparent currentColor;
+	transition: inherit;
+	opacity: 0;
+}
+
+.tab-cards__button.is-current .tab-cards__button-label::after {
+	opacity: 1;
+}

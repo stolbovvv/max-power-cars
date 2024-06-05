@@ -1,0 +1,184 @@
+.section-garage {
+	background:
+		linear-gradient(154deg, #000000 0%, rgba(0, 0, 0, 0%) 100%),
+		linear-gradient(180deg, rgba(255, 255, 255, 0%) 0%, #df2929 100%),
+		url("../../images/bg-section-garage.jpg") center top / 1220px 830px no-repeat,
+		#aa1515;
+}
+
+.section-garage__content {
+	gap: var(--size-3);
+}
+
+.section-garage__photo {
+	display: grid;
+	gap: var(--size-2);
+}
+
+.section-garage__photo-head {
+	display: flex;
+	gap: var(--size-1);
+	align-items: center;
+}
+
+.section-garage__photo-line {
+	flex: 1 1 auto;
+	height: 2px;
+	background: var(--neutral-1);
+}
+
+.section-garage__photo-tags {
+	display: flex;
+	gap: var(--size-1);
+}
+
+.section-garage__photo-body {
+	display: grid;
+	padding: var(--size-1);
+	gap: 4px;
+	background: var(--neutral-7);
+	box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 25%);
+}
+
+.section-garage__photo-grid {
+	display: grid;
+	gap: 4px;
+	grid-template-columns: repeat(7, 1fr);
+}
+
+.section-garage__photo-item {
+	width: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+
+.section-garage__photo-item:nth-child(1),
+.section-garage__photo-item:nth-child(5) {
+	grid-column: span 2;
+	grid-row: span 2;
+}
+
+.section-garage__photo-link {
+	padding: 0.5em 1em;
+	background: var(--neutral-3);
+	font-weight: 700;
+	text-align: center;
+	text-decoration: none;
+	color: var(--neutral-7);
+}
+
+.section-garage__photo-link:is(:focus, :hover) {
+	text-decoration: underline;
+}
+
+.section-garage__results {
+	display: grid;
+	gap: var(--size-1);
+}
+
+.section-garage__results-body {
+	display: flex;
+	gap: var(--size-1);
+	padding: var(--size-1);
+	background: var(--neutral-2);
+	box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 25%);
+}
+
+.section-garage__results-tabs {
+	flex: 0 0 auto;
+	width: 180px;
+}
+
+.section-garage__results-table {
+	flex: 1 1 auto;
+}
+
+.section-garage__config {
+	display: grid;
+	gap: var(--size-1);
+}
+
+.section-garage__config-list {
+	display: grid;
+	gap: var(--size-1);
+	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+@media screen and (width < 1200px) {
+	.section-garage__results-table .table-results__cell-date,
+	.section-garage__results-table .table-results__cell-icons {
+		display: flex;
+	}
+
+	.section-garage__results-table .table-results__cell-time {
+		flex: 1 1 auto;
+	}
+
+	.section-garage__results-table .table-results__cell-date {
+		margin-left: auto;
+	}
+
+	.section-garage__results-table .table-results__cell-car {
+		display: none;
+	}
+}
+
+@media screen and (width < 1024px) {
+	.section-garage__photo-grid {
+		grid-template-columns: repeat(4, 1fr);
+	}
+
+	.section-garage__photo-item:nth-child(1),
+	.section-garage__photo-item:nth-child(5) {
+		grid-column: auto;
+		grid-row: auto;
+	}
+
+	.section-garage__results {
+		flex-direction: column;
+	}
+
+	.section-garage__results-tabs {
+		width: 100%;
+	}
+
+	.section-garage__results-tabs .tabs__list {
+		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	}
+}
+
+@media screen and (width < 992px) {
+}
+
+@media screen and (width < 768px) {
+	.section-garage__wrapper {
+		gap: var(--size-5);
+	}
+}
+
+@media screen and (width < 576px) {
+	.section-garage__photo-head {
+		flex-direction: column;
+	}
+
+	.section-garage__photo-line {
+		width: 100%;
+	}
+
+	.section-garage__photo-tags {
+		width: 100%;
+		align-items: stretch;
+		flex-direction: column;
+	}
+
+	.section-garage__results-table .table-results__cell-time {
+		display: flex;
+		flex: 1 1 auto;
+	}
+}
+
+@media screen and (width < 425px) {
+	.section-garage__results-table .table-results__cell-icons {
+		display: none;
+	}
+}
