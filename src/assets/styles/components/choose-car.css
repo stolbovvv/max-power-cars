@@ -1,0 +1,95 @@
+.choose-car {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+	gap: var(--size-2);
+	padding: var(--size-3);
+	border-radius: 5px;
+	background: #000000;
+	box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 25%);
+}
+
+.choose-car__item-body {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+	border: none;
+	padding: 6px;
+	background: var(--neutral-1);
+	transition: all var(--transition-ease-1);
+	cursor: pointer;
+}
+
+.choose-car__item-image {
+	width: 100%;
+	object-fit: cover;
+	object-position: center;
+	aspect-ratio: 200/120;
+}
+
+.choose-car__item-label {
+	width: 100%;
+	text-align: left;
+}
+
+.choose-car__item-checkbox {
+	width: 0;
+	height: 0;
+	opacity: 0;
+	position: absolute;
+}
+
+.choose-car__item-body:is(:focus, :hover) {
+	background: var(--red-2);
+	color: var(--neutral-1);
+}
+
+.choose-car__item-checkbox:checked + .choose-car__item-body {
+	background: var(--red-1);
+	color: var(--neutral-1);
+}
+
+.choose-car__add {
+	display: grid;
+	place-items: center;
+	place-content: center;
+	padding: var(--size-1);
+	border: 3px solid var(--green-1);
+	border-radius: 10px;
+	background: var(--neutral-7);
+	transition: all var(--transition-ease-1);
+	box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 25%);
+	cursor: pointer;
+}
+
+.choose-car__add:is(:focus, :hover) {
+	background: var(--green-a1);
+}
+
+.choose-car__add:is(:active) {
+	transform: scale(0.9375);
+}
+
+.choose-car__add > svg {
+	width: 50px;
+	height: 50px;
+	fill: var(--neutral-1);
+}
+
+.choose-car__add > span {
+	margin-top: var(--size-1);
+	font-weight: 500;
+	font-size: 14px;
+	text-decoration: underline;
+	text-decoration-skip-ink: none;
+	text-align: center;
+	text-transform: uppercase;
+	color: var(--neutral-1);
+}
+
+@media screen and (width < 1024px) {
+	.choose-car {
+		gap: var(--size-1);
+		padding: var(--size-1);
+	}
+}

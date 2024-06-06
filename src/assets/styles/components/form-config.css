@@ -1,0 +1,72 @@
+.form-config {
+	display: grid;
+	gap: var(--size-1);
+}
+
+.form-config__item {
+	display: grid;
+	gap: 4px;
+}
+
+.form-config__label {
+	margin: 0;
+	font-weight: 700;
+	font-size: 14px;
+}
+
+.form-config__field {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: var(--size-1);
+}
+
+.form-config__row {
+	flex: 1 1 auto;
+	min-width: 250px;
+	display: flex;
+	align-content: center;
+	gap: var(--size-1);
+}
+
+.form-config__input {
+	flex: 1 1 auto;
+	padding: 0.375em 0.5em;
+	border: 1px solid var(--neutral-4);
+	line-height: 1;
+	border-radius: 5px;
+	background: var(--neutral-1);
+}
+
+.form-config__info {
+	border: none;
+	padding: 0;
+	background: none;
+}
+
+.form-config__info > svg {
+	width: 16px;
+	height: 16px;
+	fill: var(--red-1);
+	cursor: pointer;
+}
+
+.form-config__default {
+	flex: 0 0 auto;
+	width: 160px;
+	font-size: 14px;
+	text-decoration: none;
+	text-decoration-skip-ink: none;
+	color: var(--neutral-3);
+}
+
+.form-config__default:is(:focus, :hover) {
+	text-decoration: underline;
+}
+
+@media screen and (width < 1200px) {
+	.form-config__field {
+		grid-template-columns: 1fr;
+		gap: 5px;
+	}
+}

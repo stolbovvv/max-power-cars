@@ -1,0 +1,38 @@
+.config-cars {
+	display: grid;
+	gap: var(--size-1);
+	padding: var(--size-1);
+	border-radius: 5px;
+	box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 25%);
+	background: #8d8d8d;
+}
+
+.config-cars__cards-create {
+	padding: 0.75em;
+	border: 1px solid var(--neutral-1);
+	border-radius: 5px;
+	box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 25%);
+	background: var(--green-1);
+	line-height: 1;
+	text-decoration: none;
+	text-decoration-skip-ink: none;
+	text-transform: uppercase;
+	text-align: center;
+	color: var(--neutral-1);
+	cursor: pointer;
+	transition: all var(--transition-ease-1);
+}
+
+.config-cars__cards-create:is(:focus, :hover) {
+	text-decoration: underline;
+}
+
+.config-cars__cards-create:is(:active) {
+	transform: scale(0.9375);
+}
+
+.config-cars__cards-list {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+	gap: var(--size-1);
+}

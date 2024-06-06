@@ -1,0 +1,88 @@
+.form-pilote {
+	display: grid;
+	gap: var(--size-2);
+	padding: var(--size-2);
+	box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 25%);
+	border-radius: 10px;
+	background:
+		url("../../images/bg-form-pilot.png") center/cover no-repeat,
+		#df2929;
+}
+
+.form-pilote__image {
+	width: 110px;
+	height: 110px;
+	object-fit: cover;
+	object-position: center;
+	margin: var(--size-1) auto 0;
+	border: 2px solid var(--neutral-1);
+	border-radius: 100%;
+	box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 25%);
+}
+
+.form-pilote__name {
+	font-size: 18px;
+	font-weight: 700;
+	text-align: center;
+	text-transform: uppercase;
+	color: var(--neutral-1);
+	text-shadow: 0 4px 4px rgba(0, 0, 0, 25%);
+}
+
+.form-pilote__fieldset {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+	gap: 8px var(--size-2);
+}
+
+.form-pilote__field {
+	display: grid;
+	gap: 2px;
+}
+
+.form-pilote__field-label {
+	font-weight: 700;
+	color: var(--neutral-1);
+}
+
+.form-pilote__field-row {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+.form-pilote__field-input {
+	flex: 1 1 auto;
+	margin: 0;
+	padding: 0.5em 0.66em;
+	border: 1px solid var(--neutral-1);
+	border-radius: 5px;
+	background: rgba(255, 255, 255, 85%);
+	line-height: 1;
+}
+
+.form-pilote__field-button {
+	flex: 0 0 auto;
+	width: 22px;
+	height: 22px;
+	padding: 0;
+	border: none;
+	background: none;
+	cursor: pointer;
+	fill: var(--neutral-1);
+	transition: all var(--transition-ease-1);
+}
+
+.form-pilote__field-button:is(:focus, :hover) {
+	fill: var(--neutral-2);
+}
+
+.form-pilote__field-button:is(:active) {
+	transform: scale(0.9375);
+}
+
+.form-pilote__field-button > svg {
+	width: 100%;
+	height: 100%;
+	transition: inherit;
+}

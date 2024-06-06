@@ -1,0 +1,122 @@
+.section-registration-stage {
+	background:
+		linear-gradient(180deg, rgba(0, 0, 0, 0%) 0%, #f6f6f6 100%) center top / 1200px 700px no-repeat,
+		url("../../images/bg-section-registration-stage.png") center top / 1200px auto no-repeat,
+		#f6f6f6;
+}
+
+.section-registration-stage__wrapper {
+	gap: 0;
+}
+
+.section-registration-stage__sidebar {
+	width: 340px;
+	border-right: 1px solid var(--neutral-1);
+	padding-right: var(--size-5);
+}
+
+.section-registration-stage__content {
+	gap: 0;
+	border-left: 1px solid var(--neutral-2);
+}
+
+.section-registration-stage__content > * {
+	padding: var(--size-5) 0 var(--size-5) var(--size-5);
+}
+
+.section-registration-stage__content > *:first-child {
+	padding-top: 0;
+}
+
+.section-registration-stage__content > *:last-child {
+	padding-bottom: 0;
+}
+
+.section-registration-stage__content > *:not(:first-child) {
+	border-top: 1px solid var(--neutral-2);
+}
+
+.section-registration-stage__content > *:not(:last-child) {
+	border-bottom: 1px solid var(--neutral-1);
+}
+
+.section-registration-stage__cars {
+	display: grid;
+	gap: var(--size-2);
+}
+
+.section-registration-stage__config {
+	display: grid;
+	gap: var(--size-2);
+}
+
+.section-registration-stage__config-wrapper {
+	display: grid;
+	align-items: start;
+	grid-template-columns: 250px 1fr;
+	gap: var(--size-3);
+}
+
+.section-registration-stage__config-side {
+	flex: 0 0 auto;
+	display: grid;
+	gap: var(--size-2);
+}
+
+.section-registration-stage__config-body {
+	flex: 1 1 auto;
+}
+
+.section-registration-stage__tires {
+	display: grid;
+	gap: var(--size-2);
+}
+
+.section-registration-stage__submit {
+	margin: var(--size-3) auto 0;
+	border-radius: 7px;
+	background: var(--green-1);
+	border: none;
+	padding: 0.75em 1.5em;
+	box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 25%);
+	font-weight: 700;
+	font-size: 16px;
+	text-align: center;
+	color: var(--neutral-1);
+	cursor: pointer;
+	transition: all var(--transition-ease-1);
+}
+
+.section-registration-stage__submit:is(:focus, :hover) {
+	background: var(--green-2);
+}
+
+.section-registration-stage__submit:is(:active) {
+	transform: scale(0.9375);
+}
+
+@media screen and (width < 1024px) {
+	.section-registration-stage__wrapper {
+		flex-direction: column;
+		gap: var(--size-5);
+	}
+
+	.section-registration-stage__sidebar {
+		width: 100%;
+		border: none;
+		padding: 0;
+	}
+
+	.section-registration-stage__content {
+		padding: 0;
+		border: none;
+	}
+
+	.section-registration-stage__content > * {
+		padding: var(--size-5) 0;
+	}
+
+	.section-registration-stage__config-wrapper {
+		grid-template-columns: 1fr;
+	}
+}

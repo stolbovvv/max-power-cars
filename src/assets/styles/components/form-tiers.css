@@ -1,0 +1,52 @@
+.form-tiers {
+	display: grid;
+	gap: var(--size-3);
+}
+
+.form-tiers__body {
+	display: grid;
+	gap: var(--size-2);
+}
+
+.form-tiers__heading {
+	font-size: 14px;
+	text-decoration: underline;
+	text-decoration-skip-ink: none;
+	color: var(--neutral-3);
+}
+
+.form-tiers__fields {
+	display: grid;
+	gap: 8px var(--size-1);
+	max-width: 570px;
+}
+
+.form-tiers__row {
+	display: grid;
+	grid-template-columns: minmax(250px, 1fr) 255px;
+	gap: var(--size-1);
+}
+
+.form-tiers__item {
+	display: grid;
+	gap: 2px;
+}
+
+.form-tiers__label {
+	font-weight: 700;
+	font-size: 14px;
+}
+
+.form-tiers__input {
+	padding: 0.375em 0.5em;
+	border: 1px solid var(--neutral-4);
+	line-height: 1;
+	border-radius: 5px;
+	background: var(--neutral-1);
+}
+
+@media screen and (width < 768px) {
+	.form-tiers__row {
+		grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+	}
+}
