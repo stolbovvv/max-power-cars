@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+	<!-- Page options -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="MobileOptimized" content="width">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+
+	<!-- Page information -->
+	<meta name="author" content="">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+
+	<title>Сезон – MaxPowerCars</title>
+
+	<!-- Page favicons -->
+	<link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+	<link rel="icon" type="image/svg+xml" href="./favicon.svg">
+	<link rel="manifest" href="./site.webmanifest">
+
+	<!-- Page styles -->
+	<link rel="stylesheet" href="./assets/styles/bundle.min.css">
+
+	<!-- Page scripts -->
+	<script src="./assets/scripts/bundle.min.js" defer></script>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__head js-sticky">
+				<div class="header__logo">
+					<a class="header__logo-link" href="./">
+						<img class="header__logo-icon" src="./assets/images/logo-max-power-cars.svg" alt="MaxPowerCars">
+					</a>
+				</div>
+				<div class="header__line"></div>
+				<div class="header__menu">
+					<button class="header__burger js-menu-trigger">
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
+					<div class="header__login">
+						<svg class="header__login-icon icon">
+							<use xlink:href="./assets/icons/sprite.svg#icon-helmet"></use>
+						</svg>
+						<div class="header__login-body">
+							<ul class="header__login-list">
+								<li><a class="header__login-link js-menu-hide" href="./login.html">Вход</a></li>
+								<li><a class="header__login-link js-menu-hide" href="./registration.html">Регистрация</a></li>
+							</ul>
+						</div>
+					</div>
+					<!-- <div class="header__account">
+						<svg class="header__account-icon icon">
+							<use xlink:href="./assets/icons/sprite.svg#icon-helmet"></use>
+						</svg>
+						<div class="header__account-body">
+							<span class="header__account-name">Имя пилота</span>
+							<ul class="header__account-list">
+								<li><a class="header__account-link js-menu-hide" href="./profile.html">Личная страница</a></li>
+								<li><a class="header__account-link js-menu-hide" href="./settings.html">Настройки</a></li>
+								<li><a class="header__account-link js-menu-hide" href="#">Выход</a></li>
+							</ul>
+						</div>
+					</div> -->
+				</div>
+				<div class="header__line header__line--end"></div>
+			</div>
+			<div class="header__body"></div>
+		</header>
+
+		<nav class="navbar js-menu">
+			<div class="navbar__menu">
+				<ul class="navbar__menu-list">
+					<li><a class="navbar__menu-link js-menu-hide" href="./">Главная</a></li>
+					<li><a class="navbar__menu-link js-menu-hide" href="./about.html">О чемпионате</a></li>
+					<li><a class="navbar__menu-link js-menu-hide" href="./best-laps.html">MPC Best Laps</a></li>
+					<li><a class="navbar__menu-link js-menu-hide" href="./navigator.html">Навигатор по классам</a></li>
+					<li><a class="navbar__menu-link js-menu-hide" href="./results.html">Результаты</a></li>
+					<li><a class="navbar__menu-link js-menu-hide" href="./documents.html">Документы</a></li>
+					<li><a class="navbar__menu-link js-menu-hide" href="./news.html">Новости</a></li>
+					<li><a class="navbar__menu-link js-menu-hide" href="./media.html">Медиа</a></li>
+				</ul>
+			</div>
+
+			<div class="navbar__login">
+				<ul class="navbar__login-list">
+					<li><a class="navbar__login-link" href="./login.html">Вход</a></li>
+					<li><a class="navbar__login-link" href="./registration.html">Регистрация</a></li>
+				</ul>
+			</div>
+
+			<!-- <div class="navbar__account">
+				<span class="navbar__account-name">Имя пилота</span>
+				<ul class="navbar__account-list">
+					<li><a class="navbar__account-link" href="./profile.html">Личная страница</a></li>
+					<li><a class="navbar__account-link" href="./settings.html">Настройки</a></li>
+					<li><a class="navbar__account-link" href="#">Выход</a></li>
+				</ul>
+			</div> -->
+		</nav>
+
+		<main class="main">
+			<section class="section section-season">
+				<div class="section__wrapper section-season__wrapper">
+					<div class="section__sidebar section-season__sidebar">
+						<div class="season">
+							<div class="season__head">
+								<h1 class="season__name">Сезон 18</h1>
+							</div>
+							<p class="season__year">2024</p>
+							<img class="season__decor" src="./assets/images/decor-tyretrack.svg" alt="">
+						</div>
+						<div class="section-season__classes">
+							<div class="stickers">
+								<h3 class="heading-2">Зачетные классы:</h3>
+								<ul class="stickers__list">
+									<li class="stickers__item">UNLIMITED</li>
+									<li class="stickers__item">SUPERCARS</li>
+									<li class="stickers__item">GT1 PRO</li>
+									<li class="stickers__item">GT2 PRO</li>
+									<li class="stickers__item">GT3 PRO</li>
+									<li class="stickers__item">TURBOSTOCK</li>
+									<li class="stickers__item">GT4 PRO</li>
+									<li class="stickers__item">GT5 PRO</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="section__content section-season__content">
+						<div class="prize">
+							<p class="prize__label">Призовой фонд</p>
+							<p class="prize__value">7 500 000 ₽</p>
+							<div class="prize__foot">
+								<a class="prize__button button button--red" href="#">Подробнее</a>
+							</div>
+						</div>
+						<ul class="section-season__list">
+							<li class="section-season__list-item">
+								<div class="card-event">
+									<img class="card-event__image" src="./assets/images/event-1.jpg" alt="">
+									<div class="card-event__body">
+										<p class="card-event__date">16.05</p>
+										<p class="card-event__name">Smolensk ring gp</p>
+										<a class="card-event__button button button--red" href="./stage.html">Подробнее</a>
+									</div>
+								</div>
+							</li>
+							<li class="section-season__list-item">
+								<div class="card-event">
+									<img class="card-event__image" src="./assets/images/event-2.jpg" alt="">
+									<div class="card-event__body">
+										<p class="card-event__date">08.06</p>
+										<p class="card-event__name">Moscow raceway gp10</p>
+										<a class="card-event__button button button--red" href="./stage.html">Подробнее</a>
+									</div>
+								</div>
+							</li>
+							<li class="section-season__list-item">
+								<div class="card-event">
+									<img class="card-event__image" src="./assets/images/event-3.jpg" alt="">
+									<div class="card-event__body">
+										<p class="card-event__date">30.06</p>
+										<p class="card-event__name">Kazan ring canyon gp</p>
+										<a class="card-event__button button button--red" href="./stage.html">Подробнее</a>
+									</div>
+								</div>
+							</li>
+							<li class="section-season__list-item">
+								<div class="card-event">
+									<img class="card-event__image" src="./assets/images/event-4.jpg" alt="">
+									<div class="card-event__body">
+										<p class="card-event__date">10.07</p>
+										<p class="card-event__name">Igora drive f1</p>
+										<a class="card-event__button button button--red" href="./stage.html">Подробнее</a>
+									</div>
+								</div>
+							</li>
+							<li class="section-season__list-item">
+								<div class="card-event">
+									<img class="card-event__image" src="./assets/images/event-5.jpg" alt="">
+									<div class="card-event__body">
+										<p class="card-event__date">05.08</p>
+										<p class="card-event__name">Moscow raceway fim</p>
+										<a class="card-event__button button button--red" href="./stage.html">Подробнее</a>
+									</div>
+								</div>
+							</li>
+							<li class="section-season__list-item">
+								<div class="card-event">
+									<img class="card-event__image" src="./assets/images/event-6.jpg" alt="">
+									<div class="card-event__body">
+										<p class="card-event__date">25.08</p>
+										<p class="card-event__name">N-ring circuit a</p>
+										<a class="card-event__button button button--red" href="./stage.html">Подробнее</a>
+									</div>
+								</div>
+							</li>
+							<li class="section-season__list-item">
+								<div class="card-event">
+									<img class="card-event__image" src="./assets/images/event-7.jpg" alt="">
+									<div class="card-event__body">
+										<p class="card-event__date">09.09</p>
+										<p class="card-event__name">Sochi autodrom gp</p>
+										<a class="card-event__button button button--red" href="./stage.html">Подробнее</a>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+			<div class="banner">
+				<img class=" banner__image" src="./assets/images/banner-1.jpg" alt="">
+				<div class="banner__body">
+					<h2 class="banner__title">Узнайте класс вашего автомобиля <br>в Навигаторе по классам</h2>
+					<div class="banner__foot">
+						<a class="banner__button button button--black" href="./navigator.html">Перейти в Навигатор</a>
+					</div>
+				</div>
+			</div>
+
+			<section class="section section-position">
+				<h2 class="heading-1">Положение в чемпионате</h2>
+				<div class="section__wrapper section-position__wrapper">
+					<div class="section__sidebar section-position__sidebar">
+						<div class="section-position__tabs tabs">
+							<h3 class="Heading-2">Выберите класс:</h3>
+							<ul class="tabs__list">
+								<li><button class="tabs__button is-current">UNLIMITED</button></li>
+								<li><button class="tabs__button">SUPERCARS</button></li>
+								<li><button class="tabs__button">GT1 PRO</button></li>
+								<li><button class="tabs__button">GT2 PRO</button></li>
+								<li><button class="tabs__button">GT3 PRO</button></li>
+								<li><button class="tabs__button">TURBOSTOCK</button></li>
+								<li><button class="tabs__button">GT4 PRO</button></li>
+								<li><button class="tabs__button">GT5 PRO</button></li>
+								<li><button class="tabs__button">Командный зачет</button></li>
+							</ul>
+						</div>
+						<ul class="section-position__legend">
+							<li class="section-position__legend-item">
+								<svg class="fill-green">
+									<use href="./assets/icons/sprite.svg#icon-squire"></use>
+								</svg>
+								<span>Участие в 2-х и более этапах сезона</span>
+							</li>
+						</ul>
+					</div>
+					<div class="section__content section-position__content">
+						<div class="section-position__list">
+							<div class="section-position__list-item">
+								<div class="section-position__list-table">
+									<ul class="table-position">
+										<li class="table-position__head">
+											<span class="table-position__head-cel">Место</span>
+											<span class="table-position__head-cel">Пилот</span>
+											<span class="table-position__head-cel">1 этап</span>
+											<span class="table-position__head-cel">2 этап</span>
+											<span class="table-position__head-cel">3 этап</span>
+											<span class="table-position__head-cel">4 этап</span>
+											<span class="table-position__head-cel">5 этап</span>
+											<span class="table-position__head-cel">6 этап</span>
+											<span class="table-position__head-cel">7 этап</span>
+											<span class="table-position__head-cel">Итого</span>
+										</li>
+										<li class="table-position__row">
+											<span class="table-position__row-cel bg-green">1</span>
+											<span class="table-position__row-cel">Криворотченко Константин</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">15 (4)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">12 (5)</span>
+											<span class="table-position__row-cel">15 (4)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">117</span>
+										</li>
+										<li class="table-position__row">
+											<span class="table-position__row-cel bg-green">2</span>
+											<span class="table-position__row-cel">Криворотченко Константин</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">15 (4)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">12 (5)</span>
+											<span class="table-position__row-cel">15 (4)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">117</span>
+										</li>
+										<li class="table-position__row">
+											<span class="table-position__row-cel bg-green">3</span>
+											<span class="table-position__row-cel">Криворотченко Константин</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">15 (4)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">12 (5)</span>
+											<span class="table-position__row-cel">15 (4)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">117</span>
+										</li>
+										<li class="table-position__row">
+											<span class="table-position__row-cel bg-green">4</span>
+											<span class="table-position__row-cel">Криворотченко Константин</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">15 (4)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">12 (5)</span>
+											<span class="table-position__row-cel">15 (4)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">117</span>
+										</li>
+										<li class="table-position__row">
+											<span class="table-position__row-cel bg-gray">5</span>
+											<span class="table-position__row-cel">Криворотченко Константин</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">15 (4)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">12 (5)</span>
+											<span class="table-position__row-cel">15 (4)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">117</span>
+										</li>
+										<li class="table-position__row">
+											<span class="table-position__row-cel bg-gray">6</span>
+											<span class="table-position__row-cel">Криворотченко Константин</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">15 (4)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">12 (5)</span>
+											<span class="table-position__row-cel">15 (4)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">117</span>
+										</li>
+										<li class="table-position__row">
+											<span class="table-position__row-cel bg-green">7</span>
+											<span class="table-position__row-cel">Криворотченко Константин</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">15 (4)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">12 (5)</span>
+											<span class="table-position__row-cel">15 (4)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">117</span>
+										</li>
+										<li class="table-position__row">
+											<span class="table-position__row-cel bg-gray">8</span>
+											<span class="table-position__row-cel">Криворотченко Константин</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">15 (4)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">12 (5)</span>
+											<span class="table-position__row-cel">15 (4)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">117</span>
+										</li>
+										<li class="table-position__row">
+											<span class="table-position__row-cel bg-gray">9</span>
+											<span class="table-position__row-cel">Криворотченко Константин</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">15 (4)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">12 (5)</span>
+											<span class="table-position__row-cel">15 (4)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">117</span>
+										</li>
+										<li class="table-position__row">
+											<span class="table-position__row-cel bg-gray">10</span>
+											<span class="table-position__row-cel">Криворотченко Константин</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">15 (4)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">12 (5)</span>
+											<span class="table-position__row-cel">15 (4)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">25 (1)</span>
+											<span class="table-position__row-cel">117</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer class="footer">
+			<div class="footer__informtaion">
+				<p>
+					MaxPowerCars - российский любительский автоспортивный чемпионат по дисциплине “Time Attack”. Основан в 2006
+					году Максимом Травиным - одним из основоположнников любительского автоспорта в России.
+				</p>
+				<p>
+					C 2022 года чемпионат проводится под оперативным управлением ООО “МаксПауэрКарс”, при непосредственном участии
+					и наблюдении членов семьи М. Травина.
+				</p>
+			</div>
+			<div class="footer__communication">
+				<ul class="footer__social-list">
+					<li>
+						<a class="footer__social-link" href="#">
+							<svg class="footer__social-icon icon">
+								<use href="./assets/icons/sprite.svg#icon-vk"></use>
+							</svg>
+						</a>
+					</li>
+					<li>
+						<a class="footer__social-link" href="#">
+							<svg class="footer__social-icon icon">
+								<use href="./assets/icons/sprite.svg#icon-instagram"></use>
+							</svg>
+						</a>
+					</li>
+					<li>
+						<a class="footer__social-link" href="#">
+							<svg class="footer__social-icon icon">
+								<use href="./assets/icons/sprite.svg#icon-telegram"></use>
+							</svg>
+						</a>
+					</li>
+					<li>
+						<a class="footer__social-link" href="#">
+							<svg class="footer__social-icon icon">
+								<use href="./assets/icons/sprite.svg#icon-youtube"></use>
+							</svg>
+						</a>
+					</li>
+				</ul>
+				<ul class="footer__contact-list">
+					<li><a class="footer__contact-link" href="mailto:info@maxpowercars.ru">info@maxpowercars.ru</a></li>
+				</ul>
+			</div>
+		</footer>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+	<!-- Page options -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="MobileOptimized" content="width">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+
+	<!-- Page information -->
+	<meta name="author" content="">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+
+	<title>Личный кабинет – MaxPowerCars</title>
+
+	<!-- Page favicons -->
+	<link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+	<link rel="icon" type="image/svg+xml" href="./favicon.svg">
+	<link rel="manifest" href="./site.webmanifest">
+
+	<!-- Page styles -->
+	<link rel="stylesheet" href="./assets/styles/bundle.min.css">
+
+	<!-- Page scripts -->
+	<script src="./assets/scripts/bundle.min.js" defer></script>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__head js-sticky">
+				<div class="header__logo">
+					<a class="header__logo-link" href="./">
+						<img class="header__logo-icon" src="./assets/images/logo-max-power-cars.svg" alt="MaxPowerCars">
+					</a>
+				</div>
+				<div class="header__line"></div>
+				<div class="header__menu">
+					<button class="header__burger js-menu-trigger">
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
+					<!-- <div class="header__login">
+						<svg class="header__login-icon icon">
+							<use xlink:href="./assets/icons/sprite.svg#icon-helmet"></use>
+						</svg>
+						<div class="header__login-body">
+							<ul class="header__login-list">
+								<li><a class="header__login-link js-menu-hide" href="./login.html">Вход</a></li>
+								<li><a class="header__login-link js-menu-hide" href="./registration.html">Регистрация</a></li>
+							</ul>
+						</div>
+					</div> -->
+					<div class="header__account">
+						<svg class="header__account-icon icon">
+							<use xlink:href="./assets/icons/sprite.svg#icon-helmet"></use>
+						</svg>
+						<div class="header__account-body">
+							<span class="header__account-name">Имя пилота</span>
+							<ul class="header__account-list">
+								<li><a class="header__account-link js-menu-hide" href="./profile.html">Личная страница</a></li>
+								<li><a class="header__account-link js-menu-hide" href="./settings.html">Настройки</a></li>
+								<li><a class="header__account-link js-menu-hide" href="#">Выход</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="header__line header__line--end"></div>
+			</div>
+			<div class="header__body"></div>
+		</header>
+
+		<nav class="navbar js-menu">
+			<div class="navbar__menu">
+				<ul class="navbar__menu-list">
+					<li><a class="navbar__menu-link js-menu-hide" href="./">Главная</a></li>
+					<li><a class="navbar__menu-link js-menu-hide" href="./about.html">О чемпионате</a></li>
+					<li><a class="navbar__menu-link js-menu-hide" href="./best-laps.html">MPC Best Laps</a></li>
+					<li><a class="navbar__menu-link js-menu-hide" href="./navigator.html">Навигатор по классам</a></li>
+					<li><a class="navbar__menu-link js-menu-hide" href="./results.html">Результаты</a></li>
+					<li><a class="navbar__menu-link js-menu-hide" href="./documents.html">Документы</a></li>
+					<li><a class="navbar__menu-link js-menu-hide" href="./news.html">Новости</a></li>
+					<li><a class="navbar__menu-link js-menu-hide" href="./media.html">Медиа</a></li>
+				</ul>
+			</div>
+
+			<!-- <div class="navbar__login">
+				<ul class="navbar__login-list">
+					<li><a class="navbar__login-link" href="./login.html">Вход</a></li>
+					<li><a class="navbar__login-link" href="./registration.html">Регистрация</a></li>
+				</ul>
+			</div> -->
+
+			<div class="navbar__account">
+				<span class="navbar__account-name">Имя пилота</span>
+				<ul class="navbar__account-list">
+					<li><a class="navbar__account-link" href="./profile.html">Личная страница</a></li>
+					<li><a class="navbar__account-link" href="./settings.html">Настройки</a></li>
+					<li><a class="navbar__account-link" href="#">Выход</a></li>
+				</ul>
+			</div>
+		</nav>
+
+		<main class="main">
+			<section class="section section-profile">
+				<div class="section__wrapper section-profile__wrapper">
+					<div class="section-profile__pilot">
+						<div class="section-profile__bio">
+							<img class="section-profile__photo" src="./assets/images/pilot-1.png" alt="">
+							<div class="section-profile__info">
+								<h1 class="section-profile__info-name">Криворотченко Константин</h1>
+								<ul class="section-profile__info-tags">
+									<li class="tag tag--black">Возраст: <strong>35</strong></li>
+									<li class="tag tag--black">Город: <strong>Москва</strong></li>
+									<li class="tag tag--black">Участие с: <strong>2011 г.</strong></li>
+									<li class="tag tag--red">Команда: <strong>Очень длинное название команды</strong></li>
+								</ul>
+							</div>
+						</div>
+						<ul class="section-profile__props">
+							<li class="section-profile__props-item">
+								<span class="section-profile__props-value text-stroke">3</span>
+								<span class="section-profile__props-label">Выигранные сезоны</span>
+							</li>
+							<li class="section-profile__props-item">
+								<span class="section-profile__props-value text-stroke">12</span>
+								<span class="section-profile__props-label">Выигранные этапы</span>
+							</li>
+							<li class="section-profile__props-item">
+								<span class="section-profile__props-value text-stroke">18</span>
+								<span class="section-profile__props-label">Призовые места</span>
+							</li>
+							<li class="section-profile__props-item">
+								<span class="section-profile__props-value text-stroke">22</span>
+								<span class="section-profile__props-label">Всего участий в этапах</span>
+							</li>
+						</ul>
+					</div>
+					<div class="section-profile__tracks">
+						<h2 class="section-profile__tracks-heading">Лучшие результаты mpc best laps</h2>
+						<ul class="section-profile__tracks-list">
+							<li class="track">
+								<span class="track__name">MRW GP10</span>
+								<img class="track__image" src="./assets/images/track-1.png" alt="">
+								<span class="track__time bg-green">01:59,778</span>
+							</li>
+							<li class="track">
+								<span class="track__name">MRW GP4</span>
+								<img class="track__image" src="./assets/images/track-1.png" alt="">
+								<span class="track__time">--</span>
+							</li>
+							<li class="track">
+								<span class="track__name">SMOLENSK RING GP</span>
+								<img class="track__image" src="./assets/images/track-1.png" alt="">
+								<span class="track__time">01:59,778</span>
+							</li>
+							<li class="track">
+								<span class="track__name">N-RING A</span>
+								<img class="track__image" src="./assets/images/track-1.png" alt="">
+								<span class="track__time">01:59,778</span>
+							</li>
+							<li class="track">
+								<span class="track__name">MRW FIM</span>
+								<img class="track__image" src="./assets/images/track-1.png" alt="">
+								<span class="track__time bg-green">01:59,778</span>
+							</li>
+							<li class="track">
+								<span class="track__name">IGORA DRIVE F1</span>
+								<img class="track__image" src="./assets/images/track-1.png" alt="">
+								<span class="track__time">01:59,778</span>
+							</li>
+							<li class="track">
+								<span class="track__name">KAZAN RING GP</span>
+								<img class="track__image" src="./assets/images/track-1.png" alt="">
+								<span class="track__time">01:59,778</span>
+							</li>
+							<li class="track">
+								<span class="track__name">SOCHI AUTODROM</span>
+								<img class="track__image" src="./assets/images/track-1.png" alt="">
+								<span class="track__time bg-green">01:59,778</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+			<section class="section section-garage">
+				<h2 class="heading-1 clr-white">Гараж</h2>
+				<div class="section__wrapper section-garage__wrapper">
+					<div class="section__sidebar">
+						<div class="tab-cards">
+							<ul class="tab-cards__list">
+								<li>
+									<button class="tab-cards__button">
+										<img class="tab-cards__button-image" src="./assets/images/garage-car-1.jpg" alt="">
+										<span class="tab-cards__button-label">Toyota GR Yaris</span>
+									</button>
+								</li>
+								<li>
+									<button class="tab-cards__button is-current">
+										<img class="tab-cards__button-image" src="./assets/images/garage-car-2.jpg" alt="">
+										<span class="tab-cards__button-label">BMW M2 CS F87</span>
+									</button>
+								</li>
+								<li>
+									<button class="tab-cards__button">
+										<img class="tab-cards__button-image" src="./assets/images/garage-car-3.jpg" alt="">
+										<span class="tab-cards__button-label">MB AMG GTR Pro C190</span>
+									</button>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="section__content section-garage__content">
+						<div class="section-garage__photo">
+							<div class="section-garage__photo-head">
+								<h3 class="heading-1 clr-white">BMW M2 CS F87</h3>
+								<div class="section-garage__photo-line"></div>
+								<ul class="section-garage__photo-tags">
+									<li class="tag tag--black">Мощность в стоке: <strong>450</strong></li>
+									<li class="tag tag--black">Вес в стоке: <strong>1450</strong></li>
+								</ul>
+							</div>
+
+							<div class="section-garage__photo-body">
+								<div class="section-garage__photo-grid">
+									<img class="section-garage__photo-item" src="./assets/images/photo-car-1.jpg" alt="">
+									<img class="section-garage__photo-item" src="./assets/images/photo-car-2.jpg" alt="">
+									<img class="section-garage__photo-item" src="./assets/images/photo-car-3.jpg" alt="">
+									<img class="section-garage__photo-item" src="./assets/images/photo-car-4.jpg" alt="">
+									<img class="section-garage__photo-item" src="./assets/images/photo-car-8.jpg" alt="">
+									<img class="section-garage__photo-item" src="./assets/images/photo-car-5.jpg" alt="">
+									<img class="section-garage__photo-item" src="./assets/images/photo-car-6.jpg" alt="">
+									<img class="section-garage__photo-item" src="./assets/images/photo-car-7.jpg" alt="">
+								</div>
+								<a class="section-garage__photo-link" href="#">Все фотографии автомобиля</a>
+							</div>
+						</div>
+
+						<div class="section-garage__results">
+							<h4 class="heading-2 clr-white text-upper">Результаты пилота на автомобиле</h4>
+
+							<div class="section-garage__results-body">
+								<div class="section-garage__results-tabs tabs">
+									<ul class="tabs__list">
+										<li><button class="tabs__button is-current">Moscow Raceway GP10</button></li>
+										<li><button class="tabs__button">Moscow Raceway FIM</button></li>
+										<li><button class="tabs__button">Moscow Raceway GP4</button></li>
+										<li><button class="tabs__button">Igora Drive F1</button></li>
+										<li><button class="tabs__button">Smolensk Ring GP</button></li>
+										<li><button class="tabs__button">Kazan Ring Canyon GP</button></li>
+										<li><button class="tabs__button">NRing Circuit A</button></li>
+										<li><button class="tabs__button">Sochi Autodrom GP</button></li>
+									</ul>
+								</div>
+								<ul class="section-garage__results-table table-results">
+									<li class="table-results__row">
+										<p class="table-results__cell-num">1</p>
+										<p class="table-results__cell-time">01:55,943</p>
+										<div class="table-results__cell-car">
+											<svg class="icon">
+												<use href="./assets/icons/sprite.svg#icon-tires"></use>
+											</svg>
+											<div class="table-results__cell-car-body">
+												<p>Michelin PS Cup2 N0 <span>255/35/20</span></p>
+												<p>Michelin PS Cup2 N0 <span>315/30/20</span></p>
+											</div>
+										</div>
+										<div class="table-results__cell-date">
+											<p>Дата:</p>
+											<p>27.09.2023</p>
+										</div>
+										<div class="table-results__cell-icons">
+											<svg class="icon">
+												<use href="./assets/icons/sprite.svg#icon-config"></use>
+											</svg>
+											<svg class="icon">
+												<use href="./assets/icons/sprite.svg#icon-camera"></use>
+											</svg>
+											<svg class="icon">
+												<use href="./assets/icons/sprite.svg#icon-weather"></use>
+											</svg>
+										</div>
+										<button class="table-results__cell-button">
+											<span>Подробнее</span>
+											<svg class="icon">
+												<use xlink:href="./assets/icons/sprite.svg#icon-info"></use>
+											</svg>
+										</button>
+									</li>
+									<li class="table-results__row">
+										<p class="table-results__cell-num">2</p>
+										<p class="table-results__cell-time">01:56,101</p>
+										<div class="table-results__cell-car">
+											<svg class="icon">
+												<use href="./assets/icons/sprite.svg#icon-tires"></use>
+											</svg>
+											<div class="table-results__cell-car-body">
+												<p>Nankang Sportnex AR-1 <span>255/35/20</span></p>
+												<p>Nankang Sportnex AR-1 <span>315/30/20</span></p>
+											</div>
+										</div>
+										<div class="table-results__cell-date">
+											<p>Дата:</p>
+											<p>27.09.2023</p>
+										</div>
+										<div class="table-results__cell-icons">
+											<svg class="icon">
+												<use href="./assets/icons/sprite.svg#icon-config"></use>
+											</svg>
+											<svg class="icon">
+												<use href="./assets/icons/sprite.svg#icon-camera"></use>
+											</svg>
+											<svg class="icon">
+												<use href="./assets/icons/sprite.svg#icon-weather"></use>
+											</svg>
+										</div>
+										<button class="table-results__cell-button">
+											<span>Подробнее</span>
+											<svg class="icon">
+												<use xlink:href="./assets/icons/sprite.svg#icon-info"></use>
+											</svg>
+										</button>
+									</li>
+									<li class="table-results__row">
+										<p class="table-results__cell-num">3</p>
+										<p class="table-results__cell-time">01:56,203</p>
+										<div class="table-results__cell-car">
+											<svg class="icon">
+												<use href="./assets/icons/sprite.svg#icon-tires"></use>
+											</svg>
+											<div class="table-results__cell-car-body">
+												<p>Yokohama Advan A052 <span>255/35/20</span></p>
+												<p>Yokohama Advan A052 <span>315/30/20</span></p>
+											</div>
+										</div>
+										<div class="table-results__cell-date">
+											<p>Дата:</p>
+											<p>27.09.2023</p>
+										</div>
+										<div class="table-results__cell-icons">
+											<svg class="icon">
+												<use href="./assets/icons/sprite.svg#icon-config"></use>
+											</svg>
+											<svg class="icon">
+												<use href="./assets/icons/sprite.svg#icon-camera"></use>
+											</svg>
+											<svg class="icon">
+												<use href="./assets/icons/sprite.svg#icon-weather"></use>
+											</svg>
+										</div>
+										<button class="table-results__cell-button">
+											<span>Подробнее</span>
+											<svg class="icon">
+												<use xlink:href="./assets/icons/sprite.svg#icon-info"></use>
+											</svg>
+										</button>
+									</li>
+									<li class="table-results__row">
+										<p class="table-results__cell-num">4</p>
+										<p class="table-results__cell-time">01:55,943</p>
+										<div class="table-results__cell-car">
+											<svg class="icon">
+												<use href="./assets/icons/sprite.svg#icon-tires"></use>
+											</svg>
+											<div class="table-results__cell-car-body">
+												<p>Michelin PS Cup2 N0 <span>255/35/20</span></p>
+												<p>Michelin PS Cup2 N0 <span>315/30/20</span></p>
+											</div>
+										</div>
+										<div class="table-results__cell-date">
+											<p>Дата:</p>
+											<p>27.09.2023</p>
+										</div>
+										<div class="table-results__cell-icons">
+											<svg class="icon">
+												<use href="./assets/icons/sprite.svg#icon-config"></use>
+											</svg>
+											<svg class="icon">
+												<use href="./assets/icons/sprite.svg#icon-camera"></use>
+											</svg>
+											<svg class="icon">
+												<use href="./assets/icons/sprite.svg#icon-weather"></use>
+											</svg>
+										</div>
+										<button class="table-results__cell-button">
+											<span>Подробнее</span>
+											<svg class="icon">
+												<use xlink:href="./assets/icons/sprite.svg#icon-info"></use>
+											</svg>
+										</button>
+									</li>
+									<li class="table-results__row">
+										<p class="table-results__cell-num">5</p>
+										<p class="table-results__cell-time">01:56,101</p>
+										<div class="table-results__cell-car">
+											<svg class="icon">
+												<use href="./assets/icons/sprite.svg#icon-tires"></use>
+											</svg>
+											<div class="table-results__cell-car-body">
+												<p>Nankang Sportnex AR-1 <span>255/35/20</span></p>
+												<p>Nankang Sportnex AR-1 <span>315/30/20</span></p>
+											</div>
+										</div>
+										<div class="table-results__cell-date">
+											<p>Дата:</p>
+											<p>27.09.2023</p>
+										</div>
+										<div class="table-results__cell-icons">
+											<svg class="icon">
+												<use href="./assets/icons/sprite.svg#icon-config"></use>
+											</svg>
+											<svg class="icon">
+												<use href="./assets/icons/sprite.svg#icon-camera"></use>
+											</svg>
+											<svg class="icon">
+												<use href="./assets/icons/sprite.svg#icon-weather"></use>
+											</svg>
+										</div>
+										<button class="table-results__cell-button">
+											<span>Подробнее</span>
+											<svg class="icon">
+												<use xlink:href="./assets/icons/sprite.svg#icon-info"></use>
+											</svg>
+										</button>
+									</li>
+									<li class="table-results__row">
+										<p class="table-results__cell-num">6</p>
+										<p class="table-results__cell-time">01:56,203</p>
+										<div class="table-results__cell-car">
+											<svg class="icon">
+												<use href="./assets/icons/sprite.svg#icon-tires"></use>
+											</svg>
+											<div class="table-results__cell-car-body">
+												<p>Yokohama Advan A052 <span>255/35/20</span></p>
+												<p>Yokohama Advan A052 <span>315/30/20</span></p>
+											</div>
+										</div>
+										<div class="table-results__cell-date">
+											<p>Дата:</p>
+											<p>27.09.2023</p>
+										</div>
+										<div class="table-results__cell-icons">
+											<svg class="icon">
+												<use href="./assets/icons/sprite.svg#icon-config"></use>
+											</svg>
+											<svg class="icon">
+												<use href="./assets/icons/sprite.svg#icon-camera"></use>
+											</svg>
+											<svg class="icon">
+												<use href="./assets/icons/sprite.svg#icon-weather"></use>
+											</svg>
+										</div>
+										<button class="table-results__cell-button">
+											<span>Подробнее</span>
+											<svg class="icon">
+												<use xlink:href="./assets/icons/sprite.svg#icon-info"></use>
+											</svg>
+										</button>
+									</li>
+									<li class="table-results__row">
+										<p class="table-results__cell-num">7</p>
+										<p class="table-results__cell-time">01:55,943</p>
+										<div class="table-results__cell-car">
+											<svg class="icon">
+												<use href="./assets/icons/sprite.svg#icon-tires"></use>
+											</svg>
+											<div class="table-results__cell-car-body">
+												<p>Michelin PS Cup2 N0 <span>255/35/20</span></p>
+												<p>Michelin PS Cup2 N0 <span>315/30/20</span></p>
+											</div>
+										</div>
+										<div class="table-results__cell-date">
+											<p>Дата:</p>
+											<p>27.09.2023</p>
+										</div>
+										<div class="table-results__cell-icons">
+											<svg class="icon">
+												<use href="./assets/icons/sprite.svg#icon-config"></use>
+											</svg>
+											<svg class="icon">
+												<use href="./assets/icons/sprite.svg#icon-camera"></use>
+											</svg>
+											<svg class="icon">
+												<use href="./assets/icons/sprite.svg#icon-weather"></use>
+											</svg>
+										</div>
+										<button class="table-results__cell-button">
+											<span>Подробнее</span>
+											<svg class="icon">
+												<use xlink:href="./assets/icons/sprite.svg#icon-info"></use>
+											</svg>
+										</button>
+									</li>
+									<li class="table-results__row">
+										<p class="table-results__cell-num">8</p>
+										<p class="table-results__cell-time">01:56,101</p>
+										<div class="table-results__cell-car">
+											<svg class="icon">
+												<use href="./assets/icons/sprite.svg#icon-tires"></use>
+											</svg>
+											<div class="table-results__cell-car-body">
+												<p>Nankang Sportnex AR-1 <span>255/35/20</span></p>
+												<p>Nankang Sportnex AR-1 <span>315/30/20</span></p>
+											</div>
+										</div>
+										<div class="table-results__cell-date">
+											<p>Дата:</p>
+											<p>27.09.2023</p>
+										</div>
+										<div class="table-results__cell-icons">
+											<svg class="icon fill-gray">
+												<use href="./assets/icons/sprite.svg#icon-config"></use>
+											</svg>
+											<svg class="icon">
+												<use href="./assets/icons/sprite.svg#icon-camera"></use>
+											</svg>
+											<svg class="icon">
+												<use href="./assets/icons/sprite.svg#icon-weather"></use>
+											</svg>
+										</div>
+										<button class="table-results__cell-button">
+											<span>Подробнее</span>
+											<svg class="icon">
+												<use xlink:href="./assets/icons/sprite.svg#icon-info"></use>
+											</svg>
+										</button>
+									</li>
+									<li class="table-results__row">
+										<p class="table-results__cell-num">9</p>
+										<p class="table-results__cell-time">01:56,203</p>
+										<div class="table-results__cell-car">
+											<svg class="icon">
+												<use href="./assets/icons/sprite.svg#icon-tires"></use>
+											</svg>
+											<div class="table-results__cell-car-body">
+												<p>Yokohama Advan A052 <span>255/35/20</span></p>
+												<p>Yokohama Advan A052 <span>315/30/20</span></p>
+											</div>
+										</div>
+										<div class="table-results__cell-date">
+											<p>Дата:</p>
+											<p>27.09.2023</p>
+										</div>
+										<div class="table-results__cell-icons">
+											<svg class="icon fill-gray">
+												<use href="./assets/icons/sprite.svg#icon-config"></use>
+											</svg>
+											<svg class="icon fill-gray">
+												<use href="./assets/icons/sprite.svg#icon-camera"></use>
+											</svg>
+											<svg class="icon">
+												<use href="./assets/icons/sprite.svg#icon-weather"></use>
+											</svg>
+										</div>
+										<button class="table-results__cell-button">
+											<span>Подробнее</span>
+											<svg class="icon">
+												<use xlink:href="./assets/icons/sprite.svg#icon-info"></use>
+											</svg>
+										</button>
+									</li>
+									<li class="table-results__row">
+										<p class="table-results__cell-num">10</p>
+										<p class="table-results__cell-time">01:55,943</p>
+										<div class="table-results__cell-car">
+											<svg class="icon">
+												<use href="./assets/icons/sprite.svg#icon-tires"></use>
+											</svg>
+											<div class="table-results__cell-car-body">
+												<p>Michelin PS Cup2 N0 <span>255/35/20</span></p>
+												<p>Michelin PS Cup2 N0 <span>315/30/20</span></p>
+											</div>
+										</div>
+										<div class="table-results__cell-date">
+											<p>Дата:</p>
+											<p>27.09.2023</p>
+										</div>
+										<div class="table-results__cell-icons">
+											<svg class="icon fill-gray">
+												<use href="./assets/icons/sprite.svg#icon-config"></use>
+											</svg>
+											<svg class="icon fill-gray">
+												<use href="./assets/icons/sprite.svg#icon-camera"></use>
+											</svg>
+											<svg class="icon fill-gray">
+												<use href="./assets/icons/sprite.svg#icon-weather"></use>
+											</svg>
+										</div>
+										<button class="table-results__cell-button">
+											<span>Подробнее</span>
+											<svg class="icon">
+												<use xlink:href="./assets/icons/sprite.svg#icon-info"></use>
+											</svg>
+										</button>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="section-garage__config">
+							<h4 class="heading-2 clr-white text-upper">Известные конфигурации машины</h4>
+							<ul class="section-garage__config-list">
+								<li class="card-config">
+									<img class="card-config__image" src="./assets/images/card-config-1.jpg" alt="">
+									<div class="card-config__body">
+										<span class="card-config__name">Конфигурация 1</span>
+										<span class="card-config__date">01.06.2022</span>
+										<a class="card-config__button button button--red" href="#">подробнее</a>
+									</div>
+								</li>
+								<li class="card-config">
+									<img class="card-config__image" src="./assets/images/card-config-1.jpg" alt="">
+									<div class="card-config__body">
+										<span class="card-config__name">Конфигурация 2</span>
+										<span class="card-config__date">14.07.2022</span>
+										<a class="card-config__button button button--red" href="#">подробнее</a>
+									</div>
+								</li>
+								<li class="card-config">
+									<img class="card-config__image" src="./assets/images/card-config-1.jpg" alt="">
+									<div class="card-config__body">
+										<span class="card-config__name">Конфигурация 3</span>
+										<span class="card-config__date">05.05.2023</span>
+										<a class="card-config__button button button--red" href="#">подробнее</a>
+									</div>
+								</li>
+								<li class="card-config">
+									<img class="card-config__image" src="./assets/images/card-config-1.jpg" alt="">
+									<div class="card-config__body">
+										<span class="card-config__name">Конфигурация 4</span>
+										<span class="card-config__date">18.09.2023</span>
+										<a class="card-config__button button button--red" href="#">подробнее</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer class="footer">
+			<div class="footer__informtaion">
+				<p>
+					MaxPowerCars - российский любительский автоспортивный чемпионат по дисциплине “Time Attack”. Основан в 2006
+					году Максимом Травиным - одним из основоположнников любительского автоспорта в России.
+				</p>
+				<p>
+					C 2022 года чемпионат проводится под оперативным управлением ООО “МаксПауэрКарс”, при непосредственном участии
+					и наблюдении членов семьи М. Травина.
+				</p>
+			</div>
+			<div class="footer__communication">
+				<ul class="footer__social-list">
+					<li>
+						<a class="footer__social-link" href="#">
+							<svg class="footer__social-icon icon">
+								<use href="./assets/icons/sprite.svg#icon-vk"></use>
+							</svg>
+						</a>
+					</li>
+					<li>
+						<a class="footer__social-link" href="#">
+							<svg class="footer__social-icon icon">
+								<use href="./assets/icons/sprite.svg#icon-instagram"></use>
+							</svg>
+						</a>
+					</li>
+					<li>
+						<a class="footer__social-link" href="#">
+							<svg class="footer__social-icon icon">
+								<use href="./assets/icons/sprite.svg#icon-telegram"></use>
+							</svg>
+						</a>
+					</li>
+					<li>
+						<a class="footer__social-link" href="#">
+							<svg class="footer__social-icon icon">
+								<use href="./assets/icons/sprite.svg#icon-youtube"></use>
+							</svg>
+						</a>
+					</li>
+				</ul>
+				<ul class="footer__contact-list">
+					<li><a class="footer__contact-link" href="mailto:info@maxpowercars.ru">info@maxpowercars.ru</a></li>
+				</ul>
+			</div>
+		</footer>
+	</div>
+</body>
+
+</html>
