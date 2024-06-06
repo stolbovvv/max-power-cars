@@ -34,7 +34,7 @@
 <body>
 	<div class="wrapper">
 		<header class="header">
-			<div class="header__head">
+			<div class="header__head js-sticky">
 				<div class="header__logo">
 					<a class="header__logo-link" href="./">
 						<img class="header__logo-icon" src="./assets/images/logo-max-power-cars.svg" alt="MaxPowerCars">
@@ -42,7 +42,7 @@
 				</div>
 				<div class="header__line"></div>
 				<div class="header__menu">
-					<button class="header__burger">
+					<button class="header__burger js-menu-trigger">
 						<span></span>
 						<span></span>
 						<span></span>
@@ -53,8 +53,8 @@
 						</svg>
 						<div class="header__login-body">
 							<ul class="header__login-list">
-								<li><a class="header__login-link" href="./login.html">Вход</a></li>
-								<li><a class="header__login-link" href="./registration.html">Регистрация</a></li>
+								<li><a class="header__login-link js-menu-hide" href="./login.html">Вход</a></li>
+								<li><a class="header__login-link js-menu-hide" href="./registration.html">Регистрация</a></li>
 							</ul>
 						</div>
 					</div>
@@ -65,9 +65,9 @@
 						<div class="header__account-body">
 							<span class="header__account-name">Имя пилота</span>
 							<ul class="header__account-list">
-								<li><a class="header__account-link" href="./profile.html">Личная страница</a></li>
-								<li><a class="header__account-link" href="./settings.html">Настройки</a></li>
-								<li><a class="header__account-link" href="#">Выход</a></li>
+								<li><a class="header__account-link js-menu-hide" href="./profile.html">Личная страница</a></li>
+								<li><a class="header__account-link js-menu-hide" href="./settings.html">Настройки</a></li>
+								<li><a class="header__account-link js-menu-hide" href="#">Выход</a></li>
 							</ul>
 						</div>
 					</div> -->
@@ -77,17 +77,17 @@
 			<div class="header__body"></div>
 		</header>
 
-		<nav class="navbar">
+		<nav class="navbar js-menu">
 			<div class="navbar__menu">
 				<ul class="navbar__menu-list">
-					<li><a class="navbar__menu-link" href="./">Главная</a></li>
-					<li><a class="navbar__menu-link" href="./about.html">О чемпионате</a></li>
-					<li><a class="navbar__menu-link" href="./best-laps.html">MPC Best Laps</a></li>
-					<li><a class="navbar__menu-link" href="./navigator.html">Навигатор по классам</a></li>
-					<li><a class="navbar__menu-link" href="./results.html">Результаты</a></li>
-					<li><a class="navbar__menu-link" href="./documents.html">Документы</a></li>
-					<li><a class="navbar__menu-link is-current" href="./news.html">Новости</a></li>
-					<li><a class="navbar__menu-link" href="./media.html">Медиа</a></li>
+					<li><a class="navbar__menu-link js-menu-hide" href="./">Главная</a></li>
+					<li><a class="navbar__menu-link js-menu-hide" href="./about.html">О чемпионате</a></li>
+					<li><a class="navbar__menu-link js-menu-hide" href="./best-laps.html">MPC Best Laps</a></li>
+					<li><a class="navbar__menu-link js-menu-hide" href="./navigator.html">Навигатор по классам</a></li>
+					<li><a class="navbar__menu-link js-menu-hide" href="./results.html">Результаты</a></li>
+					<li><a class="navbar__menu-link js-menu-hide" href="./documents.html">Документы</a></li>
+					<li><a class="navbar__menu-link js-menu-hide is-current" href="./news.html">Новости</a></li>
+					<li><a class="navbar__menu-link js-menu-hide" href="./media.html">Медиа</a></li>
 				</ul>
 			</div>
 
@@ -118,26 +118,34 @@
 							<img src="./assets/images/article-1.jpg" alt="">
 							<h2>Заголовок 2</h2>
 							<p>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Morbi quis commodo odio aenean sed
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Morbi quis commodo odio
+								aenean sed
 								adipiscing diam. Commodo odio aenean sed adipiscing. Iaculis urna
-								id volutpat lacus laoreet non curabitur. Aliquet porttitor lacus luctus accumsan. Ac ut consequat semper viverra. Non enim praesent elementum facilisis leo vel
+								id volutpat lacus laoreet non curabitur. Aliquet porttitor lacus luctus accumsan. Ac ut consequat semper viverra. Non enim praesent elementum
+								facilisis leo vel
 								fringilla est ullamcorper. At quis risus sed vulputate odio ut
-								enim. Elit pellentesque habitant morbi tristique. Morbi non arcu risus quis varius quam. Fringilla phasellus faucibus scelerisque eleifend donec. Eget sit amet
+								enim. Elit pellentesque habitant morbi tristique. Morbi non arcu risus quis varius quam. Fringilla phasellus faucibus scelerisque eleifend donec.
+								Eget sit amet
 								tellus cras adipiscing enim eu turpis egestas. Sit amet
-								consectetur adipiscing elit. Mauris commodo quis imperdiet massa. Phasellus egestas tellus rutrum tellus pellentesque eu tincidunt tortor aliquam. Etiam non quam
+								consectetur adipiscing elit. Mauris commodo quis imperdiet massa. Phasellus egestas tellus rutrum tellus pellentesque eu tincidunt tortor aliquam.
+								Etiam non quam
 								lacus suspendisse faucibus. Mollis nunc sed id semper risus.
 								Vivamus arcu felis bibendum ut tristique et egestas quis ipsum. A condimentum vitae sapien pellentesque.
 							</p>
 
 							<h3>Заголовок 3</h3>
 							<p>
-								Amet aliquam id diam maecenas ultricies mi. Porta non pulvinar neque laoreet suspendisse interdum consectetur libero id. Risus at ultrices mi tempus imperdiet nulla
+								Amet aliquam id diam maecenas ultricies mi. Porta non pulvinar neque laoreet suspendisse interdum consectetur libero id. Risus at ultrices mi tempus
+								imperdiet nulla
 								malesuada pellentesque elit. Et malesuada fames ac turpis
-								egestas. Sit amet risus nullam eget felis eget nunc. Facilisi etiam dignissim diam quis enim lobortis scelerisque fermentum dui. Convallis tellus id interdum velit
+								egestas. Sit amet risus nullam eget felis eget nunc. Facilisi etiam dignissim diam quis enim lobortis scelerisque fermentum dui. Convallis tellus id
+								interdum velit
 								laoreet id donec. Malesuada fames ac turpis egestas integer
-								eget aliquet. Urna duis convallis convallis tellus id. Nisl vel pretium lectus quam. Tellus at urna condimentum mattis pellentesque id nibh tortor id. Fermentum dui
+								eget aliquet. Urna duis convallis convallis tellus id. Nisl vel pretium lectus quam. Tellus at urna condimentum mattis pellentesque id nibh tortor
+								id. Fermentum dui
 								faucibus in ornare quam viverra. Quis enim lobortis
-								scelerisque fermentum dui faucibus. Suspendisse in est ante in nibh mauris cursus. Ultricies tristique nulla aliquet enim tortor at auctor urna nunc. Et netus et
+								scelerisque fermentum dui faucibus. Suspendisse in est ante in nibh mauris cursus. Ultricies tristique nulla aliquet enim tortor at auctor urna
+								nunc. Et netus et
 								malesuada fames ac turpis. Condimentum mattis pellentesque id
 								nibh tortor id aliquet lectus. At urna condimentum mattis pellentesque id nibh tortor id aliquet.
 							</p>
@@ -150,22 +158,28 @@
 
 							<h4>Заголовок 4</h4>
 							<p>
-								At quis risus sed vulputate odio ut enim. Ultrices in iaculis nunc sed augue lacus viverra vitae. Enim sed faucibus turpis in eu mi bibendum neque. Nunc id cursus
+								At quis risus sed vulputate odio ut enim. Ultrices in iaculis nunc sed augue lacus viverra vitae. Enim sed faucibus turpis in eu mi bibendum neque.
+								Nunc id cursus
 								metus aliquam eleifend mi in nulla. Sem viverra aliquet eget
-								sit amet tellus cras. Ultricies integer quis auctor elit sed. Volutpat maecenas volutpat blandit aliquam etiam. Sit amet dictum sit amet justo donec enim.
+								sit amet tellus cras. Ultricies integer quis auctor elit sed. Volutpat maecenas volutpat blandit aliquam etiam. Sit amet dictum sit amet justo donec
+								enim.
 								Adipiscing elit pellentesque habitant morbi. Curabitur gravida arcu
-								ac tortor dignissim convallis aenean et. Turpis massa tincidunt dui ut. Dui sapien eget mi proin sed libero. Nunc sed velit dignissim sodales ut eu sem integer. Est
+								ac tortor dignissim convallis aenean et. Turpis massa tincidunt dui ut. Dui sapien eget mi proin sed libero. Nunc sed velit dignissim sodales ut eu
+								sem integer. Est
 								ante in nibh mauris cursus. Interdum velit laoreet id donec
-								ultrices tincidunt arcu non. Commodo viverra maecenas accumsan lacus. Est velit egestas dui id ornare arcu odio ut sem. Sit amet consectetur adipiscing elit duis
+								ultrices tincidunt arcu non. Commodo viverra maecenas accumsan lacus. Est velit egestas dui id ornare arcu odio ut sem. Sit amet consectetur
+								adipiscing elit duis
 								tristique sollicitudin nibh sit. Non arcu risus quis varius
 								quam quisque id diam vel.
 							</p>
 
 							<h5>Заголовок 5</h5>
 							<p>
-								Tortor condimentum lacinia quis vel eros donec. Odio tempor orci dapibus ultrices in iaculis. Nibh venenatis cras sed felis eget. Et tortor at risus viverra.
+								Tortor condimentum lacinia quis vel eros donec. Odio tempor orci dapibus ultrices in iaculis. Nibh venenatis cras sed felis eget. Et tortor at risus
+								viverra.
 								Fringilla est ullamcorper eget nulla facilisi etiam. Nullam non
-								nisi est sit amet facilisis magna etiam. Morbi quis commodo odio aenean. Accumsan sit amet nulla facilisi morbi tempus iaculis. Eros in cursus turpis massa
+								nisi est sit amet facilisis magna etiam. Morbi quis commodo odio aenean. Accumsan sit amet nulla facilisi morbi tempus iaculis. Eros in cursus
+								turpis massa
 								tincidunt dui ut ornare lectus. Leo urna molestie at elementum eu
 								facilisis. Sagittis id consectetur purus ut faucibus.
 							</p>
@@ -178,9 +192,11 @@
 
 							<h6>Заголовок 6</h6>
 							<p>
-								Mi quis hendrerit dolor magna eget est lorem ipsum. Arcu odio ut sem nulla pharetra diam. Malesuada pellentesque elit eget gravida cum sociis natoque penatibus et.
+								Mi quis hendrerit dolor magna eget est lorem ipsum. Arcu odio ut sem nulla pharetra diam. Malesuada pellentesque elit eget gravida cum sociis
+								natoque penatibus et.
 								Id faucibus nisl tincidunt eget nullam non nisi est. Pretium
-								vulputate sapien nec sagittis. Quis enim lobortis scelerisque fermentum dui faucibus in ornare quam. Neque volutpat ac tincidunt vitae semper quis. Nunc mi ipsum
+								vulputate sapien nec sagittis. Quis enim lobortis scelerisque fermentum dui faucibus in ornare quam. Neque volutpat ac tincidunt vitae semper quis.
+								Nunc mi ipsum
 								faucibus vitae aliquet nec ullamcorper sit amet. Id velit ut
 								tortor pretium viverra. Consequat semper viverra nam libero justo laoreet sit amet.
 							</p>

@@ -218,6 +218,12 @@
 		left: 0;
 		padding: var(--size-1);
 		z-index: 1000;
+		transition: all var(--transition-ease-1);
+	}
+
+	.header__head.is-active {
+		background-color: var(--neutral-7);
+		box-shadow: var(--box-shadow-1);
 	}
 
 	.header__logo {

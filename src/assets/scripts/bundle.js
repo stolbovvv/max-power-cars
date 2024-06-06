@@ -1,17 +1,85 @@
 /* global Splide SlimSelect */
 
-window.addEventListener('DOMContentLoaded', () => {
-	// Selects
-	const selects = document.querySelectorAll('.select');
+class Menu {
+	constructor({ openClass = 'is-open', lockClass = 'is-lock', activeClass = 'is-active' } = {}) {
+		this.element = document.querySelector('.js-menu');
+		this.trigger = document.querySelector('.js-menu-trigger');
 
-	selects.forEach((select) => {
-		new SlimSelect({
-			select: select,
-			settings: {
-				showSearch: false,
-			},
+		this.options = {
+			openClass,
+			lockClass,
+			activeClass,
+		};
+
+		this.init();
+	}
+
+	open = () => {
+		this.element.classList.add(this.options.openClass);
+		this.trigger.classList.add(this.options.activeClass);
+		document.body.classList.add(this.options.lockClass);
+	};
+
+	hide = () => {
+		this.element.classList.remove(this.options.openClass);
+		this.trigger.classList.remove(this.options.activeClass);
+		document.body.classList.remove(this.options.lockClass);
+	};
+
+	init() {
+		const { element, trigger, options } = this;
+
+		if (!element) return;
+
+		window.addEventListener('resize', this.hide);
+
+		trigger.addEventListener('click', () => {
+			if (element.classList.contains(options.openClass)) {
+				this.hide();
+			} else {
+				this.open();
+			}
 		});
-	});
+
+		element.addEventListener('click', ({ target }) => {
+			if (target && target.matches('.js-menu-hide')) this.hide();
+		});
+	}
+}
+
+class Sticky {
+	constructor(selector = '.js-sticky', { activeClass = 'is-active' } = {}) {
+		this.element = document.querySelector(selector);
+		this.options = {
+			activeClass,
+		};
+
+		this.init();
+	}
+
+	onScroll = () => {
+		if (window.scrollY) {
+			if (this.element.matches(this.options.activeClass)) return;
+
+			this.element.classList.add(this.options.activeClass);
+		} else {
+			this.element.classList.remove(this.options.activeClass);
+		}
+	};
+
+	init() {
+		if (!this.element) return;
+
+		window.addEventListener('scroll', this.onScroll);
+	}
+}
+
+window.addEventListener('DOMContentLoaded', () => {
+	// Site menu
+	new Menu();
+
+	// Sticky header
+	new Sticky();
 
 	// Sliders
 	const mediaSlider = document.querySelector('#media-slider');
@@ -60,4 +128,16 @@ window.addEventListener('DOMContentLoaded', () => {
 			pagination: false,
 		}).mount(window.splide.Extensions);
 	}
+
+	// Selects
+	const selects = document.querySelectorAll('.select');
+
+	selects.forEach((select) => {
+		new SlimSelect({
+			select: select,
+			settings: {
+				showSearch: false,
+			},
+		});
+	});
 });

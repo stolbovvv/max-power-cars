@@ -71,5 +71,6 @@
 
 /* Utility styles */
 @import url("./utility/bg-list.css");
-@import url("./utility/color-list.css");
+@import url("./utility/clr-list.css");
 @import url("./utility/text-list.css");
+@import url("./utility/util-list.css");
