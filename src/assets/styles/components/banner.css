@@ -20,12 +20,21 @@
 	z-index: 1;
 }
 
+.banner__body--border-bottom {
+	border-bottom: 1px solid var(--neutral-1);
+	padding-bottom: var(--size-1);
+}
+
 .banner__title {
 	color: var(--neutral-1);
 	font-size: clamp(18px, 1.277vw + 14px, 30px);
 	font-weight: 700;
 	line-height: 1.2;
 	text-shadow: 0 4px 4px rgba(0, 0, 0, 25%);
+}
+
+.banner__title--small {
+	font-size: clamp(1rem, 0.455vw + 14.5px, 1.25rem);
 }
 
 .banner__foot {
@@ -51,6 +60,10 @@
 	.banner__body {
 		padding: var(--size-1) var(--size-3) 0;
 	}
+
+	.banner__body--border-bottom {
+		padding-bottom: var(--size-1);
+	}
 }
 
 @media screen and (width < 768px) {
@@ -60,5 +73,9 @@
 
 	.banner__body {
 		padding: var(--size-1) var(--size-1) 0;
+	}
+
+	.banner__body--border-bottom {
+		padding-bottom: var(--size-1);
 	}
 }

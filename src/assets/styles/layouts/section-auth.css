@@ -1,0 +1,18 @@
+.section-auth {
+	background: radial-gradient(50% 50% at 50% 50%, rgb(0, 0, 0, 50%) 50%, rgb(0, 0, 0) 100%),
+		url("../../images/bg-setcion-auth.jpg"), rgb(0, 0, 0, 80%);
+}
+
+.section-auth__sidebar {
+	width: 300px;
+}
+
+@media screen and (width < 768px) {
+	.section-auth__wrapepr {
+		gap: var(--size-5);
+	}
+
+	.section-auth__sidebar {
+		width: 300px;
+	}
+}

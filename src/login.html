@@ -54,7 +54,7 @@
 						<div class="header__login-body">
 							<ul class="header__login-list">
 								<li><a class="header__login-link js-menu-hide" href="./login.html">Вход</a></li>
-								<li><a class="header__login-link js-menu-hide" href="./registration.html">Регистрация</a></li>
+								<li><a class="header__login-link js-menu-hide" href="./login.html">Регистрация</a></li>
 							</ul>
 						</div>
 					</div>
@@ -80,7 +80,7 @@
 		<nav class="navbar js-menu">
 			<div class="navbar__menu">
 				<ul class="navbar__menu-list">
-					<li><a class="navbar__menu-link js-menu-hide is-current" href="./">Главная</a></li>
+					<li><a class="navbar__menu-link js-menu-hide" href="./">Главная</a></li>
 					<li><a class="navbar__menu-link js-menu-hide" href="./about.html">О чемпионате</a></li>
 					<li><a class="navbar__menu-link js-menu-hide" href="./best-laps.html">MPC Best Laps</a></li>
 					<li><a class="navbar__menu-link js-menu-hide" href="./navigator.html">Навигатор по классам</a></li>
@@ -94,7 +94,7 @@
 			<div class="navbar__login">
 				<ul class="navbar__login-list">
 					<li><a class="navbar__login-link" href="./login.html">Вход</a></li>
-					<li><a class="navbar__login-link" href="./registration.html">Регистрация</a></li>
+					<li><a class="navbar__login-link" href="./login.html">Регистрация</a></li>
 				</ul>
 			</div>
 
@@ -109,7 +109,156 @@
 		</nav>
 
 		<main class="main">
-			<!-- Page main content -->
+			<div class="banner">
+				<img class="banner__image" src="./assets/images/banner-2.jpg" alt="">
+				<div class="banner__body banner__body--border-bottom">
+					<h2 class="banner__title banner__title--small">Создайте профиль пилота MaxPowerCars и регистрируйтесь <br>на мероприятия и этапы чемпионата в считанные секунды
+					</h2>
+				</div>
+			</div>
+
+			<section class="section section-auth">
+				<div class="section__wrapper section-auth__wrapepr">
+					<div class="section__sidebar section-auth__sidebar">
+						<h2 class="heading-1 clr-white">Войти в профиль</h2>
+						<form class="form-auth form-auth--border-red" action="#">
+							<div class="form-auth__row">
+								<div class="form-auth__item">
+									<label class="form-auth__label">Номер телефона:</label>
+									<input class="form-auth__input">
+								</div>
+								<div class="form-auth__item">
+									<label class="form-auth__label">Пароль:</label>
+									<input class="form-auth__input" type="password">
+								</div>
+							</div>
+							<div class="form-auth__row">
+								<div class="form-auth__checkbox">
+									<input class="form-auth__checkbox-input" type="checkbox" id="form-auth-save">
+									<label class="form-auth__checkbox-label" for="form-auth-save">Запомнить меня</label>
+								</div>
+							</div>
+							<div class="form-auth__row">
+								<button class="form-auth__button form-auth__button--stretch button button--green" type="submit">Войти</button>
+								<button class="form-auth__button form-auth__button--stretch button button--grey" type="button">Восстановить пароль</button>
+							</div>
+						</form>
+					</div>
+
+					<div class="section__content section-auth__content">
+						<h2 class="heading-1 clr-white">Регистрация</h2>
+						<form class="form-auth" action="#">
+							<div class="form-auth__group">
+								<div class="form-auth__row">
+									<div class="form-auth__item">
+										<label class="form-auth__label">Номер телефона:</label>
+										<input class="form-auth__input">
+									</div>
+									<div class="form-auth__item">
+										<label class="form-auth__label">Код подтверждения:</label>
+										<input class="form-auth__input">
+									</div>
+								</div>
+								<div class="form-auth__row form-auth__row--start">
+									<button class="form-auth__button button button--green" type="submit">Выслать код</button>
+									<button class="form-auth__button button button--grey" type="button">Выслать повторно (58)</button>
+								</div>
+							</div>
+							<div class="form-auth__group">
+								<div class="form-auth__row">
+									<div class="form-auth__item">
+										<label class="form-auth__label">Придумайте пароль:</label>
+										<input class="form-auth__input">
+									</div>
+									<div class="form-auth__item">
+										<label class="form-auth__label">Введите пароль еще раз:</label>
+										<input class="form-auth__input">
+									</div>
+								</div>
+							</div>
+							<div class="form-auth__group">
+								<div class="form-auth__row">
+									<div class="form-auth__item">
+										<label class="form-auth__label">Фамилия:</label>
+										<input class="form-auth__input">
+									</div>
+									<div class="form-auth__item">
+										<label class="form-auth__label">Имя:</label>
+										<input class="form-auth__input">
+									</div>
+								</div>
+								<div class="form-auth__row">
+									<div class="form-auth__item">
+										<label class="form-auth__label">Отчество:</label>
+										<input class="form-auth__input">
+									</div>
+									<div class="form-auth__item">
+										<label class="form-auth__label">Дата рождения:</label>
+										<input class="form-auth__input">
+									</div>
+								</div>
+								<div class="form-auth__row">
+									<div class="form-auth__item">
+										<label class="form-auth__label">Город:</label>
+										<input class="form-auth__input">
+									</div>
+									<div class="form-auth__item">
+										<label class="form-auth__label">Участие в чемпионате с года:</label>
+										<input class="form-auth__input">
+									</div>
+								</div>
+							</div>
+							<div class="form-auth__group">
+								<div class="form-auth__row">
+									<div class="form-auth__item">
+										<label class="form-auth__label">Серия и номер паспорта:</label>
+										<input class="form-auth__input">
+									</div>
+									<div class="form-auth__item">
+										<label class="form-auth__label">Дата выдачи:</label>
+										<input class="form-auth__input">
+									</div>
+								</div>
+								<div class="form-auth__row">
+									<div class="form-auth__item form-auth__item--stretch">
+										<label class="form-auth__label">Орган, выдавший паспорт:</label>
+										<input class="form-auth__input">
+									</div>
+								</div>
+								<div class="form-auth__row">
+									<div class="form-auth__item">
+										<label class="form-auth__label">Серия и номер ВУ:</label>
+										<input class="form-auth__input">
+									</div>
+									<div class="form-auth__item">
+										<label class="form-auth__label">Серия и номер лицензии:</label>
+										<input class="form-auth__input">
+									</div>
+								</div>
+							</div>
+							<div class="form-auth__group">
+								<div class="form-auth__row">
+									<div class="form-auth__checkbox">
+										<input class="form-auth__checkbox-input" type="checkbox" id="form-auth-presonal">
+										<label class="form-auth__checkbox-label" for="form-auth-presonal">Даю согласие на обработку и хранение персональных данных Обществу с
+											ограниченной ответственностью “МаксПауэрКарс”.</label>
+									</div>
+									<div class="form-auth__checkbox">
+										<input class="form-auth__checkbox-input" type="checkbox" id="form-auth-privacy">
+										<label class="form-auth__checkbox-label" for="form-auth-privacy">Ознакомлен с политикой конфиденциальности сайта и правилами использования
+											информационного ресурса в сети Интернет </label>
+									</div>
+								</div>
+							</div>
+							<div class="form-auth__group">
+								<div class="form-auth__row form-auth__row--start">
+									<button class="form-auth__button button button--green" type="submit">Зарегистрировать профиль</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</section>
 		</main>
 
 		<footer class="footer">

@@ -30,6 +30,7 @@
 @import url("./components/form-pilote.css");
 @import url("./components/form-config.css");
 @import url("./components/form-tiers.css");
+@import url("./components/form-auth.css");
 @import url("./components/config-cars.css");
 @import url("./components/choose-car.css");
 @import url("./components/car-info.css");
@@ -68,6 +69,7 @@
 @import url("./layouts/section-documents.css");
 @import url("./layouts/section-profile.css");
 @import url("./layouts/section-garage.css");
+@import url("./layouts/section-auth.css");
 
 /* Utility styles */
 @import url("./utility/bg-list.css");
