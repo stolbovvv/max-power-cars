@@ -1,0 +1,1276 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+	<!-- Page options -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="MobileOptimized" content="width">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+
+	<!-- Page information -->
+	<meta name="author" content="">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+
+	<title>Сравнение – MaxPowerCars</title>
+
+	<!-- Page favicons -->
+	<link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+	<link rel="icon" type="image/svg+xml" href="./favicon.svg">
+	<link rel="manifest" href="./site.webmanifest">
+
+	<!-- TODO: BUNDLE TO VENDOR -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slim-select@2.7.1/dist/slimselect.min.css">
+	<script src="https://cdn.jsdelivr.net/npm/slim-select@2.7.1/dist/slimselect.umd.min.js"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide-core.min.css">
+	<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+
+	<!-- Page styles -->
+	<link rel="stylesheet" href="./assets/styles/bundle.min.css">
+
+	<!-- Page scripts -->
+	<script src="./assets/scripts/bundle.min.js" defer></script>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__head js-sticky">
+				<div class="header__logo">
+					<a class="header__logo-link" href="./">
+						<img class="header__logo-icon" src="./assets/images/logo-max-power-cars.svg" alt="MaxPowerCars">
+					</a>
+				</div>
+				<div class="header__line"></div>
+				<div class="header__menu">
+					<button class="header__burger js-menu-trigger">
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
+					<div class="header__login">
+						<svg class="header__login-icon icon">
+							<use xlink:href="./assets/icons/sprite.svg#icon-helmet"></use>
+						</svg>
+						<div class="header__login-body">
+							<ul class="header__login-list">
+								<li><a class="header__login-link js-menu-hide" href="./login.html">Вход</a></li>
+								<li><a class="header__login-link js-menu-hide" href="./login.html">Регистрация</a></li>
+							</ul>
+						</div>
+					</div>
+					<!-- <div class="header__account">
+						<svg class="header__account-icon icon">
+							<use xlink:href="./assets/icons/sprite.svg#icon-helmet"></use>
+						</svg>
+						<div class="header__account-body">
+							<span class="header__account-name">Имя пилота</span>
+							<ul class="header__account-list">
+								<li><a class="header__account-link js-menu-hide" href="./profile.html">Личная страница</a></li>
+								<li><a class="header__account-link js-menu-hide" href="./settings.html">Настройки</a></li>
+								<li><a class="header__account-link js-menu-hide" href="#">Выход</a></li>
+							</ul>
+						</div>
+					</div> -->
+				</div>
+				<div class="header__line header__line--end"></div>
+			</div>
+			<div class="header__body"></div>
+		</header>
+
+		<nav class="navbar js-menu">
+			<div class="navbar__menu">
+				<ul class="navbar__menu-list">
+					<li><a class="navbar__menu-link js-menu-hide" href="./">Главная</a></li>
+					<li><a class="navbar__menu-link js-menu-hide" href="./about.html">О чемпионате</a></li>
+					<li><a class="navbar__menu-link js-menu-hide" href="./best-laps.html">MPC Best Laps</a></li>
+					<li><a class="navbar__menu-link js-menu-hide is-current" href="./navigator.html">Навигатор по классам</a></li>
+					<li><a class="navbar__menu-link js-menu-hide" href="./results.html">Результаты</a></li>
+					<li><a class="navbar__menu-link js-menu-hide" href="./documents.html">Документы</a></li>
+					<li><a class="navbar__menu-link js-menu-hide" href="./news.html">Новости</a></li>
+					<li><a class="navbar__menu-link js-menu-hide" href="./media.html">Медиа</a></li>
+				</ul>
+			</div>
+
+			<div class="navbar__login">
+				<ul class="navbar__login-list">
+					<li><a class="navbar__login-link" href="./login.html">Вход</a></li>
+					<li><a class="navbar__login-link" href="./login.html">Регистрация</a></li>
+				</ul>
+			</div>
+
+			<!-- <div class="navbar__account">
+				<span class="navbar__account-name">Имя пилота</span>
+				<ul class="navbar__account-list">
+					<li><a class="navbar__account-link" href="./profile.html">Личная страница</a></li>
+					<li><a class="navbar__account-link" href="./settings.html">Настройки</a></li>
+					<li><a class="navbar__account-link" href="#">Выход</a></li>
+				</ul>
+			</div> -->
+		</nav>
+
+		<main class="main">
+			<section class="section section-navigator">
+				<h2 class="heading-1">Навигатор по классам</h2>
+
+				<div class="section-navigator__info">
+					<div class="section-navigator__info-text">
+						<p>
+							Навигатор по классам является основным инструментом для конкурентного распределения участников по зачетным группам и помогает участникам ознакомиться с
+							разрешенными
+							доработками конкретных моделей автомобилей. Расчетные данные
+							формируются исходя из опыта организаторов, потенциала автомобилей и результатов выступлений пилотов чемпионата.
+						</p>
+					</div>
+					<div class="section-navigator__info-banner card-banner">
+						<img class="card-banner__img" src="./assets/images/banner-3.jpg" alt="">
+						<div class="card-banner__body">
+							<p class="card-banner__title">Нет вашего автомобиля?</p>
+							<a class="card-banner__link" href="#">Напишите организаторам в телеграм для предварительного определения класса</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="section__wrapper">
+					<div class="section__sidebar">
+						<div class="section-navigator__classes tabs">
+							<h3 class="heading-2">Зачетные классы:</h3>
+							<ul class="tabs__list">
+								<li><button class="tabs__button is-current">UNLIMITED</button></li>
+								<li><button class="tabs__button">SUPERCARS</button></li>
+								<li><button class="tabs__button">GT1 PRO</button></li>
+								<li><button class="tabs__button">GT2 PRO</button></li>
+								<li><button class="tabs__button">GT3 PRO</button></li>
+								<li><button class="tabs__button">TURBOSTOCK</button></li>
+								<li><button class="tabs__button">GT4 PRO</button></li>
+								<li><button class="tabs__button">GT5 PRO</button></li>
+							</ul>
+						</div>
+
+						<div class="section-navigator__select selects">
+							<h3 class="heading-2">Фильтр по авто:</h3>
+							<div class="selects__list">
+								<select class="select select--white" name="track-variant">
+									<option>BMW</option>
+									<option>BMW 1</option>
+									<option>BMW 2</option>
+									<option>BMW 3</option>
+								</select>
+								<select class="select select--white" name="track-variant">
+									<option>M2 C/CS F87</option>
+									<option>M2 C/CS F871</option>
+									<option>M2 C/CS F872</option>
+									<option>M2 C/CS F873</option>
+								</select>
+							</div>
+						</div>
+					</div>
+
+					<div class="compare">
+						<div class="compare__sidebar">
+							<div class="compare__head">
+								<h3 class="compare__head-subtitle">Экстерьер:</h3>
+								<ul class="compare__head-list">
+									<li class="compare__head-list-item">
+										<span class="compare__head-list-label">Навесные элементы кузова:</span>
+									</li>
+									<li class="compare__head-list-item">
+										<span class="compare__head-list-label">Двери:</span>
+									</li>
+									<li class="compare__head-list-item">
+										<span class="compare__head-list-label">Спойлер:</span>
+									</li>
+									<li class="compare__head-list-item">
+										<span class="compare__head-list-label">Аэропакет/аэрокит:</span>
+									</li>
+								</ul>
+
+								<h3 class="compare__head-subtitle">Интерьер:</h3>
+								<ul class="compare__head-list">
+									<li class="compare__head-list-item">
+										<span class="compare__head-list-label">Сиденья:</span>
+									</li>
+									<li class="compare__head-list-item">
+										<span class="compare__head-list-label">Каркас/ролл-бар:</span>
+									</li>
+									<li class="compare__head-list-item">
+										<span class="compare__head-list-label">Обшивка салона:</span>
+									</li>
+								</ul>
+
+								<h3 class="compare__head-subtitle">Подвеска:</h3>
+								<ul class="compare__head-list">
+									<li class="compare__head-list-item">
+										<span class="compare__head-list-label">Амортизаторы:</span>
+									</li>
+									<li class="compare__head-list-item">
+										<span class="compare__head-list-label">Пружины:</span>
+									</li>
+									<li class="compare__head-list-item">
+										<span class="compare__head-list-label">Опоры:</span>
+									</li>
+									<li class="compare__head-list-item">
+										<span class="compare__head-list-label">Распорки:</span>
+									</li>
+									<li class="compare__head-list-item">
+										<span class="compare__head-list-label">Стабилизаторы:</span>
+									</li>
+									<li class="compare__head-list-item">
+										<span class="compare__head-list-label">Рычаги/тяги (передняя ось):</span>
+									</li>
+									<li class="compare__head-list-item">
+										<span class="compare__head-list-label">Рычаги/тяги (задняя ось):</span>
+									</li>
+								</ul>
+
+								<h3 class="compare__head-subtitle">Колеса/шины:</h3>
+								<ul class="compare__head-list">
+									<li class="compare__head-list-item">
+										<span class="compare__head-list-label">Колесные диски:</span>
+									</li>
+									<li class="compare__head-list-item">
+										<span class="compare__head-list-label">Проставки (передняя ось):</span>
+									</li>
+									<li class="compare__head-list-item">
+										<span class="compare__head-list-label">Проставки (задняя ось):</span>
+									</li>
+									<li class="compare__head-list-item">
+										<span class="compare__head-list-label">Ширина шин (передняя ось):</span>
+									</li>
+									<li class="compare__head-list-item">
+										<span class="compare__head-list-label">Ширина шин (задняя ось):</span>
+									</li>
+									<li class="compare__head-list-item">
+										<span class="compare__head-list-label">Модели шин Michelin:</span>
+									</li>
+									<li class="compare__head-list-item">
+										<span class="compare__head-list-label">Модели шин Yokohama:</span>
+									</li>
+									<li class="compare__head-list-item">
+										<span class="compare__head-list-label">Модели шин Nankang:</span>
+									</li>
+									<li class="compare__head-list-item">
+										<span class="compare__head-list-label">Модели шин Pirelli:</span>
+									</li>
+									<li class="compare__head-list-item">
+										<span class="compare__head-list-label">Модели шин Hanckook:</span>
+									</li>
+									<li class="compare__head-list-item">
+										<span class="compare__head-list-label">Модели шин Toyo:</span>
+									</li>
+									<li class="compare__head-list-item">
+										<span class="compare__head-list-label">Модели шин Goodyear:</span>
+									</li>
+								</ul>
+
+								<h3 class="compare__head-subtitle">Тормозная система:</h3>
+								<ul class="compare__head-list">
+									<li class="compare__head-list-item">
+										<span class="compare__head-list-label">Суппорты:</span>
+									</li>
+									<li class="compare__head-list-item">
+										<span class="compare__head-list-label">Тормозные диски:</span>
+									</li>
+								</ul>
+
+								<h3 class="compare__head-subtitle">Двигатель:</h3>
+								<ul class="compare__head-list">
+									<li class="compare__head-list-item">
+										<span class="compare__head-list-label">Двигатель/блок цилиндров:</span>
+									</li>
+									<li class="compare__head-list-item">
+										<span class="compare__head-list-label">ГБЦ:</span>
+									</li>
+									<li class="compare__head-list-item">
+										<span class="compare__head-list-label">Турбина:</span>
+									</li>
+								</ul>
+
+								<h3 class="compare__head-subtitle">Впускная система:</h3>
+								<ul class="compare__head-list">
+									<li class="compare__head-list-item">
+										<span class="compare__head-list-label">Впускной коллектор:</span>
+									</li>
+									<li class="compare__head-list-item">
+										<span class="compare__head-list-label">Интеркулер:</span>
+									</li>
+								</ul>
+
+								<h3 class="compare__head-subtitle">Выпускная система:</h3>
+								<ul class="compare__head-list">
+									<li class="compare__head-list-item">
+										<span class="compare__head-list-label">Выпускной коллектор:</span>
+									</li>
+									<li class="compare__head-list-item">
+										<span class="compare__head-list-label">Приемная труба:</span>
+									</li>
+									<li class="compare__head-list-item">
+										<span class="compare__head-list-label">Катализаторы:</span>
+									</li>
+									<li class="compare__head-list-item">
+										<span class="compare__head-list-label">Средняя часть / резонатор</span>
+									</li>
+									<li class="compare__head-list-item">
+										<span class="compare__head-list-label">Глушитель/банка</span>
+									</li>
+								</ul>
+
+								<h3 class="compare__head-subtitle">Топливная система:</h3>
+								<ul class="compare__head-list">
+									<li class="compare__head-list-item">
+										<span class="compare__head-list-label">Топливный бак:</span>
+									</li>
+									<li class="compare__head-list-item">
+										<span class="compare__head-list-label">Топливо:</span>
+									</li>
+									<li class="compare__head-list-item">
+										<span class="compare__head-list-label">Система впрыска метанола:</span>
+									</li>
+								</ul>
+
+								<h3 class="compare__head-subtitle">Трансмиссия:</h3>
+								<ul class="compare__head-list">
+									<li class="compare__head-list-item">
+										<span class="compare__head-list-label">КПП:</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="compare__content">
+							<div class="compare__slider splide" id="compare-slider">
+								<div class="compare__track splide__track">
+									<ul class="splide__list">
+										<li class="splide__slide compare__slide">
+											<div class="compare__slide-car">
+												<p class="compare__slide-car-name">GT1 PRO</p>
+												<img class="compare__slide-car-image" src="./assets/images/model-bmw-1.png" alt="">
+												<div class="compare__slide-car-info">
+													<img class="compare__slide-car-icon" src="./assets/images/logo-bmw.png" alt="">
+													<p class="compare__slide-car-model">M2 C/CS F87</p>
+												</div>
+											</div>
+											<h3 class="compare__slide-subtitle"><span>Экстерьер:</span></h3>
+											<ul class="compare__slide-list">
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Навесные элементы кузова:</span>
+													<span class="compare__slide-list-value clr-green">Доработка/замена разрешена</span>
+												</li>
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Двери:</span>
+													<span class="compare__slide-list-value clr-red">Только при наличии каркаса</span>
+												</li>
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Спойлер:</span>
+													<span class="compare__slide-list-value clr-green">Доработка/замена разрешена</span>
+												</li>
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Аэропакет/аэрокит:</span>
+													<span class="compare__slide-list-value clr-green">Доработка/замена разрешена</span>
+												</li>
+											</ul>
+
+											<h3 class="compare__slide-subtitle"><span>Интерьер:</span></h3>
+											<ul class="compare__slide-list">
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Сиденья:</span>
+													<span class="compare__slide-list-value clr-green">Доработка/замена разрешена</span>
+												</li>
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Каркас/ролл-бар:</span>
+													<span class="compare__slide-list-value clr-green">Доработка/замена разрешена</span>
+												</li>
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Обшивка салона:</span>
+													<span class="compare__slide-list-value clr-green">Доработка/замена разрешена</span>
+												</li>
+											</ul>
+
+											<h3 class="compare__slide-subtitle"><span>Подвеска:</span></h3>
+											<ul class="compare__slide-list">
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Амортизаторы:</span>
+													<span class="compare__slide-list-value clr-green">Доработка/замена разрешена</span>
+												</li>
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Пружины:</span>
+													<span class="compare__slide-list-value clr-green">Доработка/замена разрешена</span>
+												</li>
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Опоры:</span>
+													<span class="compare__slide-list-value clr-green">Доработка/замена разрешена</span>
+												</li>
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Распорки:</span>
+													<span class="compare__slide-list-value clr-green">Доработка/замена разрешена</span>
+												</li>
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Стабилизаторы:</span>
+													<span class="compare__slide-list-value clr-green">Доработка/замена разрешена</span>
+												</li>
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Рычаги/тяги (передняя ось):</span>
+													<span class="compare__slide-list-value clr-green">Доработка/замена разрешена</span>
+												</li>
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Рычаги/тяги (задняя ось):</span>
+													<span class="compare__slide-list-value clr-green">Доработка/замена разрешена</span>
+												</li>
+											</ul>
+
+											<h3 class="compare__slide-subtitle"><span>Колеса/шины:</span></h3>
+											<ul class="compare__slide-list">
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Колесные диски:</span>
+													<span class="compare__slide-list-value clr-green">Доработка/замена разрешена</span>
+												</li>
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Проставки (передняя ось):</span>
+													<span class="compare__slide-list-value clr-green">Доработка/замена разрешена</span>
+												</li>
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Проставки (задняя ось):</span>
+													<span class="compare__slide-list-value clr-green">Доработка/замена разрешена</span>
+												</li>
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Ширина шин (передняя ось):</span>
+													<span class="compare__slide-list-value clr-red">Max. 295</span>
+												</li>
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Ширина шин (задняя ось):</span>
+													<span class="compare__slide-list-value clr-red">Max. 305</span>
+												</li>
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Модели шин Michelin:</span>
+													<span class="compare__slide-list-value">PSS, PS 4S, PS Cup 2</span>
+												</li>
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Модели шин Yokohama:</span>
+													<span class="compare__slide-list-value">AD08, AD09, AD052</span>
+												</li>
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Модели шин Nankang:</span>
+													<span class="compare__slide-list-value">AR-1, NS-2R, CR-S</span>
+												</li>
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Модели шин Pirelli:</span>
+													<span class="compare__slide-list-value">P-Zero, P-Zero Trofeo R, P-Zero Corsa</span>
+												</li>
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Модели шин Hanckook:</span>
+													<span class="compare__slide-list-value">Ventus RS-3, Ventus RS-4</span>
+												</li>
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Модели шин Toyo:</span>
+													<span class="compare__slide-list-value">Proxes R888R</span>
+												</li>
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Модели шин Goodyear:</span>
+													<span class="compare__slide-list-value">Eagle F1 SS, Eagle F1 SS R</span>
+												</li>
+											</ul>
+
+											<h3 class="compare__slide-subtitle"><span>Тормозная система:</span></h3>
+											<ul class="compare__slide-list">
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Суппорты:</span>
+													<span class="compare__slide-list-value clr-green">Доработка/замена разрешена</span>
+												</li>
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Тормозные диски:</span>
+													<span class="compare__slide-list-value clr-green">Доработка/замена разрешена</span>
+												</li>
+											</ul>
+
+											<h3 class="compare__slide-subtitle"><span>Двигатель:</span></h3>
+											<ul class="compare__slide-list">
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Двигатель/блок цилиндров:</span>
+													<span class="compare__slide-list-value clr-red">Заводское исполнение (сток)</span>
+												</li>
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">ГБЦ:</span>
+													<span class="compare__slide-list-value clr-red">Заводское исполнение (сток)</span>
+												</li>
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Турбина:</span>
+													<span class="compare__slide-list-value clr-red">Заводское исполнение (сток)</span>
+												</li>
+											</ul>
+
+											<h3 class="compare__slide-subtitle"><span>Впускная система:</span></h3>
+											<ul class="compare__slide-list">
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Впускной коллектор:</span>
+													<span class="compare__slide-list-value clr-red">Заводское исполнение (сток)</span>
+												</li>
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Интеркулер:</span>
+													<span class="compare__slide-list-value clr-green">Доработка/замена разрешена</span>
+												</li>
+											</ul>
+
+											<h3 class="compare__slide-subtitle"><span>Выпускная система:</span></h3>
+											<ul class="compare__slide-list">
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Выпускной коллектор:</span>
+													<span class="compare__slide-list-value clr-green">Доработка/замена разрешена</span>
+												</li>
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Приемная труба:</span>
+													<span class="compare__slide-list-value clr-green">Доработка/замена разрешена</span>
+												</li>
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Катализаторы:</span>
+													<span class="compare__slide-list-value clr-green">Доработка/замена разрешена</span>
+												</li>
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Средняя часть / резонатор</span>
+													<span class="compare__slide-list-value clr-green">Доработка/замена разрешена</span>
+												</li>
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Глушитель/банка</span>
+													<span class="compare__slide-list-value clr-green">Доработка/замена разрешена</span>
+												</li>
+											</ul>
+
+											<h3 class="compare__slide-subtitle"><span>Топливная система:</span></h3>
+											<ul class="compare__slide-list">
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Топливный бак:</span>
+													<span class="compare__slide-list-value clr-green">Доработка/замена разрешена</span>
+												</li>
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Топливо:</span>
+													<span class="compare__slide-list-value clr-red">Max. АИ-100</span>
+												</li>
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Система впрыска метанола:</span>
+													<span class="compare__slide-list-value clr-red">Запрещена</span>
+												</li>
+											</ul>
+
+											<h3 class="compare__slide-subtitle"><span>Трансмиссия:</span></h3>
+											<ul class="compare__slide-list">
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">КПП:</span>
+													<span class="compare__slide-list-value clr-red">Заводское исполнение (сток)</span>
+												</li>
+											</ul>
+										</li>
+										<li class="splide__slide compare__slide">
+											<div class="compare__slide-car">
+												<p class="compare__slide-car-name">GT1 PRO</p>
+												<img class="compare__slide-car-image" src="./assets/images/model-bmw-1.png" alt="">
+												<div class="compare__slide-car-info">
+													<img class="compare__slide-car-icon" src="./assets/images/logo-bmw.png" alt="">
+													<p class="compare__slide-car-model">M2 C/CS F87</p>
+												</div>
+											</div>
+											<h3 class="compare__slide-subtitle"><span>Экстерьер:</span></h3>
+											<ul class="compare__slide-list">
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Навесные элементы кузова:</span>
+													<span class="compare__slide-list-value clr-green">Доработка/замена разрешена</span>
+												</li>
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Двери:</span>
+													<span class="compare__slide-list-value clr-red">Только при наличии каркаса</span>
+												</li>
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Спойлер:</span>
+													<span class="compare__slide-list-value clr-green">Доработка/замена разрешена</span>
+												</li>
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Аэропакет/аэрокит:</span>
+													<span class="compare__slide-list-value clr-green">Доработка/замена разрешена</span>
+												</li>
+											</ul>
+
+											<h3 class="compare__slide-subtitle"><span>Интерьер:</span></h3>
+											<ul class="compare__slide-list">
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Сиденья:</span>
+													<span class="compare__slide-list-value clr-green">Доработка/замена разрешена</span>
+												</li>
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Каркас/ролл-бар:</span>
+													<span class="compare__slide-list-value clr-green">Доработка/замена разрешена</span>
+												</li>
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Обшивка салона:</span>
+													<span class="compare__slide-list-value clr-green">Доработка/замена разрешена</span>
+												</li>
+											</ul>
+
+											<h3 class="compare__slide-subtitle"><span>Подвеска:</span></h3>
+											<ul class="compare__slide-list">
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Амортизаторы:</span>
+													<span class="compare__slide-list-value clr-green">Доработка/замена разрешена</span>
+												</li>
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Пружины:</span>
+													<span class="compare__slide-list-value clr-green">Доработка/замена разрешена</span>
+												</li>
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Опоры:</span>
+													<span class="compare__slide-list-value clr-green">Доработка/замена разрешена</span>
+												</li>
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Распорки:</span>
+													<span class="compare__slide-list-value clr-green">Доработка/замена разрешена</span>
+												</li>
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Стабилизаторы:</span>
+													<span class="compare__slide-list-value clr-green">Доработка/замена разрешена</span>
+												</li>
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Рычаги/тяги (передняя ось):</span>
+													<span class="compare__slide-list-value clr-green">Доработка/замена разрешена</span>
+												</li>
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Рычаги/тяги (задняя ось):</span>
+													<span class="compare__slide-list-value clr-green">Доработка/замена разрешена</span>
+												</li>
+											</ul>
+
+											<h3 class="compare__slide-subtitle"><span>Колеса/шины:</span></h3>
+											<ul class="compare__slide-list">
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Колесные диски:</span>
+													<span class="compare__slide-list-value clr-green">Доработка/замена разрешена</span>
+												</li>
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Проставки (передняя ось):</span>
+													<span class="compare__slide-list-value clr-green">Доработка/замена разрешена</span>
+												</li>
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Проставки (задняя ось):</span>
+													<span class="compare__slide-list-value clr-green">Доработка/замена разрешена</span>
+												</li>
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Ширина шин (передняя ось):</span>
+													<span class="compare__slide-list-value clr-red">Max. 295</span>
+												</li>
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Ширина шин (задняя ось):</span>
+													<span class="compare__slide-list-value clr-red">Max. 305</span>
+												</li>
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Модели шин Michelin:</span>
+													<span class="compare__slide-list-value">PSS, PS 4S, PS Cup 2</span>
+												</li>
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Модели шин Yokohama:</span>
+													<span class="compare__slide-list-value">AD08, AD09, AD052</span>
+												</li>
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Модели шин Nankang:</span>
+													<span class="compare__slide-list-value">AR-1, NS-2R, CR-S</span>
+												</li>
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Модели шин Pirelli:</span>
+													<span class="compare__slide-list-value">P-Zero, P-Zero Trofeo R, P-Zero Corsa</span>
+												</li>
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Модели шин Hanckook:</span>
+													<span class="compare__slide-list-value">Ventus RS-3, Ventus RS-4</span>
+												</li>
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Модели шин Toyo:</span>
+													<span class="compare__slide-list-value">Proxes R888R</span>
+												</li>
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Модели шин Goodyear:</span>
+													<span class="compare__slide-list-value">Eagle F1 SS, Eagle F1 SS R</span>
+												</li>
+											</ul>
+
+											<h3 class="compare__slide-subtitle"><span>Тормозная система:</span></h3>
+											<ul class="compare__slide-list">
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Суппорты:</span>
+													<span class="compare__slide-list-value clr-green">Доработка/замена разрешена</span>
+												</li>
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Тормозные диски:</span>
+													<span class="compare__slide-list-value clr-green">Доработка/замена разрешена</span>
+												</li>
+											</ul>
+
+											<h3 class="compare__slide-subtitle"><span>Двигатель:</span></h3>
+											<ul class="compare__slide-list">
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Двигатель/блок цилиндров:</span>
+													<span class="compare__slide-list-value clr-red">Заводское исполнение (сток)</span>
+												</li>
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">ГБЦ:</span>
+													<span class="compare__slide-list-value clr-red">Заводское исполнение (сток)</span>
+												</li>
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Турбина:</span>
+													<span class="compare__slide-list-value clr-red">Заводское исполнение (сток)</span>
+												</li>
+											</ul>
+
+											<h3 class="compare__slide-subtitle"><span>Впускная система:</span></h3>
+											<ul class="compare__slide-list">
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Впускной коллектор:</span>
+													<span class="compare__slide-list-value clr-red">Заводское исполнение (сток)</span>
+												</li>
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Интеркулер:</span>
+													<span class="compare__slide-list-value clr-green">Доработка/замена разрешена</span>
+												</li>
+											</ul>
+
+											<h3 class="compare__slide-subtitle"><span>Выпускная система:</span></h3>
+											<ul class="compare__slide-list">
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Выпускной коллектор:</span>
+													<span class="compare__slide-list-value clr-green">Доработка/замена разрешена</span>
+												</li>
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Приемная труба:</span>
+													<span class="compare__slide-list-value clr-green">Доработка/замена разрешена</span>
+												</li>
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Катализаторы:</span>
+													<span class="compare__slide-list-value clr-green">Доработка/замена разрешена</span>
+												</li>
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Средняя часть / резонатор</span>
+													<span class="compare__slide-list-value clr-green">Доработка/замена разрешена</span>
+												</li>
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Глушитель/банка</span>
+													<span class="compare__slide-list-value clr-green">Доработка/замена разрешена</span>
+												</li>
+											</ul>
+
+											<h3 class="compare__slide-subtitle"><span>Топливная система:</span></h3>
+											<ul class="compare__slide-list">
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Топливный бак:</span>
+													<span class="compare__slide-list-value clr-green">Доработка/замена разрешена</span>
+												</li>
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Топливо:</span>
+													<span class="compare__slide-list-value clr-red">Max. АИ-100</span>
+												</li>
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Система впрыска метанола:</span>
+													<span class="compare__slide-list-value clr-red">Запрещена</span>
+												</li>
+											</ul>
+
+											<h3 class="compare__slide-subtitle"><span>Трансмиссия:</span></h3>
+											<ul class="compare__slide-list">
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">КПП:</span>
+													<span class="compare__slide-list-value clr-red">Заводское исполнение (сток)</span>
+												</li>
+											</ul>
+										</li>
+										<li class="splide__slide compare__slide">
+											<div class="compare__slide-car">
+												<p class="compare__slide-car-name">GT1 PRO</p>
+												<img class="compare__slide-car-image" src="./assets/images/model-bmw-1.png" alt="">
+												<div class="compare__slide-car-info">
+													<img class="compare__slide-car-icon" src="./assets/images/logo-bmw.png" alt="">
+													<p class="compare__slide-car-model">M2 C/CS F87</p>
+												</div>
+											</div>
+											<h3 class="compare__slide-subtitle"><span>Экстерьер:</span></h3>
+											<ul class="compare__slide-list">
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Навесные элементы кузова:</span>
+													<span class="compare__slide-list-value clr-green">Доработка/замена разрешена</span>
+												</li>
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Двери:</span>
+													<span class="compare__slide-list-value clr-red">Только при наличии каркаса</span>
+												</li>
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Спойлер:</span>
+													<span class="compare__slide-list-value clr-green">Доработка/замена разрешена</span>
+												</li>
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Аэропакет/аэрокит:</span>
+													<span class="compare__slide-list-value clr-green">Доработка/замена разрешена</span>
+												</li>
+											</ul>
+
+											<h3 class="compare__slide-subtitle"><span>Интерьер:</span></h3>
+											<ul class="compare__slide-list">
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Сиденья:</span>
+													<span class="compare__slide-list-value clr-green">Доработка/замена разрешена</span>
+												</li>
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Каркас/ролл-бар:</span>
+													<span class="compare__slide-list-value clr-green">Доработка/замена разрешена</span>
+												</li>
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Обшивка салона:</span>
+													<span class="compare__slide-list-value clr-green">Доработка/замена разрешена</span>
+												</li>
+											</ul>
+
+											<h3 class="compare__slide-subtitle"><span>Подвеска:</span></h3>
+											<ul class="compare__slide-list">
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Амортизаторы:</span>
+													<span class="compare__slide-list-value clr-green">Доработка/замена разрешена</span>
+												</li>
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Пружины:</span>
+													<span class="compare__slide-list-value clr-green">Доработка/замена разрешена</span>
+												</li>
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Опоры:</span>
+													<span class="compare__slide-list-value clr-green">Доработка/замена разрешена</span>
+												</li>
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Распорки:</span>
+													<span class="compare__slide-list-value clr-green">Доработка/замена разрешена</span>
+												</li>
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Стабилизаторы:</span>
+													<span class="compare__slide-list-value clr-green">Доработка/замена разрешена</span>
+												</li>
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Рычаги/тяги (передняя ось):</span>
+													<span class="compare__slide-list-value clr-green">Доработка/замена разрешена</span>
+												</li>
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Рычаги/тяги (задняя ось):</span>
+													<span class="compare__slide-list-value clr-green">Доработка/замена разрешена</span>
+												</li>
+											</ul>
+
+											<h3 class="compare__slide-subtitle"><span>Колеса/шины:</span></h3>
+											<ul class="compare__slide-list">
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Колесные диски:</span>
+													<span class="compare__slide-list-value clr-green">Доработка/замена разрешена</span>
+												</li>
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Проставки (передняя ось):</span>
+													<span class="compare__slide-list-value clr-green">Доработка/замена разрешена</span>
+												</li>
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Проставки (задняя ось):</span>
+													<span class="compare__slide-list-value clr-green">Доработка/замена разрешена</span>
+												</li>
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Ширина шин (передняя ось):</span>
+													<span class="compare__slide-list-value clr-red">Max. 295</span>
+												</li>
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Ширина шин (задняя ось):</span>
+													<span class="compare__slide-list-value clr-red">Max. 305</span>
+												</li>
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Модели шин Michelin:</span>
+													<span class="compare__slide-list-value">PSS, PS 4S, PS Cup 2</span>
+												</li>
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Модели шин Yokohama:</span>
+													<span class="compare__slide-list-value">AD08, AD09, AD052</span>
+												</li>
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Модели шин Nankang:</span>
+													<span class="compare__slide-list-value">AR-1, NS-2R, CR-S</span>
+												</li>
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Модели шин Pirelli:</span>
+													<span class="compare__slide-list-value">P-Zero, P-Zero Trofeo R, P-Zero Corsa</span>
+												</li>
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Модели шин Hanckook:</span>
+													<span class="compare__slide-list-value">Ventus RS-3, Ventus RS-4</span>
+												</li>
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Модели шин Toyo:</span>
+													<span class="compare__slide-list-value">Proxes R888R</span>
+												</li>
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Модели шин Goodyear:</span>
+													<span class="compare__slide-list-value">Eagle F1 SS, Eagle F1 SS R</span>
+												</li>
+											</ul>
+
+											<h3 class="compare__slide-subtitle"><span>Тормозная система:</span></h3>
+											<ul class="compare__slide-list">
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Суппорты:</span>
+													<span class="compare__slide-list-value clr-green">Доработка/замена разрешена</span>
+												</li>
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Тормозные диски:</span>
+													<span class="compare__slide-list-value clr-green">Доработка/замена разрешена</span>
+												</li>
+											</ul>
+
+											<h3 class="compare__slide-subtitle"><span>Двигатель:</span></h3>
+											<ul class="compare__slide-list">
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Двигатель/блок цилиндров:</span>
+													<span class="compare__slide-list-value clr-red">Заводское исполнение (сток)</span>
+												</li>
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">ГБЦ:</span>
+													<span class="compare__slide-list-value clr-red">Заводское исполнение (сток)</span>
+												</li>
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Турбина:</span>
+													<span class="compare__slide-list-value clr-red">Заводское исполнение (сток)</span>
+												</li>
+											</ul>
+
+											<h3 class="compare__slide-subtitle"><span>Впускная система:</span></h3>
+											<ul class="compare__slide-list">
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Впускной коллектор:</span>
+													<span class="compare__slide-list-value clr-red">Заводское исполнение (сток)</span>
+												</li>
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Интеркулер:</span>
+													<span class="compare__slide-list-value clr-green">Доработка/замена разрешена</span>
+												</li>
+											</ul>
+
+											<h3 class="compare__slide-subtitle"><span>Выпускная система:</span></h3>
+											<ul class="compare__slide-list">
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Выпускной коллектор:</span>
+													<span class="compare__slide-list-value clr-green">Доработка/замена разрешена</span>
+												</li>
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Приемная труба:</span>
+													<span class="compare__slide-list-value clr-green">Доработка/замена разрешена</span>
+												</li>
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Катализаторы:</span>
+													<span class="compare__slide-list-value clr-green">Доработка/замена разрешена</span>
+												</li>
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Средняя часть / резонатор</span>
+													<span class="compare__slide-list-value clr-green">Доработка/замена разрешена</span>
+												</li>
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Глушитель/банка</span>
+													<span class="compare__slide-list-value clr-green">Доработка/замена разрешена</span>
+												</li>
+											</ul>
+
+											<h3 class="compare__slide-subtitle"><span>Топливная система:</span></h3>
+											<ul class="compare__slide-list">
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Топливный бак:</span>
+													<span class="compare__slide-list-value clr-green">Доработка/замена разрешена</span>
+												</li>
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Топливо:</span>
+													<span class="compare__slide-list-value clr-red">Max. АИ-100</span>
+												</li>
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Система впрыска метанола:</span>
+													<span class="compare__slide-list-value clr-red">Запрещена</span>
+												</li>
+											</ul>
+
+											<h3 class="compare__slide-subtitle"><span>Трансмиссия:</span></h3>
+											<ul class="compare__slide-list">
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">КПП:</span>
+													<span class="compare__slide-list-value clr-red">Заводское исполнение (сток)</span>
+												</li>
+											</ul>
+										</li>
+										<li class="splide__slide compare__slide">
+											<div class="compare__slide-car">
+												<p class="compare__slide-car-name">GT1 PRO</p>
+												<img class="compare__slide-car-image" src="./assets/images/model-bmw-1.png" alt="">
+												<div class="compare__slide-car-info">
+													<img class="compare__slide-car-icon" src="./assets/images/logo-bmw.png" alt="">
+													<p class="compare__slide-car-model">M2 C/CS F87</p>
+												</div>
+											</div>
+											<h3 class="compare__slide-subtitle"><span>Экстерьер:</span></h3>
+											<ul class="compare__slide-list">
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Навесные элементы кузова:</span>
+													<span class="compare__slide-list-value clr-green">Доработка/замена разрешена</span>
+												</li>
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Двери:</span>
+													<span class="compare__slide-list-value clr-red">Только при наличии каркаса</span>
+												</li>
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Спойлер:</span>
+													<span class="compare__slide-list-value clr-green">Доработка/замена разрешена</span>
+												</li>
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Аэропакет/аэрокит:</span>
+													<span class="compare__slide-list-value clr-green">Доработка/замена разрешена</span>
+												</li>
+											</ul>
+
+											<h3 class="compare__slide-subtitle"><span>Интерьер:</span></h3>
+											<ul class="compare__slide-list">
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Сиденья:</span>
+													<span class="compare__slide-list-value clr-green">Доработка/замена разрешена</span>
+												</li>
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Каркас/ролл-бар:</span>
+													<span class="compare__slide-list-value clr-green">Доработка/замена разрешена</span>
+												</li>
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Обшивка салона:</span>
+													<span class="compare__slide-list-value clr-green">Доработка/замена разрешена</span>
+												</li>
+											</ul>
+
+											<h3 class="compare__slide-subtitle"><span>Подвеска:</span></h3>
+											<ul class="compare__slide-list">
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Амортизаторы:</span>
+													<span class="compare__slide-list-value clr-green">Доработка/замена разрешена</span>
+												</li>
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Пружины:</span>
+													<span class="compare__slide-list-value clr-green">Доработка/замена разрешена</span>
+												</li>
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Опоры:</span>
+													<span class="compare__slide-list-value clr-green">Доработка/замена разрешена</span>
+												</li>
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Распорки:</span>
+													<span class="compare__slide-list-value clr-green">Доработка/замена разрешена</span>
+												</li>
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Стабилизаторы:</span>
+													<span class="compare__slide-list-value clr-green">Доработка/замена разрешена</span>
+												</li>
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Рычаги/тяги (передняя ось):</span>
+													<span class="compare__slide-list-value clr-green">Доработка/замена разрешена</span>
+												</li>
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Рычаги/тяги (задняя ось):</span>
+													<span class="compare__slide-list-value clr-green">Доработка/замена разрешена</span>
+												</li>
+											</ul>
+
+											<h3 class="compare__slide-subtitle"><span>Колеса/шины:</span></h3>
+											<ul class="compare__slide-list">
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Колесные диски:</span>
+													<span class="compare__slide-list-value clr-green">Доработка/замена разрешена</span>
+												</li>
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Проставки (передняя ось):</span>
+													<span class="compare__slide-list-value clr-green">Доработка/замена разрешена</span>
+												</li>
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Проставки (задняя ось):</span>
+													<span class="compare__slide-list-value clr-green">Доработка/замена разрешена</span>
+												</li>
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Ширина шин (передняя ось):</span>
+													<span class="compare__slide-list-value clr-red">Max. 295</span>
+												</li>
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Ширина шин (задняя ось):</span>
+													<span class="compare__slide-list-value clr-red">Max. 305</span>
+												</li>
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Модели шин Michelin:</span>
+													<span class="compare__slide-list-value">PSS, PS 4S, PS Cup 2</span>
+												</li>
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Модели шин Yokohama:</span>
+													<span class="compare__slide-list-value">AD08, AD09, AD052</span>
+												</li>
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Модели шин Nankang:</span>
+													<span class="compare__slide-list-value">AR-1, NS-2R, CR-S</span>
+												</li>
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Модели шин Pirelli:</span>
+													<span class="compare__slide-list-value">P-Zero, P-Zero Trofeo R, P-Zero Corsa</span>
+												</li>
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Модели шин Hanckook:</span>
+													<span class="compare__slide-list-value">Ventus RS-3, Ventus RS-4</span>
+												</li>
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Модели шин Toyo:</span>
+													<span class="compare__slide-list-value">Proxes R888R</span>
+												</li>
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Модели шин Goodyear:</span>
+													<span class="compare__slide-list-value">Eagle F1 SS, Eagle F1 SS R</span>
+												</li>
+											</ul>
+
+											<h3 class="compare__slide-subtitle"><span>Тормозная система:</span></h3>
+											<ul class="compare__slide-list">
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Суппорты:</span>
+													<span class="compare__slide-list-value clr-green">Доработка/замена разрешена</span>
+												</li>
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Тормозные диски:</span>
+													<span class="compare__slide-list-value clr-green">Доработка/замена разрешена</span>
+												</li>
+											</ul>
+
+											<h3 class="compare__slide-subtitle"><span>Двигатель:</span></h3>
+											<ul class="compare__slide-list">
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Двигатель/блок цилиндров:</span>
+													<span class="compare__slide-list-value clr-red">Заводское исполнение (сток)</span>
+												</li>
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">ГБЦ:</span>
+													<span class="compare__slide-list-value clr-red">Заводское исполнение (сток)</span>
+												</li>
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Турбина:</span>
+													<span class="compare__slide-list-value clr-red">Заводское исполнение (сток)</span>
+												</li>
+											</ul>
+
+											<h3 class="compare__slide-subtitle"><span>Впускная система:</span></h3>
+											<ul class="compare__slide-list">
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Впускной коллектор:</span>
+													<span class="compare__slide-list-value clr-red">Заводское исполнение (сток)</span>
+												</li>
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Интеркулер:</span>
+													<span class="compare__slide-list-value clr-green">Доработка/замена разрешена</span>
+												</li>
+											</ul>
+
+											<h3 class="compare__slide-subtitle"><span>Выпускная система:</span></h3>
+											<ul class="compare__slide-list">
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Выпускной коллектор:</span>
+													<span class="compare__slide-list-value clr-green">Доработка/замена разрешена</span>
+												</li>
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Приемная труба:</span>
+													<span class="compare__slide-list-value clr-green">Доработка/замена разрешена</span>
+												</li>
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Катализаторы:</span>
+													<span class="compare__slide-list-value clr-green">Доработка/замена разрешена</span>
+												</li>
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Средняя часть / резонатор</span>
+													<span class="compare__slide-list-value clr-green">Доработка/замена разрешена</span>
+												</li>
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Глушитель/банка</span>
+													<span class="compare__slide-list-value clr-green">Доработка/замена разрешена</span>
+												</li>
+											</ul>
+
+											<h3 class="compare__slide-subtitle"><span>Топливная система:</span></h3>
+											<ul class="compare__slide-list">
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Топливный бак:</span>
+													<span class="compare__slide-list-value clr-green">Доработка/замена разрешена</span>
+												</li>
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Топливо:</span>
+													<span class="compare__slide-list-value clr-red">Max. АИ-100</span>
+												</li>
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">Система впрыска метанола:</span>
+													<span class="compare__slide-list-value clr-red">Запрещена</span>
+												</li>
+											</ul>
+
+											<h3 class="compare__slide-subtitle"><span>Трансмиссия:</span></h3>
+											<ul class="compare__slide-list">
+												<li class="compare__slide-list-item">
+													<span class="compare__slide-list-label">КПП:</span>
+													<span class="compare__slide-list-value clr-red">Заводское исполнение (сток)</span>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer class="footer">
+			<div class="footer__informtaion">
+				<p>
+					MaxPowerCars - российский любительский автоспортивный чемпионат по дисциплине “Time Attack”. Основан в 2006
+					году Максимом Травиным - одним из основоположнников любительского автоспорта в России.
+				</p>
+				<p>
+					C 2022 года чемпионат проводится под оперативным управлением ООО “МаксПауэрКарс”, при непосредственном участии
+					и наблюдении членов семьи М. Травина.
+				</p>
+			</div>
+			<div class="footer__communication">
+				<ul class="footer__social-list">
+					<li>
+						<a class="footer__social-link" href="#">
+							<svg class="footer__social-icon icon">
+								<use href="./assets/icons/sprite.svg#icon-vk"></use>
+							</svg>
+						</a>
+					</li>
+					<li>
+						<a class="footer__social-link" href="#">
+							<svg class="footer__social-icon icon">
+								<use href="./assets/icons/sprite.svg#icon-instagram"></use>
+							</svg>
+						</a>
+					</li>
+					<li>
+						<a class="footer__social-link" href="#">
+							<svg class="footer__social-icon icon">
+								<use href="./assets/icons/sprite.svg#icon-telegram"></use>
+							</svg>
+						</a>
+					</li>
+					<li>
+						<a class="footer__social-link" href="#">
+							<svg class="footer__social-icon icon">
+								<use href="./assets/icons/sprite.svg#icon-youtube"></use>
+							</svg>
+						</a>
+					</li>
+				</ul>
+				<ul class="footer__contact-list">
+					<li><a class="footer__contact-link" href="mailto:info@maxpowercars.ru">info@maxpowercars.ru</a></li>
+				</ul>
+			</div>
+		</footer>
+	</div>
+</body>
+
+</html>

@@ -86,6 +86,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // Sliders
   const mediaSlider = document.querySelector('#media-slider');
   const photoSlider = document.querySelector('#photo-slider');
+  const compareSlider = document.querySelector('#compare-slider');
   if (mediaSlider) {
     new Splide(mediaSlider, {
       pagination: false,
@@ -127,6 +128,19 @@ window.addEventListener('DOMContentLoaded', () => {
       gap: '20px',
       pagination: false
     }).mount(window.splide.Extensions);
+  }
+  if (compareSlider) {
+    new Splide(compareSlider, {
+      gap: 0,
+      perMove: 1,
+      perPage: 2,
+      pagination: false,
+      breakpoints: {
+        575: {
+          perPage: 1
+        }
+      }
+    }).mount();
   }
 
   // Selects
