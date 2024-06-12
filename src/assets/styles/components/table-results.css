@@ -154,6 +154,7 @@
 
 @media screen and (width < 1200px) {
 	.table-results__cell-date,
+	.table-results__cell-points,
 	.table-results__cell-icons {
 		display: none;
 	}
