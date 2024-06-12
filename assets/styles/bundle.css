@@ -787,6 +787,7 @@ article > * + * {
 }
 @media screen and (max-width: 1199.98px) {
 	.table-results__cell-date,
+	.table-results__cell-points,
 	.table-results__cell-icons {
 		display: none;
 	}
