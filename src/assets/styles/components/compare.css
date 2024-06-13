@@ -26,21 +26,21 @@
 	min-width: 0;
 }
 
-.compare__slider .splide__arrow {
+.compare .compare__slider .splide__arrow {
 	top: 6.25%;
 }
 
-.compare__slider .splide__arrow--prev {
+.compare .compare__slider .splide__arrow--prev {
 	left: -10px;
 	border-width: 20px 15px 20px 0;
 }
 
-.compare__slider .splide__arrow--next {
+.compare .compare__slider .splide__arrow--next {
 	right: -10px;
 	border-width: 20px 0 20px 15px;
 }
 
-.compare__track {
+.compare .compare__track {
 	margin-inline: 0 !important;
 }
 
@@ -207,7 +207,7 @@
 		display: none;
 	}
 
-	.compare__slider .splide__arrow {
+	.compare .compare__slider .splide__arrow {
 		top: 4.75%;
 	}
 

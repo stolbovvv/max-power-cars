@@ -24,6 +24,11 @@
 	<link rel="icon" type="image/svg+xml" href="./favicon.svg">
 	<link rel="manifest" href="./site.webmanifest">
 
+	<!-- TODO: BUNDLE TO VENDOR -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide-core.min.css">
+	<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-grid@0.4.1/dist/js/splide-extension-grid.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+
 	<!-- Page styles -->
 	<link rel="stylesheet" href="./assets/styles/bundle.min.css">
 
@@ -270,7 +275,7 @@
 										<use href="./assets/icons/sprite.svg#icon-weather"></use>
 									</svg>
 								</div>
-								<button class="table-results__cell-button">
+								<button class="table-results__cell-button js-popup-trigger" data-show-popup="popup-result">
 									<span>Подробнее</span>
 									<svg class="icon">
 										<use xlink:href="./assets/icons/sprite.svg#icon-info"></use>
@@ -308,7 +313,7 @@
 										<use href="./assets/icons/sprite.svg#icon-weather"></use>
 									</svg>
 								</div>
-								<button class="table-results__cell-button">
+								<button class="table-results__cell-button js-popup-trigger" data-show-popup="popup-result">
 									<span>Подробнее</span>
 									<svg class="icon">
 										<use xlink:href="./assets/icons/sprite.svg#icon-info"></use>
@@ -346,7 +351,7 @@
 										<use href="./assets/icons/sprite.svg#icon-weather"></use>
 									</svg>
 								</div>
-								<button class="table-results__cell-button">
+								<button class="table-results__cell-button js-popup-trigger" data-show-popup="popup-result">
 									<span>Подробнее</span>
 									<svg class="icon">
 										<use xlink:href="./assets/icons/sprite.svg#icon-info"></use>
@@ -384,7 +389,7 @@
 										<use href="./assets/icons/sprite.svg#icon-weather"></use>
 									</svg>
 								</div>
-								<button class="table-results__cell-button">
+								<button class="table-results__cell-button js-popup-trigger" data-show-popup="popup-result">
 									<span>Подробнее</span>
 									<svg class="icon">
 										<use xlink:href="./assets/icons/sprite.svg#icon-info"></use>
@@ -422,7 +427,7 @@
 										<use href="./assets/icons/sprite.svg#icon-weather"></use>
 									</svg>
 								</div>
-								<button class="table-results__cell-button">
+								<button class="table-results__cell-button js-popup-trigger" data-show-popup="popup-result">
 									<span>Подробнее</span>
 									<svg class="icon">
 										<use xlink:href="./assets/icons/sprite.svg#icon-info"></use>
@@ -460,7 +465,7 @@
 										<use href="./assets/icons/sprite.svg#icon-weather"></use>
 									</svg>
 								</div>
-								<button class="table-results__cell-button">
+								<button class="table-results__cell-button js-popup-trigger" data-show-popup="popup-result">
 									<span>Подробнее</span>
 									<svg class="icon">
 										<use xlink:href="./assets/icons/sprite.svg#icon-info"></use>
@@ -498,7 +503,7 @@
 										<use href="./assets/icons/sprite.svg#icon-weather"></use>
 									</svg>
 								</div>
-								<button class="table-results__cell-button">
+								<button class="table-results__cell-button js-popup-trigger" data-show-popup="popup-result">
 									<span>Подробнее</span>
 									<svg class="icon">
 										<use xlink:href="./assets/icons/sprite.svg#icon-info"></use>
@@ -536,7 +541,7 @@
 										<use href="./assets/icons/sprite.svg#icon-weather"></use>
 									</svg>
 								</div>
-								<button class="table-results__cell-button">
+								<button class="table-results__cell-button js-popup-trigger" data-show-popup="popup-result">
 									<span>Подробнее</span>
 									<svg class="icon">
 										<use xlink:href="./assets/icons/sprite.svg#icon-info"></use>
@@ -574,7 +579,7 @@
 										<use href="./assets/icons/sprite.svg#icon-weather"></use>
 									</svg>
 								</div>
-								<button class="table-results__cell-button">
+								<button class="table-results__cell-button js-popup-trigger" data-show-popup="popup-result">
 									<span>Подробнее</span>
 									<svg class="icon">
 										<use xlink:href="./assets/icons/sprite.svg#icon-info"></use>
@@ -612,7 +617,7 @@
 										<use href="./assets/icons/sprite.svg#icon-weather"></use>
 									</svg>
 								</div>
-								<button class="table-results__cell-button">
+								<button class="table-results__cell-button js-popup-trigger" data-show-popup="popup-result">
 									<span>Подробнее</span>
 									<svg class="icon">
 										<use xlink:href="./assets/icons/sprite.svg#icon-info"></use>
@@ -752,6 +757,250 @@
 				</ul>
 			</div>
 		</footer>
+	</div>
+
+	<div class="popup-result js-popup" id="popup-result">
+		<div class="popup-result__overlay js-popup-trigger" data-hide-popup="popup-result">
+			<div class="popup-result__dialog">
+				<div class="popup-result__head">
+					<h2 class="popup-result__heading">
+						<span>mpc bestlaps</span>
+					</h2>
+					<div class="popup-result__control">
+						<a class="popup-result__link js-popup-trigger" href="#" data-hide-popup="popup-result">
+							<svg class="icon">
+								<use xlink:href="./assets/icons/sprite.svg#icon-external"></use>
+							</svg>
+						</a>
+						<button class="popup-result__hide js-popup-trigger" data-hide-popup="popup-result">
+							<svg class="icon">
+								<use xlink:href="./assets/icons/sprite.svg#icon-close"></use>
+							</svg>
+						</button>
+					</div>
+				</div>
+				<div class="popup-result__tabs">
+					<button class="popup-result__tabs-button is-current">Информация</button>
+					<button class="popup-result__tabs-button">Онборд</button>
+					<button class="popup-result__tabs-button">Конфигурация</button>
+				</div>
+				<div class="popup-result__body">
+					<div class="popup-result__media">
+						<img class="popup-result__photo" src="./assets/images/popup-photo-1.jpg" alt="">
+						<div class="popup-result__video"></div>
+					</div>
+					<div class="popup-result__info">
+						<span class="popup-result__info-stage">Moscow raceway GP10</span>
+						<span class="popup-result__info-time">01:57,158</span>
+					</div>
+					<div class="popup-result__pilot">
+						<img class="popup-result__pilot-photo" src="./assets/images/pilot-1.png" alt="">
+						<div class="popup-result__pilot-body">
+							<span class="popup-result__pilot-name">Криворотченко Константин</span>
+							<span class="popup-result__pilot-car">Porsche Cayman GT4 982</span>
+						</div>
+					</div>
+					<ul class="popup-result__list">
+						<li class="popup-result__list-item">
+							<svg class="popup-result__list-item-icon icon">
+								<use xlink:href="./assets/icons/sprite.svg#icon-tire"></use>
+							</svg>
+							<div class="popup-result__list-item-body">
+								<span class="popup-result__list-item-label">Шины пер. ось:</span>
+								<span class="popup-result__list-item-value">275/30/20 Yokohama Advan A052</span>
+							</div>
+						</li>
+						<li class="popup-result__list-item">
+							<svg class="popup-result__list-item-icon icon">
+								<use xlink:href="./assets/icons/sprite.svg#icon-tire"></use>
+							</svg>
+							<div class="popup-result__list-item-body">
+								<span class="popup-result__list-item-label">Шины зад. ось:</span>
+								<span class="popup-result__list-item-value">315/30/21 Yokohama Advan A052</span>
+							</div>
+						</li>
+						<li class="popup-result__list-item">
+							<svg class="popup-result__list-item-icon icon">
+								<use xlink:href="./assets/icons/sprite.svg#icon-weight"></use>
+							</svg>
+							<div class="popup-result__list-item-body">
+								<span class="popup-result__list-item-label">Вес (без пилота):</span>
+								<span class="popup-result__list-item-value">1545 кг</span>
+							</div>
+						</li>
+						<li class="popup-result__list-item">
+							<svg class="popup-result__list-item-icon icon">
+								<use xlink:href="./assets/icons/sprite.svg#icon-fuel-level"></use>
+							</svg>
+							<div class="popup-result__list-item-body">
+								<span class="popup-result__list-item-label">Уровень топлива:</span>
+								<span class="popup-result__list-item-value">1/2</span>
+							</div>
+						</li>
+						<li class="popup-result__list-item">
+							<svg class="popup-result__list-item-icon icon">
+								<use xlink:href="./assets/icons/sprite.svg#icon-date"></use>
+							</svg>
+							<div class="popup-result__list-item-body">
+								<span class="popup-result__list-item-label">Дата:</span>
+								<span class="popup-result__list-item-value">05.08.2022</span>
+							</div>
+						</li>
+						<li class="popup-result__list-item">
+							<svg class="popup-result__list-item-icon icon">
+								<use xlink:href="./assets/icons/sprite.svg#icon-date"></use>
+							</svg>
+							<div class="popup-result__list-item-body">
+								<span class="popup-result__list-item-label">Мероприятие:</span>
+								<span class="popup-result__list-item-value">5-й этап MaxPowerCars 2022</span>
+							</div>
+						</li>
+						<li class="popup-result__list-item">
+							<svg class="popup-result__list-item-icon icon">
+								<use xlink:href="./assets/icons/sprite.svg#icon-time"></use>
+							</svg>
+							<div class="popup-result__list-item-body">
+								<span class="popup-result__list-item-label">Время:</span>
+								<span class="popup-result__list-item-value">14:35</span>
+							</div>
+						</li>
+						<li class="popup-result__list-item">
+							<svg class="popup-result__list-item-icon icon">
+								<use xlink:href="./assets/icons/sprite.svg#icon-temp"></use>
+							</svg>
+							<div class="popup-result__list-item-body">
+								<span class="popup-result__list-item-label">Температура:</span>
+								<span class="popup-result__list-item-value">+22</span>
+							</div>
+						</li>
+						<li class="popup-result__list-item">
+							<svg class="popup-result__list-item-icon icon">
+								<use xlink:href="./assets/icons/sprite.svg#icon-sun"></use>
+							</svg>
+							<div class="popup-result__list-item-body">
+								<span class="popup-result__list-item-label">Погода:</span>
+								<span class="popup-result__list-item-value">Солнечно</span>
+							</div>
+						</li>
+						<li class="popup-result__list-item">
+							<svg class="popup-result__list-item-icon icon">
+								<use xlink:href="./assets/icons/sprite.svg#icon-coating"></use>
+							</svg>
+							<div class="popup-result__list-item-body">
+								<span class="popup-result__list-item-label">Покрытие:</span>
+								<span class="popup-result__list-item-value">Сухо</span>
+							</div>
+						</li>
+					</ul>
+				</div>
+
+				<div class="popup-result__conf">
+					<div class="popup-result__conf-pilot">
+						<img class="popup-result__conf-pilot-photo" src="./assets/images/pilot-1.png" alt="">
+						<div class="popup-result__conf-pilot-body">
+							<span class="popup-result__conf-pilot-name">Криворотченко Константин</span>
+							<span class="popup-result__conf-pilot-car">Porsche Cayman GT4 982</span>
+						</div>
+					</div>
+					<div class="popup-result__conf-slider splide" id="popup-slider">
+						<div class="popup-result__conf-track splide__track">
+							<ul class="popup-result__conf-list splide__list">
+								<li class="popup-result__conf-slide splide__slide"><img class="popup-result__conf-image" src="./assets/images/card-config-1.jpg" alt=""></li>
+								<li class="popup-result__conf-slide splide__slide"><img class="popup-result__conf-image" src="./assets/images/card-config-1.jpg" alt=""></li>
+								<li class="popup-result__conf-slide splide__slide"><img class="popup-result__conf-image" src="./assets/images/card-config-1.jpg" alt=""></li>
+							</ul>
+						</div>
+					</div>
+					<div class="popup-result__conf-content">
+						<div class="popup-result__conf-head">
+							<span class="popup-result__conf-head-name">Конфигурация 1</span>
+							<span class="popup-result__conf-head-date">01.06.2022</span>
+						</div>
+						<div class="popup-result__conf-tabs">
+							<button class="popup-result__conf-tabs-button is-current">
+								<svg class="icon">
+									<use xlink:href="./assets/icons/sprite.svg#icon-exterior"></use>
+								</svg>
+								<span>Экстерьер</span>
+							</button>
+							<button class="popup-result__conf-tabs-button">
+								<svg class="icon">
+									<use xlink:href="./assets/icons/sprite.svg#icon-interior"></use>
+								</svg>
+								<span>Интерьер</span>
+							</button>
+							<button class="popup-result__conf-tabs-button">
+								<svg class="icon">
+									<use xlink:href="./assets/icons/sprite.svg#icon-suspension"></use>
+								</svg>
+								<span>Подвеска</span>
+							</button>
+							<button class="popup-result__conf-tabs-button">
+								<svg class="icon">
+									<use xlink:href="./assets/icons/sprite.svg#icon-tire"></use>
+								</svg>
+								<span>Колеса</span>
+							</button>
+							<button class="popup-result__conf-tabs-button">
+								<svg class="icon">
+									<use xlink:href="./assets/icons/sprite.svg#icon-brakes"></use>
+								</svg>
+								<span>Тормоза</span>
+							</button>
+							<button class="popup-result__conf-tabs-button">
+								<svg class="icon">
+									<use xlink:href="./assets/icons/sprite.svg#icon-engine"></use>
+								</svg>
+								<span>Двигатель</span>
+							</button>
+							<button class="popup-result__conf-tabs-button">
+								<svg class="icon">
+									<use xlink:href="./assets/icons/sprite.svg#icon-inlet"></use>
+								</svg>
+								<span>Впуск</span>
+							</button>
+							<button class="popup-result__conf-tabs-button">
+								<svg class="icon">
+									<use xlink:href="./assets/icons/sprite.svg#icon-exhaust"></use>
+								</svg>
+								<span>Выпуск</span>
+							</button>
+							<button class="popup-result__conf-tabs-button">
+								<svg class="icon">
+									<use xlink:href="./assets/icons/sprite.svg#icon-fuel"></use>
+								</svg>
+								<span>Топливо</span>
+							</button>
+							<button class="popup-result__conf-tabs-button">
+								<svg class="icon">
+									<use xlink:href="./assets/icons/sprite.svg#icon-transmission"></use>
+								</svg>
+								<span>Трансмиссия</span>
+							</button>
+						</div>
+
+						<ul class="popup-result__conf-list">
+							<li class="popup-result__conf-list-item">
+								<span class="popup-result__conf-list-label">Навесные элементы кузова:</span>
+								<span class="popup-result__conf-list-value">Доработка/замена разрешена</span>
+							</li>
+							<li class="popup-result__conf-list-item">
+								<span class="popup-result__conf-list-label">Двери:</span>
+								<span class="popup-result__conf-list-value">Только при наличии каркаса</span>
+							</li>
+							<li class="popup-result__conf-list-item">
+								<span class="popup-result__conf-list-label">Спойлер:</span>
+								<span class="popup-result__conf-list-value">Доработка/замена разрешена</span>
+							</li>
+							<li class="popup-result__conf-list-item">
+								<span class="popup-result__conf-list-label">Аэропакет/аэрокит:</span>
+								<span class="popup-result__conf-list-value">Доработка/замена разрешена</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 </body>
 

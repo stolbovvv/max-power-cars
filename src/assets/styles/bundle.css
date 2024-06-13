@@ -45,6 +45,7 @@
 @import url("./components/prize.css");
 @import url("./components/banner.css");
 @import url("./components/splide.css");
+@import url("./components/popup-result.css");
 
 /* Layouts styles */
 @import url("./layouts/wrapper.css");
